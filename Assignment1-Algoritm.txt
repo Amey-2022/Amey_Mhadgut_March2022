@@ -1,0 +1,241 @@
+Assignment 1
+Date: 01/03/2022
+Submission Date: 03/03/2022
+
+
+1. Check the given number is EVEN or ODD.
+step 1 :start the program
+step 2 :Enter the number
+step 3 :if number%2==0 then goto step4 otherwise goto step 5
+step 4 :number is even
+step 5 :number is odd
+step 6 :stop
+-------------------------------------------------------------------------------------------------------------------------
+2. Write a Java Program to find the Factorial of given number.
+step 1 :start the program
+step 2 :enter the number
+step 3 :initialization i=1,result=1
+step 4 :if condition i<=num is true then goto step5
+step 5 :result=result*i
+step 6 :increment i=i+1
+step 7 :print the result 
+step 8 :stop 
+-------------------------------------------------------------------------------------------------------------------------
+3.Find the Factorial of a number using Recursion.
+
+-------------------------------------------------------------------------------------------------------------------------
+4. Swap two numbers without using third variable approach.
+step 1 :start the program
+step 2 :enter the n1 , n2 
+step 3 :calculate n1=n1+n2
+				  n2=n1-n2
+				  n1=n1-n2
+step 4 :display n1 and n2 
+step 5 :stop 
+-------------------------------------------------------------------------------------------------------------------------
+5. How to check the given number is Positive or Negative in Java?
+
+step 1 :start the program
+step 2 :enter the number 
+step 3 :if number>0 then goto step 4 otherwise goto step 5
+step 4 :The given number is Positive
+step 5 :if number==0 then goto step 6 otherwise goto step 7
+step 6 :The given number is zero
+step 7 :the number is negative
+step 8 :stop
+-------------------------------------------------------------------------------------------------------------------------
+6.Write a Java Program to find whether given number is Leap year or NOT?
+step 1:start the program
+step 2:enter the year
+step 3:if ((year % 4 == 0 && year % 100!= 0) || year%400 == 0) goto step 4 otherwise goto step 5
+step 4:leap year
+step 5:not leap year
+step 6:stop
+-------------------------------------------------------------------------------------------------------------------------
+7. Write a Java Program to Print 1 To 10 Without Using Loop.
+step 1:start the program
+step 2:print numbers from 1 to 10
+step 3:stop
+
+
+-------------------------------------------------------------------------------------------------------------------------
+8. Write a Java Program to print the digits of a Given Number.
+
+step 1:start the program
+step 2:Enter the number
+step 3:remainder=1
+step 4:rem=num%10;  
+	   num=num/10; 
+step 5:num>0 then goto step 4 otherwise goto step 6
+step 6:stop
+-------------------------------------------------------------------------------------------------------------------------
+9. Write a Java Program to print all the Factors of the Given number.
+step 1:start the program
+step 2:Enter the number
+step 3:Initialize i=1
+step 4:i<num then goto step 5 otherwise goto step 10
+step 5:num%i==0 goto step 6 otherwise goto step 8
+step 6:display i (factors) goto step 7
+step 7:increment i goto step 4
+step 8:display none goto step 7
+step 9:display factors
+step 10:stop
+-------------------------------------------------------------------------------------------------------------------------
+10.Write a Java Program to find sum of the digits of a given number.
+step 1:start the program
+step 2:Enter the number
+step 3:remainder=1,sum=0
+step 4:rem=num%10;  
+	   num=num/10; 
+step 5:sum+=rem
+step 6:num>0 then goto step 4 otherwise goto step 6
+step 7:display sum
+step 8:stop
+-------------------------------------------------------------------------------------------------------------------------
+11. Write a Java Program to find the smallest of 3 numbers (a,b,c)
+
+step 1:start the program
+step 2:Enter three numbers
+step 3:if (a<b && a<c) then goto step 4 otherwise goto step 5 
+step 4:a is minimum
+step 5:(b<a&&b<c) then goto step 6 otherwise goto step 7
+step 6:b is minimum
+step 7:c is minimum
+step 8:stop
+-------------------------------------------------------------------------------------------------------------------------
+12.How to add two numbers without using the arithmetic operators in Java?
+
+step 1:start the program
+step 2:initialize sum=0,carry=0
+step 3:enter two numbers
+step 4:if(n2==0) then goto step 5 otherwise goto step 6
+step 5:dispay sum
+step 6:while(n2!=0) then goto step 7 otherwise goto step 9
+step 7:sum=n1^n2;
+	   carry=(n1&n2)<<1;
+	   n1=sum;
+	   n2=carry;
+step 8:dispay sum
+step 9:stop
+
+-------------------------------------------------------------------------------------------------------------------------
+13. Write a java program to Reverse a given number.
+step 1:start the program
+step 2:Enter the number
+step 3:remainder=1
+step 4:rem=num%10;  
+	   num=num/10; 
+step 5:num>0 then goto step 4 otherwise goto step 6
+step 6:stop
+
+-------------------------------------------------------------------------------------------------------------------------
+14. Write a Java Program to find GCD of two given numbers.
+
+step 1:start the program
+step 2:enter two numbers
+step 3:initialize i=1 hcf=0
+step 4:i <= n1 || i <= n2 then goto step 6 otherwise goto step 8
+step 5:increment i goto step 4
+step 6:if n1%i == 0 && n2%i == 0 goto step 7 otherwise goto step 5 
+step 7:hcf=i goto step 5
+step 8:dispay hcf
+step 9:stop
+
+-------------------------------------------------------------------------------------------------------------------------
+15. Write a java program to LCM of TWO given number.
+
+step 1:start the program
+step 2:enter two numbers
+step 3:initialize i=1 hcf=0 lcm=0
+step 4:i <= n1 || i <= n2 then goto step 6 otherwise goto step 8
+step 5:increment i goto step 4
+step 6:if n1%i == 0 && n2%i == 0 goto step 7 otherwise goto step 5 
+step 7:hcf=i goto step 5
+step 8:dispay hcf
+step 9:lcm=(n1*n2)/hcf;
+step 10:display lcm
+step 11:stop
+
+-------------------------------------------------------------------------------------------------------------------------
+16. Write a java program to LCM of TWO given number using Prime Factors method.
+step 1:start the program
+step 2:enter two numbers
+step 3:initialize i=1 hcf=0 lcm=0
+step 4:i <= n1 || i <= n2 then goto step 6 otherwise goto step 8
+step 5:increment i goto step 4
+step 6:if n1%i == 0 && n2%i == 0 goto step 7 otherwise goto step 5 
+step 7:hcf=i goto step 5
+step 8:dispay hcf
+step 9:lcm=(n1*n2)/hcf;
+step 10:display lcm
+step 11:initialize i=2
+step 12:i<lcm then goto step 14 otherwise goto step 16
+step 13:increment i then goto step 12
+step 14:lcm%i==0 then goto step 15 otherwise goto step 13
+step 15:lcm=lcm/i then goto step 14
+step 16:if lcm>2 then goto step 17
+step 17:display lcm
+step 18:stop
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+17. Check whether the Given Number is a Palindrome or NOT.
+step 1:start the program
+step 2:Enter the number
+step 3:remainder=1,reverse=0,old=num
+step 4:rem=num%10;  
+	   num=num/10; 
+       rev=rev*10+rem;
+step 5:num>0 then goto step 4 otherwise goto step 6
+step 6:if old==rev then goto to step 7 otherwise goto step 8
+step 7:number is palindrome
+step 8:number is not palindrome
+step 9:stop
+-------------------------------------------------------------------------------------------------------------------------
+18. Write a Java Program to print all the Prime Factors of the Given Number.
+step 1:start the program
+step 2:enter the number
+step 3:initialize i=2
+step 4:i<number then goto step 6 otherwise goto step 8
+step 5:increment i then goto step 4
+step 6:number%i==0 then goto step 7 otherwise goto step 5
+step 7:number=number/i then goto step 6
+step 8:if number>2 then goto step 9
+step 9:display number
+step 10:stop
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+19.To print the following series EVEN number Series 2 4 6 8 10 12 14 16 ..
+step 1:start the program
+step 2:enter the number
+step 3:i=2
+step 4:if i<=number goto step 5 otherwise goto step 7
+step 5:display number
+step 6:increment i by 2 goto step 4
+step 7:stop
+
+-------------------------------------------------------------------------------------------------------------------------
+20. To print the following series ODD number Series 1 3 5 7 9 11 13 ....
+step 1:start the program
+step 2:enter the number
+step 3:i=1
+step 4:if i<=number goto step 5 otherwise goto step 7
+step 5:display number
+step 6:increment i by 2 goto step 4
+step 7:stop
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
