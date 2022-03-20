@@ -1,0 +1,85 @@
+ameymhadgut@LAPTOP-G1PPCQSJ:~/cdac22$ ls
+tree
+ameymhadgut@LAPTOP-G1PPCQSJ:~/cdac22$ cd tree
+ameymhadgut@LAPTOP-G1PPCQSJ:~/cdac22/tree$ ls
+FamilyTree  KapoorFamily  MAHABHARAT
+ameymhadgut@LAPTOP-G1PPCQSJ:~/cdac22/tree$ tree
+.
+├── FamilyTree
+│   └── A
+│       ├── B
+│       │   ├── B1
+│       │   │   ├── B3
+│       │   │   └── B4
+│       │   └── B2
+│       │       ├── B5
+│       │       └── B6
+│       └── C
+│           ├── C1
+│           │   ├── C3
+│           │   └── C4
+│           └── C2
+│               ├── C5
+│               └── C6
+├── KapoorFamily
+│   └── prithviraj
+│       ├── devinder
+│       ├── raj
+│       │   ├── rajiv
+│       │   ├── randhir
+│       │   │   ├── kareena
+│       │   │   │   └── taimur
+│       │   │   └── karishma
+│       │   │       ├── kiaan
+│       │   │       └── samaira
+│       │   ├── rima
+│       │   │   ├── adar
+│       │   │   └── arman
+│       │   ├── rishi
+│       │   │   ├── ranbir
+│       │   │   └── ridhima
+│       │   │       └── samara
+│       │   └── ritu
+│       │       ├── nikhil
+│       │       │   ├── agastya
+│       │       │   └── navya
+│       │       └── nitasha
+│       ├── ravinder
+│       ├── shami
+│       │   ├── aditya
+│       │   └── kanchan
+│       ├── shashi
+│       │   ├── karan
+│       │   ├── kunal
+│       │   └── sanjana
+│       └── urmi
+└── MAHABHARAT
+    └── Kuru
+        ├── Parashara
+        │   └── Vyasa
+        └── Shantanu
+            ├── Ganga_wife
+            │   └── Bhishma
+            └── Satyavati_Wife
+                ├── Chintrangada
+                └── Vichitraviriya
+                    ├── Ambalika_Wife
+                    │   └── {Pandu
+                    │       ├── Kunti_Wife
+                    │       │   ├── Arjuna
+                    │       │   │   └── Abhimanyu}
+                    │       │   ├── Bhima}
+                    │       │   ├── Karna}
+                    │       │   └── Yudhishthira}
+                    │       └── Madri_Wife
+                    │           ├── Nakula}
+                    │           └── Sahadeva}
+                    └── Ambika_Wife
+                        └── {Dhritarashtra
+                            ├── 98_Sons}
+                            ├── Duryodhana}
+                            ├── Dushasana}
+                            └── Dussala}
+
+75 directories, 0 files
+ameymhadgut@LAPTOP-G1PPCQSJ:~/cdac22/tree$
