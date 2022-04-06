@@ -1,0 +1,32 @@
+package pack1;
+import  pack1.Person;
+import  pack1.Employee;
+import java.util.*;
+
+
+class TestEmpolyee{
+public static void main(String[] args){
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter Your Name: ");
+	String name=sc.NextLine();
+	System.out.println("Enter Your Village: ");
+	String vil=sc.NextLine();
+	System.out.println("Enter Your District: ");
+	String dis=sc.NextLine();
+	System.out.println("Enter Your Pin: ");
+	int pin=sc.nextInt();
+	System.out.println("Enter Your Country: ");
+	String cont=sc.NextLine();
+	System.out.println("Enter Your Mobile number: ");
+	int mob=sc.nextInt();
+	System.out.println("Enter Your annual salary: ");
+	int asal=sc.nextInt();
+	System.out.println("Enter Your joining year: ");
+	int yr=sc.nextInt();
+	System.out.println("Enter Your national insurance number: ");
+	int nin=sc.nextInt();
+	
+	Employee e=new Employee(name,vil,dis,cont,pin,mob,asal,yr,nin);
+}
+
+}

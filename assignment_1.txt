@@ -1,0 +1,585 @@
+                                                           1. Check the given number is EVEN or ODD.
+   
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int num;
+	    num=44;
+	    if (num%2==0)
+	    {
+	        System.out.println("The given number is EVEN");
+	    }
+	    else{
+	        System.out.println("The given number is ODD");
+	    }
+	}
+}
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+2. Write a Java Program to find the Factorial of given number.
+	
+public class Main
+{
+	public static void main(String[] args) {
+	    int num=4,i,result=1;
+	    System.out.println("The Factorial of number 4 is ");
+	    for(i=1;i<=num;i++)
+	    {
+	        result=result*i;
+	        
+	    }
+	    System.out.print(result);
+	}
+}
+
+
+-------------------------------------------------------------------------------------------------------------------------
+3. Find the Factorial of a number using Recursion.
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+4. Swap two numbers without using third variable approach.
+   public class Main
+{
+	public static void main(String[] args) {
+	   int n1,n2;
+	   n1=10;
+	   n2=20;
+	   System.out.println("Before Swaping Number 1 = "+n1);
+	   System.out.println("Before Swaping Number 2 = "+n2);
+	   n1=n1+n2;
+	   n2=n1-n2;
+	   n1=n1-n2;
+	   System.out.println("After Swaping Number  1 = "+n1);
+	   System.out.println("After Swaping Number  2 = "+n2);
+	}
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+5. How to check the given number is Positive or Negative in Java?
+public class Main
+{
+	public static void main(String[] args) {
+	   int num;
+	   num=28;
+	   if (num>0)
+	   {
+	       System.out.println("The given number is Positive");
+	   }
+	   else if (num==0)
+	   {
+	       System.out.println("The given number is zero");
+	   }
+	   else 
+	   {
+	       System.out.println("The given number is Negative");
+	   }
+	}
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+6. Write a Java Program to find whether given number is Leap year or NOT?
+public class Main
+{
+	public static void main(String[] args) {
+	   int year;
+	   year=2020;
+	   if (((year % 4 == 0) || (year % 100!= 0)) && (year%400 == 0))
+	   {
+	       System.out.println("The given year "+year+" is Leap year");
+	   }
+	  
+	   else 
+	   {
+	       System.out.println("The given year "+year+" is Not a Leap year");
+	   }
+	}
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+7. Write a Java Program to Print 1 To 10 Without Using Loop.
+public class Main
+{
+	public static void main(String[] args) {
+	   System.out.println("1");
+	    System.out.println("2");
+	     System.out.println("3");
+	      System.out.println("4");
+	       System.out.println("5");
+	        System.out.println("6");
+	         System.out.println("7");
+	          System.out.println("8");
+	           System.out.println("9");
+	            System.out.println("10");
+	             
+	}
+}
+
+
+public class Main
+{
+     // Driver Code
+    public static void main(String[] args)
+    {
+        printNos(10);
+    }
+    // Prints numbers from 1 to n
+    static void printNos(int n)
+    {
+        if(n > 0)
+        {
+            printNos(n - 1);
+            System.out.print(n + " ");
+        }
+        return;
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+8. Write a Java Program to print the digits of a Given Number.
+	public class Main
+{
+	public static void main(String[] args) {
+	 int num,f,s,t,l,x,y;
+	 num=1234;
+
+ f=num/1000;     //1234/1000=1
+ x=num%1000;    // 1234%1000=234
+ s=x/100;       // 234/100=2
+ y=x%100;       // 234%100=34
+ t=y/10;        // 34/10=3
+ l=y%10;        // 34%10=4
+ System.out.println("Input = "+num);
+ System.out.println("unit digit= "+l);
+ System.out.println("tens digit= "+t);
+ System.out.println("hundreds digit= "+s);
+ System.out.println("thousands digit= "+f);
+ 
+	}
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	 int num,rem;
+	 num=1234;
+ 	do{
+	 rem=num%10;  //1234%10=4
+	 num=num/10;  //1234/10=123
+	 System.out.println("digits of given number is "+rem);
+
+ 	}
+     while(num>0);
+   	}
+}
+-------------------------------------------------------------------------------------------------------------------------
+9. Write a Java Program to print all the Factors of the Given number.
+
+public class Main
+{
+	public static void main(String[] args) {
+  int num,i;
+  num=55;
+    System.out.println("The number is "+num);
+    System.out.println("Output: ");
+    for(i=1;i<num;i++)
+    {
+      if(num%i==0)
+      System.out.print(i+"*");
+      else
+      System.out.print("");
+    }
+    System.out.print("\b="+num);
+ 	}
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+10. Write a Java Program to find sum of the digits of a given number.
+	public class Main
+{
+	public static void main(String[] args) {
+	 int num,f,s,t,l,x,y,sum;
+	 num=1234;
+
+ f=num/1000;     //1234/1000=1
+ x=num%1000;    // 1234%1000=234
+ s=x/100;       // 234/100=2
+ y=x%100;       // 234%100=34
+ t=y/10;        // 34/10=3
+ l=y%10;        // 34%10=4
+ System.out.println("Input = "+num);
+ System.out.println("unit digit= "+l);
+ System.out.println("tens digit= "+t);
+ System.out.println("hundreds digit= "+s);
+ System.out.println("thousands digit= "+f);
+ sum=f+s+t+l;
+ System.out.println("The sum of digits = "+sum);
+	}
+}
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	 int num,rem,sum=0;
+	 num=1234;
+ 	do{
+	 rem=num%10;  //1234%10=4
+	 num=num/10;  //1234/10=123
+	 System.out.println("digits of given number is "+rem);
+     sum+=rem;
+ 	}
+     while(num>0);
+     System.out.println("sum of digits = "+sum);
+   	}
+}
+-------------------------------------------------------------------------------------------------------------------------
+11. Write a Java Program to find the smallest of 3 numbers (a,b,c)
+public class Main
+{
+	public static void main(String[] args) {
+    int a,b,c;
+    a=12;
+    b=5;
+    c=7;
+    if (a<b && a<c)
+    System.out.println("the smallest number is "+a);
+    else if(b<a && b<c)
+    System.out.println("the smallest number is "+b);
+    else
+    System.out.println("the smallest number is "+c);
+		
+	}
+}
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+    
+    Scanner sc=new Scanner(System.in);
+    System.out.print("Enter first number:");
+    int a=sc.nextInt();
+    
+    System.out.print("Enter second number:");
+    int b=sc.nextInt();
+    
+    System.out.print("Enter third number:");
+    int c=sc.nextInt();
+    
+    if (a<b && a<c)
+    System.out.println("the smallest number is "+a);
+    else if(b<a && b<c)
+    System.out.println("the smallest number is "+b);
+    else
+    System.out.println("the smallest number is "+c);
+		
+	}
+}
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+  
+    int min;
+     Scanner sc=new Scanner(System.in);
+    System.out.print("Enter first number:");
+    int a=sc.nextInt();
+    
+    System.out.print("Enter second number:");
+    int b=sc.nextInt();
+    
+    System.out.print("Enter third number:");
+    int c=sc.nextInt();
+    
+    min=(a<b&&a<c)?a:(b<c?b:c);
+    System.out.println("Minimum number is "+min);
+    
+		
+	}
+}
+-------------------------------------------------------------------------------------------------------------------------
+
+12. How to add two numbers without using the arithmetic operators in Java?
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    int sum=0,carry=0;
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter first Number :");
+		int n1=sc.nextInt();
+		
+		System.out.println("Enter second Number :");
+		int n2=sc.nextInt();
+		if(n2==0)
+		{
+		    System.out.println("Addition of two numbers without using arithmatic operator = "+n1);
+		}
+	    else
+	    {
+		while(n2!=0)
+		{
+		   sum=n1^n2;
+		   carry=(n1&n2)<<1;
+		   n1=sum;
+		   n2=carry;
+		}
+	    
+		System.out.println("Addition of two numbers without using arithmatic operator = "+sum);
+	    }
+	}
+}-------------------------------------------------------------------------------------------------------------------------
+13. Write a java program to Reverse a given number.
+	public class Main
+{
+	public static void main(String[] args) {
+	 int num,f,s,t,l,x,y;
+	 num=1234;
+
+ f=num/1000;     //1234/1000=1
+ x=num%1000;    // 1234%1000=234
+ s=x/100;       // 234/100=2
+ y=x%100;       // 234%100=34
+ t=y/10;        // 34/10=3
+ l=y%10;        // 34%10=4
+ System.out.println("Input = "+num);
+ System.out.print("Reverse number is "+l);
+ System.out.print(t);
+ System.out.print(s);
+ System.out.print(f);
+	}
+}
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	 int rem;
+	 Scanner sc=new Scanner(System.in);
+	 
+	 System.out.println("Enter the number :");
+	 int num=sc.nextInt();
+	 
+	 //1234
+	 System.out.println("The reverse number :");
+ 	do{
+	rem=num%10;  //1234%10=4
+    num=num/10;   //1234/10=123
+    System.out.print(rem);
+ 	}
+     while(num>0);
+     
+   	}
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+14. Write a Java Program to find GCD of two given numbers.
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	   int i,hcf=0;
+	   
+	   Scanner sc=new Scanner(System.in);
+	   System.out.print("Enter the first number : ");
+	   int n1=sc.nextInt();
+	   System.out.print("Enter the Second number : ");
+	   int n2=sc.nextInt();
+	   
+	   
+        for(i = 1; i <= n1 || i <= n2; i++)
+        {
+         if( n1%i == 0 && n2%i == 0 )
+         hcf = i;
+        }
+      System.out.println("HCF of given two numbers is ::"+hcf);
+	}
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+15. Write a java program to LCM of TWO given number.
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	   int i,hcf=0,lcm=0;
+	   
+	   Scanner sc=new Scanner(System.in);
+	   System.out.print("Enter the first number : ");
+	   int n1=sc.nextInt();
+	   System.out.print("Enter the Second number : ");
+	   int n2=sc.nextInt();
+	   
+	   
+        for(i = 1; i <= n1 || i <= n2; i++)
+        {
+         if( n1%i == 0 && n2%i == 0 )
+         hcf = i;
+        }
+      System.out.println("HCF of given two numbers is ::"+hcf);
+      lcm=(n1*n2)/hcf;
+       System.out.println("LCM of given two numbers is ::"+lcm);
+	}
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+16. Write a java program to LCM of TWO given number using Prime Factors method.
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	   int i,hcf=0,lcm=0;
+	   
+	   Scanner sc=new Scanner(System.in);
+	   System.out.print("Enter the first number : ");
+	   int n1=sc.nextInt();
+	   System.out.print("Enter the Second number : ");
+	   int n2=sc.nextInt();
+	   
+	   
+        for(i = 1; i <= n1 || i <= n2; i++)
+        {
+         if( n1%i == 0 && n2%i == 0 )
+         hcf = i;
+        }
+      System.out.println("HCF of given two numbers is ::"+hcf);
+      lcm=(n1*n2)/hcf;
+       System.out.println("LCM of given two numbers is ::"+lcm);
+       
+       
+     
+     
+      for( i = 2; i< lcm; i++) 
+      {
+         while(lcm%i == 0)    
+         {
+            System.out.println("i= "+i+" ");    
+            lcm = lcm/i;           
+         }
+      }
+      
+      if(lcm >2)     
+      {
+         System.out.println("number"+lcm);  
+      }
+	}
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+17. Check whether the Given Number is a Palindrome or NOT.
+	public class Main
+{
+	public static void main(String[] args) {
+	 int num,f,s,t,l,x,y,z;
+	 num=1221;
+
+ f=num/1000;     //1234/1000=1
+ x=num%1000;    // 1234%1000=234
+ s=x/100;       // 234/100=2
+ y=x%100;       // 234%100=34
+ t=y/10;        // 34/10=3
+ l=y%10;        // 34%10=4
+ System.out.println("Input = "+num);
+z=l*1000+t*100+s*10+f;
+ if(num==z)
+ System.out.println(z+" is palindrome number");
+ else
+ System.out.println(z+" is not a palindrome number");
+	}
+}
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	 int rem,old,rev=0;
+	 Scanner sc=new Scanner(System.in);
+	 
+	 System.out.println("Enter the number :");
+	 int num=sc.nextInt();
+	 old=num;
+	 
+	 //123
+	 System.out.println("The reverse number :");
+ 	do{
+	rem=num%10;  //123%10=3
+    num=num/10;   //123/10=12
+    
+    rev=rev*10+rem;         //  =0*10+4   rev=4   =4*10+3  =43    43*10+2 =432  432*10+1=4321
+    
+ 	}
+     while(num>0);
+     System.out.println(rev);
+     
+     if(old==rev)
+     System.out.println("number is palindrome");
+     else
+     System.out.println("number is not palindrome");
+   	}
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+18. Write a Java Program to print all the Prime Factors of the Given Number.
+import java.util.Scanner;
+
+public class Main {
+   public static void main(String args[])
+   {
+      int number;
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter a number ::");
+      number = sc.nextInt();
+     
+      for(int i = 2; i< number; i++) 
+      {
+         while(number%i == 0)    
+         {
+            System.out.println("i= "+i+" ");    
+            number = number/i;           
+         }
+      }
+      
+      if(number >2)     
+      {
+         System.out.println("number"+number);  
+      }
+   }
+}
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+19. To print the following series EVEN number Series 2 4 6 8 10 12 14 16 .....
+	public class Main
+{
+	public static void main(String[] args) {
+	 int num,i;
+	 for(i=2;i<=100;i+=2)
+	 System.out.println(i);
+	}
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+20. To print the following series ODD number Series 1 3 5 7 9 11 13 ....
+	public class Main
+{
+	public static void main(String[] args) {
+	 int num,i;
+	 for(i=1;i<=100;i+=2)
+	 System.out.println(i);
+	}
+}
+-------------------------------------------------------------------------------------------------------------------------
