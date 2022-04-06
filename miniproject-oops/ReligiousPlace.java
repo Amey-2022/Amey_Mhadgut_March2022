@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+class ReligiousPlace{
+
+
+			String relplc[]=new String[15];
+			String sel[]=new String[25];	
+				
+			void setRelplaceNames(){
+			this.relplc[0]="1.KUNKESHWAR TEMPLE";
+			this.relplc[1]="2.ANGANEWADI TEMPLE";
+			this.relplc[2]="3.BHALCHANDRA MAHARAJ SANSTHANAM";
+			this.relplc[3]="4.MANGAON DATTATRAY TEMPLE";
+			this.relplc[4]="5.JAITIR TEMPLE, TULAS";
+			this.relplc[5]="6.VETOBA TEMPLE, ARAVLI";
+			this.relplc[6]="7.REDI GANESH TEMPLE";
+			this.relplc[7]="8.BANDESHWAR TEMPLE, BANDA";
+			this.relplc[8]="9.VENGURLA ROMAN CATHOLIC CHURCH";
+			this.relplc[9]="10.MALWAN CHURCH";
+			this.relplc[10]="11.SAWANTWADI CHURCH";
+			this.relplc[11]="12.SHIRODA CHURCH";
+			this.relplc[12]="13.REDEGHUMAT,SAWANTWADI";
+			this.relplc[13]="14.JAMA MASJID, DEVGAD";
+			this.relplc[14]="15.NOT INTERESTED";
+			}
+			
+			void getRelplaceNames(){
+			String str1=String.format("%75s","DEVOTEES QUOTES");
+		
+		System.out.println("               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println(str1);
+		System.out.println("               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println("\n\n\n");
+		
+		System.out.print(String.format("%-50s","                "+relplc[0]));
+		System.out.print(String.format("%-40s",relplc[1]));
+		System.out.print(String.format("%-30s",relplc[2]));
+		System.out.println("\n\n\n");
+		System.out.print(String.format("%-50s","                "+relplc[3]));
+		System.out.print(String.format("%-40s",relplc[4]));
+		System.out.print(String.format("%-30s",relplc[5]));
+		System.out.println("\n\n\n");
+		System.out.print(String.format("%-50s","                "+relplc[6]));
+		System.out.print(String.format("%-40s",relplc[7]));
+		System.out.print(String.format("%-30s",relplc[8]));
+		System.out.println("\n\n\n");
+		System.out.print(String.format("%-50s","                "+relplc[9]));
+		System.out.print(String.format("%-40s",relplc[10]));
+		System.out.print(String.format("%-30s",relplc[11]));
+		System.out.println("\n\n\n");
+		System.out.print(String.format("%-50s","                "+relplc[12]));
+		System.out.print(String.format("%-40s",relplc[13]));
+		System.out.print(String.format("%-30s",relplc[14]));
+		System.out.println("\n\n\n");
+		
+			
+			
+			
+			
+			}
+			
+		
+
+}
