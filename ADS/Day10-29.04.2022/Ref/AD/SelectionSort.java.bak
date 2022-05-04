@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+class SelectionSort{
+	
+	public static void selectionSort(int arr){
+		
+		for(int i=0;i<arr.length-1;i++){
+			for(int j=0;j<arr.length;j++){
+				
+				if(a[i] > a[j]){
+					int temp=a[i];
+					a[i]=a[j];
+					a[j]=temp;
+				}
+				System.out.println("After Each Pass : "+Arrays.toString(arr));
+			}
+		}
+		System.out.println("After Each Pass : "+Arrays.toString(arr));
+	}
+}

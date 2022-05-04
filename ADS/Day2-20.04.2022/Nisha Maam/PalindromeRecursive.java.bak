@@ -1,0 +1,20 @@
+/5.Write a program to implement a recursive Java palindrome checker
+import java.util.Scanner;
+class PalindromeRecursive{
+
+
+
+
+	public static void main(String []args){
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter Number : ");
+		int n=sc.nextInt();
+		
+		
+		
+		
+		
+		
+		}
+
+}
