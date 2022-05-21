@@ -1,0 +1,187 @@
+
+SQL> DESC SALESPEOPLE;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SNUM                                               NUMBER(4)
+ SNAME                                              VARCHAR2(10)
+ CITY                                               VARCHAR2(10)
+ COMM                                               NUMBER(3,2)
+
+
+
+SQL>  create table CUSTOMERS(
+  2   Cnum number(4),
+  3  Cname varchar2(10),
+  4  City varchar2(10),
+  5   Rating number(4),
+  6  Snum number(4));
+  
+ 
+ SQL> desc customers;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CNUM                                               NUMBER(4)
+ CNAME                                              VARCHAR2(10)
+ CITY                                               VARCHAR2(10)
+ RATING                                             NUMBER(4)
+ SNUM                                               NUMBER(4)
+ 
+ 
+ SQL> create table ORDERS(
+  2  Onum number(4),
+  3  Amt number(7,2),
+  4  Odate date,
+  5  Cnum number(4),
+  6  Snum number(4));
+
+Table created.
+
+SQL> desc orders;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ONUM                                               NUMBER(4)
+ AMT                                                NUMBER(7,2)
+ ODATE                                              DATE
+ CNUM                                               NUMBER(4)
+ SNUM                                               NUMBER(4)
+ 
+ 
+ 
+ 
+ SQL> insert into SALESPEOPLE VALUES
+  2  (1001,'Peel','London',0.12);
+
+1 row created.
+
+SQL> insert into SALESPEOPLE VALUES  (1002,'Serres','San Jose',0.13);
+
+1 row created.
+
+SQL> insert into SALESPEOPLE VALUES  (1004,'Motika','London',0.11);
+
+1 row created.
+
+SQL> insert into SALESPEOPLE VALUES (1007,'Rifkin','Barcelona',0.15);
+
+1 row created.
+
+SQL> insert into SALESPEOPLE VALUES (1003,'Axelrod','New York',0.10);
+
+1 row created.	
+ 
+ 
+ SQL> select * from salespeople;
+
+      SNUM SNAME      CITY             COMM
+---------- ---------- ---------- ----------
+      1001 Peel       London            .12
+      1002 Serres     San Jose          .13
+      1004 Motika     London            .11
+      1007 Rifkin     Barcelona         .15
+      1003 Axelrod    New York           .1
+
+
+
+SQL> insert into CUSTOMERS values (2001,'Hoffman','London',100,1001);
+
+1 row created.
+
+SQL> insert into CUSTOMERS values (2002,'Giovanni','Rome',200,1003);
+
+1 row created.
+
+SQL> insert into CUSTOMERS values (2003,'Liu','San Jose',200,1002);
+
+1 row created.
+
+SQL> insert into CUSTOMERS values (2004,'Grass','Berlin',300,1002);
+
+1 row created.
+
+SQL> insert into CUSTOMERS values (2006,'Clemens','London',100,1001);
+
+1 row created.
+
+SQL> insert into CUSTOMERS values (2008,'Cisneros','San Jose',300,1007);
+
+1 row created.
+
+SQL> insert into CUSTOMERS values (2007,'Pereira','Rome',100,1004);
+
+1 row created.
+
+SQL> select * from CUSTOMERS;
+
+      CNUM CNAME      CITY           RATING       SNUM
+---------- ---------- ---------- ---------- ----------
+      2001 Hoffman    London            100       1001
+      2002 Giovanni   Rome              200       1003
+      2003 Liu        San Jose          200       1002
+      2004 Grass      Berlin            300       1002
+      2006 Clemens    London            100       1001
+      2008 Cisneros   San Jose          300       1007
+      2007 Pereira    Rome              100       1004
+
+7 rows selected.
+
+
+
+SQL> insert into ORDERS values (3001,18.69,'03-OCT-1990',2008,1007);
+
+1 row created.
+
+SQL> insert into ORDERS values (3003,767.19,'03-OCT-1990',2001,1001);
+
+1 row created.
+
+SQL> insert into ORDERS values (3002,1900.10,'03-OCT-1990',2007,1004);
+
+1 row created.
+
+SQL> insert into ORDERS values (3005,5160.45,'03-OCT-1990',2003,1002);
+
+1 row created.
+
+SQL> insert into ORDERS values (3006,1098.16,'03-OCT-1990',2008,1007);
+
+1 row created.
+
+SQL> insert into ORDERS values (3009,1713.23,'04-OCT-1990',2002,1003);
+
+1 row created.
+
+SQL> insert into ORDERS values (3007,75.75,'04-OCT-1990',2004,1002);
+
+1 row created.
+
+SQL> insert into ORDERS values (3008,4723.00,'05-OCT-1990',2006,1001);
+
+1 row created.
+
+SQL> insert into ORDERS values (3010,1309.95,'06-OCT-1990',2004,1002);
+
+1 row created.
+
+SQL> insert into ORDERS values (3011,9891.88,'06-OCT-1990',2006,1001);
+
+1 row created.
+
+SQL> SELECT * FROM ORDERS;
+
+      ONUM        AMT ODATE           CNUM       SNUM
+---------- ---------- --------- ---------- ----------
+      3001      18.69 03-OCT-90       2008       1007
+      3003     767.19 03-OCT-90       2001       1001
+      3002     1900.1 03-OCT-90       2007       1004
+      3005    5160.45 03-OCT-90       2003       1002
+      3006    1098.16 03-OCT-90       2008       1007
+      3009    1713.23 04-OCT-90       2002       1003
+      3007      75.75 04-OCT-90       2004       1002
+      3008       4723 05-OCT-90       2006       1001
+      3010    1309.95 06-OCT-90       2004       1002
+      3011    9891.88 06-OCT-90       2006       1001
+
+10 rows selected.
+
+
+

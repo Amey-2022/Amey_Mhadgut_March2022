@@ -1,0 +1,135 @@
+SQL Exercise 6
+
+
+1. Display all the Suppliers with the same Status as the supplier, ‘CLARK’.
+
+		mysql> select * from s1 where status = (select status from s1 where sname='clark');
+		+------+-------+--------+--------+
+		| s#   | sname | status | city   |
+		+------+-------+--------+--------+
+		| s1   | Smith |     20 | London |
+		| s4   | Clark |     20 | London |
+		+------+-------+--------+--------+
+		2 rows in set (0.00 sec)
+
+		mysql> select sname from s1 where status = (select status from s1 where sname='clark');
+		+-------+
+		| sname |
+		+-------+
+		| Smith |
+		| Clark |
+		+-------+
+		2 rows in set (0.00 sec)
+
+2. Display all the Employees in the same department as the employee ‘MILLER/Arun’.
+
+
+		mysql> select dept.dname,ename from emp,dept 
+		where emp.deptno=dept.deptno and dept.deptno =
+		(select emp.deptno from emp where ename='Arun');
+		+----------+-------+
+		| dname    | ename |
+		+----------+-------+
+		| TRAINING | ARUN  |
+		| TRAINING | ALI   |
+		| TRAINING | KIRUN |
+		+----------+-------+
+		3 rows in set (0.04 sec)
+
+
+3. Display all the Parts which have more Weight than all the Red/Blue parts.
+
+
+		mysql> select * from p1 
+		where weight > 
+		(select max(weight) from p1 where color='blue');
+		+------+-------+-------+--------+--------+
+		| p#   | pname | color | weight | city   |
+		+------+-------+-------+--------+--------+
+		| p6   | cog   | red   |     19 | London |
+		+------+-------+-------+--------+--------+
+		1 row in set (0.00 sec)
+
+
+4. Display all the Projects going on in the same city as the project ‘TAPE’.
+
+		mysql> select * from j1 
+		where city = 
+		(select city from j1 where jname='tape');
+		+------+----------+--------+
+		| j#   | jname    | city   |
+		+------+----------+--------+
+		| j5   | collator | London |
+		| j6   | tape     | London |
+		+------+----------+--------+
+		2 rows in set (0.02 sec)
+
+5. Display all the Parts with Weight less than all the Green parts.
+		mysql> select * from p1 
+		where weight < 
+		(select min(weight) from p1 where color = 'green');
+		+------+---------+-------+--------+--------+
+		| p#   | pname   | color | weight | city   |
+		+------+---------+-------+--------+--------+
+		| p1   | nut     | red   |     12 | London |
+		| p4   | stapler | red   |     14 | London |
+		| p5   | cam     | blue  |     12 | Paris  |
+		+------+---------+-------+--------+--------+
+		3 rows in set (0.00 sec)
+
+
+6. Display the name of the Supplier who has sold the maximum Quantity (in one sale).
+
+		mysql> select sname,qty from s1,spj1 where s1.`s#`=spj1.`s#` and qty = (select max(qty) from spj1);
+		+-------+------+
+		| sname | qty  |
+		+-------+------+
+		| Jones |  800 |
+		| Adams |  800 |
+		+-------+------+
+		2 rows in set (0.00 sec)
+
+7. Display the name of the Employee with the minimum Salary.
+
+		mysql> select ename,min(sal) from emp;
+		+-------+----------+
+		| ename | min(sal) |
+		+-------+----------+
+		| ARUN  |     3000 |
+		+-------+----------+
+		1 row in set (0.00 sec)
+
+
+8. Display the name of the Supplier who has sold the maximum overall Quantity (sum of Sales).
+
+
+
+
+
+
+9. Display the name of the Department with the maximum number of Employees.
+
+			mysql> select dname, max(count_deptno) from
+				->     (select dname, count(emp.deptno) "count_deptno" from emp,dept
+				->     where emp.deptno=dept.deptno
+				->     group by emp.deptno) as tempp;
+			+----------+-------------------+
+			| dname    | max(count_deptno) |
+			+----------+-------------------+
+			| TRAINING |                 3 |
+			+----------+-------------------+
+			1 row in set (0.00 sec)
+
+
+		 select sname, max(sum_qty) from
+		 (select sname, sum(qty) sum_qty from spj1, s1
+		 where spj1.`s#`=s1.`s#`
+		 group by sname) as tempp;
+		 
+		 
+		 
+	 select dname, max(count_deptno) from
+    (select dname, count(emp.deptno) "count_deptno" from emp,dept
+    where emp.deptno=dept.deptno
+    group by emp.deptno) as tempp;
+

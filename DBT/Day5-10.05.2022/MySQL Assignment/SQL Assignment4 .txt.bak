@@ -1,0 +1,159 @@
+SQL Exercise 4
+
+1. Display the minimum Status in the Supplier table.
+
+mysql> select min(status) from s1;
++-------------+
+| min(status) |
++-------------+
+|          10 |
++-------------+
+1 row in set (0.15 sec)
+
+mysql> select ltrim(min(status)) from s1;
++--------------------+
+| ltrim(min(status)) |
++--------------------+
+| 10                 |
++--------------------+
+1 row in set (0.02 sec)
+
+
+2. Display the maximum Weight in the Parts table.
+
+mysql> select max(weight) from p1;
++-------------+
+| max(weight) |
++-------------+
+|          19 |
++-------------+
+1 row in set (0.00 sec)
+
+
+3. Display the average Weight of the Parts.
+
+mysql> select avg(weight) from p1;
++-------------+
+| avg(weight) |
++-------------+
+|     15.1667 |
++-------------+
+1 row in set (0.05 sec)
+
+4. Display the total Quantity sold for part ‘P1’.
+
+mysql> select pname,sum(qty) from spj1,p1
+    -> where p1.`p#`=spj1.`p#` and
+    -> `p#`='p1';
+ERROR 1052 (23000): Column 'p#' in where clause is ambiguous
+
+mysql> select pname,sum(qty) from spj1,p1
+    -> where p1.`p#`=spj1.`p#` and
+    -> spj1.`p#`='p1';
++-------+----------+
+| pname | sum(qty) |
++-------+----------+
+| nut   |      900 |
++-------+----------+
+1 row in set (0.00 sec)
+
+
+
+5. Display the total Quantity sold for each part.
+
+mysql> select `p#`,sum(qty) from spj1
+    -> group by `p#`;
++------+----------+
+| p#   | sum(qty) |
++------+----------+
+| p1   |      900 |
+| p3   |     3300 |
+| p5   |      100 |
+| p4   |      500 |
+| p6   |      700 |
++------+----------+
+5 rows in set (0.00 sec)
+
+
+mysql> select pname,sum(qty) from spj1,p1
+    ->  where p1.`p#`=spj1.`p#`
+    -> group by spj1.`p#`;
++---------+----------+
+| pname   | sum(qty) |
++---------+----------+
+| nut     |      900 |
+| screw   |     3300 |
+| cam     |      100 |
+| stapler |      500 |
+| cog     |      700 |
++---------+----------+
+5 rows in set (0.00 sec)
+
+
+
+6. Display the average Quantity sold for each part.
+
+mysql> select `p#`,avg(qty) from spj1
+    -> group by `p#`;
++------+----------+
+| p#   | avg(qty) |
++------+----------+
+| p1   | 450.0000 |
+| p3   | 412.5000 |
+| p5   | 100.0000 |
+| p4   | 500.0000 |
+| p6   | 350.0000 |
++------+----------+
+5 rows in set (0.05 sec)
+
+
+7. Display the maximum Quantity sold for each part, provided the maximum Quantity
+is greater than 400.
+
+mysql>  select pname,max(qty) from spj1,p1
+    -> where p1.`p#`=spj1.`p#`
+    -> and qty > 400
+    ->  group by pname;
++---------+----------+
+| pname   | max(qty) |
++---------+----------+
+| nut     |      700 |
+| screw   |      800 |
+| stapler |      500 |
++---------+----------+
+3 rows in set (0.05 sec)
+
+
+
+
+8. Display the Status and the count of Suppliers with that Status.
+
+
+
+
+9. Display the count of Projects going on in different cities.
+
+
+
+
+10. What is the difference between COUNT(Status) and COUNT(*) ?
+
+
+
+11. Display the Status and the Count of Suppliers with that Status in the following format
+as shown below:-
+Status Count
+Ten 1
+Twenty 2
+Thirty 3
+
+
+
+select
+     case
+     when supplier.status = 10 then 'Ten'
+     when supplier.status = 20 then 'Twenty'
+     when supplier.status = 30 then 'Thirty'
+     end "Status"
+     ,count(supplier) "Count" from supplier
+     group by status;

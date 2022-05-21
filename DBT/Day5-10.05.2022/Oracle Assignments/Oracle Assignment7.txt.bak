@@ -1,0 +1,114 @@
+Assignment –7
+Summarizing Data with Aggregate Functions.
+
+
+
+SQL> select * from orders;
+
+      ONUM        AMT ODATE           CNUM       SNUM
+---------- ---------- --------- ---------- ----------
+      3001      18.69 03-OCT-90       2008       1007
+      3003     767.19 03-OCT-90       2001       1001
+      3002     1900.1 03-OCT-90       2007       1004
+      3005    5160.45 03-OCT-90       2003       1002
+      3006    1098.16 03-OCT-90       2008       1007
+      3009    1713.23 04-OCT-90       2002       1003
+      3007      75.75 04-OCT-90       2004       1002
+      3008       4723 05-OCT-90       2006       1001
+      3010    1309.95 06-OCT-90       2004       1002
+      3011    9891.88 06-OCT-90       2006       1001
+	  
+	  
+	  SQL> select * from customers;
+
+      CNUM CNAME      CITY           RATING       SNUM
+---------- ---------- ---------- ---------- ----------
+      2001 Hoffman    London            100       1001
+      2002 Giovanni   Rome              200       1003
+      2003 Liu        San Jose          200       1002
+      2004 Grass      Berlin            300       1002
+      2006 Clemens    London            100       1001
+      2008 Cisneros   San Jose          300       1007
+      2007 Pereira    Rome              100       1004
+
+7 rows selected.
+
+1) Write a query that counts all orders for October 3.
+QL> select count(*) from orders
+  2  where odate='03-OCT-90';
+
+  COUNT(*)
+----------
+         5
+
+2) Write a query that counts the number of different non-NULL city values in the Customers table.
+SQL> select count(*) from customers
+  2  where city is not null;
+
+  COUNT(*)
+----------
+         7
+
+
+
+3) Write a query that selects each customer’s smallest order.
+
+
+SQL> select min(amt) "Smallest Order", cnum
+  2  from orders
+  3  group by cnum;
+
+Smallest Order       CNUM
+-------------- ----------
+        767.19       2001
+          4723       2006
+        1900.1       2007
+       5160.45       2003
+         75.75       2004
+         18.69       2008
+       1713.23       2002
+
+7 rows selected.
+
+
+4) Write a query that selects the first customer, in alphabetical order, whose name begins with G.
+
+SQL> select * from customers
+  2  where cname like 'G%'
+  3  order by cname;
+
+      CNUM CNAME      CITY           RATING       SNUM
+---------- ---------- ---------- ---------- ----------
+      2002 Giovanni   Rome              200       1003
+      2004 Grass      Berlin            300       1002
+
+
+5) Write a query that selects the highest rating in each city.
+
+SQL> select max(rating),city from customers
+  2  group by city;
+
+MAX(RATING) CITY
+----------- ----------
+        100 London
+        300 Berlin
+        200 Rome
+        300 San Jose
+
+
+6) Write a query that counts the number of salespeople registering orders for each day. (If a salesperson has more than one order on a given day, he or she should be counted only once.).
+
+
+
+
+QL> select count(snum),odate from orders
+  2  group by odate;
+
+COUNT(SNUM) ODATE
+----------- ---------
+          2 04-OCT-90
+          1 05-OCT-90
+          5 03-OCT-90
+          2 06-OCT-90
+		  
+		  

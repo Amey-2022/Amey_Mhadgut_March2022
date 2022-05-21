@@ -1,0 +1,351 @@
+mysql> use ameymhadgut_019_juhu;
+Database changed
+mysql> show tables;
++--------------------------------+
+| Tables_in_ameymhadgut_019_juhu |
++--------------------------------+
+| sdept                          |
+| semp                           |
++--------------------------------+
+2 rows in set (0.03 sec)
+
+mysql> create table S(
+    -> `S#` CHAR(2),
+    -> SNAME CHAR(30),
+    -> STATUS INT,
+    -> CITY CHAR(20));
+Query OK, 0 rows affected (0.81 sec)
+
+
+mysql> DESC S;
++--------+----------+------+-----+---------+-------+
+| Field  | Type     | Null | Key | Default | Extra |
++--------+----------+------+-----+---------+-------+
+| S#     | char(2)  | YES  |     | NULL    |       |
+| SNAME  | char(30) | YES  |     | NULL    |       |
+| STATUS | int      | YES  |     | NULL    |       |
+| CITY   | char(20) | YES  |     | NULL    |       |
++--------+----------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+
+CREATE  TABLE J(
+    -> `J#` CHAR(2),
+    -> JNAME CHAR(30),
+    -> CITY CHAR(20));
+Query OK, 0 rows affected (0.77 sec)
+
+mysql> DESC J;
++-------+----------+------+-----+---------+-------+
+| Field | Type     | Null | Key | Default | Extra |
++-------+----------+------+-----+---------+-------+
+| J#    | char(2)  | YES  |     | NULL    |       |
+| JNAME | char(30) | YES  |     | NULL    |       |
+| CITY  | char(20) | YES  |     | NULL    |       |
++-------+----------+------+-----+---------+-------+
+3 rows in set (0.02 sec)
+
+ CREATE  TABLE SPJ(
+    -> `S#` CHAR(2),
+    ->  `P#` CHAR(2),
+    -> `J#` CHAR(2),
+    -> QTY INT);
+Query OK, 0 rows affected (0.91 sec)
+
+mysql> DESC SPJ;
++-------+---------+------+-----+---------+-------+
+| Field | Type    | Null | Key | Default | Extra |
++-------+---------+------+-----+---------+-------+
+| S#    | char(2) | YES  |     | NULL    |       |
+| P#    | char(2) | YES  |     | NULL    |       |
+| J#    | char(2) | YES  |     | NULL    |       |
+| QTY   | int     | YES  |     | NULL    |       |
++-------+---------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> INSERT INTO S VALUES
+    -> ('S1','AKSHAY',10,'LONDON'),
+    -> ('S2','BRIJESH',20,'PARIS'),
+    -> ('S3','MARTIN',30,'ATHENS');
+Query OK, 3 rows affected (0.15 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> SELECT * FROM S;
++------+---------+--------+--------+
+| S#   | SNAME   | STATUS | CITY   |
++------+---------+--------+--------+
+| S1   | AKSHAY  |     10 | LONDON |
+| S2   | BRIJESH |     20 | PARIS  |
+| S3   | MARTIN  |     30 | ATHENS |
++------+---------+--------+--------+
+3 rows in set (0.04 sec)
+
+
+ CREATE  TABLE P(
+    -> `P#` CHAR(2),
+    -> PNAME CHAR(30),
+    ->  COLOR CHAR(10),
+    -> WEIGHT FLOAT,
+    ->  CITY CHAR(20));
+Query OK, 0 rows affected (0.36 sec)
+
+mysql> DESC P;
++--------+----------+------+-----+---------+-------+
+| Field  | Type     | Null | Key | Default | Extra |
++--------+----------+------+-----+---------+-------+
+| P#     | char(2)  | YES  |     | NULL    |       |
+| PNAME  | char(30) | YES  |     | NULL    |       |
+| COLOR  | char(10) | YES  |     | NULL    |       |
+| WEIGHT | float    | YES  |     | NULL    |       |
+| CITY   | char(20) | YES  |     | NULL    |       |
++--------+----------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+INSERT INTO P VALUES
+    -> ('P1','OLDHAM COUPLING','GREY',12,'LONDON'),
+    -> ('P2','BUSH','BLACK',13,'PARIS'),
+    -> ('P3','ABS','SILVER',14,'ATHENS');
+Query OK, 3 rows affected (0.15 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> SELECT * FROM P;
++------+-----------------+--------+--------+--------+
+| P#   | PNAME           | COLOR  | WEIGHT | CITY   |
++------+-----------------+--------+--------+--------+
+| P1   | OLDHAM COUPLING | GREY   |     12 | LONDON |
+| P2   | BUSH            | BLACK  |     13 | PARIS  |
+| P3   | ABS             | SILVER |     14 | ATHENS |
++------+-----------------+--------+--------+--------+
+3 rows in set (0.00 sec)
+
+ INSERT INTO J VALUES
+    -> ('J1','POWER PLANT','LONDON'),
+    -> ('J2','ENGINE','PARIS'),
+    -> ('J3','CAR','ATHENS');
+Query OK, 3 rows affected (0.18 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> SELECT * FROM J;
++------+-------------+--------+
+| J#   | JNAME       | CITY   |
++------+-------------+--------+
+| J1   | POWER PLANT | LONDON |
+| J2   | ENGINE      | PARIS  |
+| J3   | CAR         | ATHENS |
++------+-------------+--------+
+3 rows in set (0.00 sec)
+
+
+mysql> INSERT INTO SPJ VALUES
+    -> ('S1','P1','J1',100),
+    -> ('S2','P2','J2',200),
+    -> ('S3','P3','J3',300);
+Query OK, 3 rows affected (0.21 sec)
+Records: 3  Duplicates: 0  Warnings: 0
+
+mysql> SELECT * FROM SPJ;
++------+------+------+------+
+| S#   | P#   | J#   | QTY  |
++------+------+------+------+
+| S1   | P1   | J1   |  100 |
+| S2   | P2   | J2   |  200 |
+| S3   | P3   | J3   |  300 |
++------+------+------+------+
+3 rows in set (0.00 sec)
+
+
+
+
+5. Display all the data from the S1 table.
+
+mysql> SELECT * FROM S;
++------+---------+--------+--------+
+| S#   | SNAME   | STATUS | CITY   |
++------+---------+--------+--------+
+| S1   | AKSHAY  |     10 | LONDON |
+| S2   | BRIJESH |     20 | PARIS  |
+| S3   | MARTIN  |     30 | ATHENS |
++------+---------+--------+--------+
+3 rows in set (0.04 sec)
+
+mysql> select * from s1;
++------+-------+--------+--------+
+| s#   | sname | status | city   |
++------+-------+--------+--------+
+| s1   | Smith |     20 | London |
+| s2   | Jones |     10 | Paris  |
+| s3   | Blake |     30 | Paris  |
+| s4   | Clark |     20 | London |
+| s5   | Adams |     30 | Athens |
++------+-------+--------+--------+
+5 rows in set (0.00 sec)
+
+
+6. Display only the S# and SNAME fields from the S table.
+
+mysql> SELECT `S#`,CITY FROM S;
++------+--------+
+| S#   | CITY   |
++------+--------+
+| S1   | LONDON |
+| S2   | PARIS  |
+| S3   | ATHENS |
++------+--------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT `S#`,CITY FROM S1;
++------+--------+
+| S#   | CITY   |
++------+--------+
+| s1   | London |
+| s2   | Paris  |
+| s3   | Paris  |
+| s4   | London |
+| s5   | Athens |
++------+--------+
+5 rows in set (0.00 sec)
+
+
+7. Display the PNAME and COLOR from the P table for the CITY=”London”.
+
+mysql> SELECT PNAME,COLOR FROM P
+    -> WHERE CITY='LONDON';
++-----------------+-------+
+| PNAME           | COLOR |
++-----------------+-------+
+| OLDHAM COUPLING | GREY  |
++-----------------+-------+
+1 row in set (0.00 sec)
+
+
+mysql> SELECT PNAME,COLOR FROM P1
+    -> WHERE CITY='LONDON';
++---------+-------+
+| PNAME   | COLOR |
++---------+-------+
+| nut     | red   |
+| stapler | red   |
+| cog     | red   |
++---------+-------+
+3 rows in set (0.00 sec)
+
+8. Display all the Suppliers from London.
+
+mysql> SELECT * FROM S
+    -> WHERE CITY = 'LONDON';
++------+--------+--------+--------+
+| S#   | SNAME  | STATUS | CITY   |
++------+--------+--------+--------+
+| S1   | AKSHAY |     10 | LONDON |
++------+--------+--------+--------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM S1
+    -> WHERE CITY = 'LONDON';
++------+-------+--------+--------+
+| s#   | sname | status | city   |
++------+-------+--------+--------+
+| s1   | Smith |     20 | London |
+| s4   | Clark |     20 | London |
++------+-------+--------+--------+
+2 rows in set (0.00 sec)
+
+
+9. Display all the Suppliers from Paris or Athens.
+
+mysql> SELECT * FROM S
+    -> WHERE CITY='PARIS' OR CITY='ATHENS';
++------+---------+--------+--------+
+| S#   | SNAME   | STATUS | CITY   |
++------+---------+--------+--------+
+| S2   | BRIJESH |     20 | PARIS  |
+| S3   | MARTIN  |     30 | ATHENS |
++------+---------+--------+--------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT * FROM S1
+    -> WHERE CITY='PARIS' OR CITY='ATHENS';
++------+-------+--------+--------+
+| s#   | sname | status | city   |
++------+-------+--------+--------+
+| s2   | Jones |     10 | Paris  |
+| s3   | Blake |     30 | Paris  |
+| s5   | Adams |     30 | Athens |
++------+-------+--------+--------+
+3 rows in set (0.00 sec)
+
+
+10. Display all the Projects in Athens.
+
+mysql> SELECT * FROM P
+    -> WHERE CITY='ATHENS';
++------+-------+--------+--------+--------+
+| P#   | PNAME | COLOR  | WEIGHT | CITY   |
++------+-------+--------+--------+--------+
+| P3   | ABS   | SILVER |     14 | ATHENS |
++------+-------+--------+--------+--------+
+1 row in set (0.00 sec)
+
+11. Display all the Partnames with the weight between 12 and 14 (inclusive of both).
+
+mysql> SELECT PNAME FROM P
+    -> WHERE WEIGHT BETWEEN 12 AND 14;
++-----------------+
+| PNAME           |
++-----------------+
+| OLDHAM COUPLING |
+| BUSH            |
+| ABS             |
++-----------------+
+3 rows in set (0.00 sec)
+
+12. Display all the Suppliers with a Status greater than or equal to 20.
+mysql> SELECT  * FROM S
+    -> WHERE STATUS >= 20;
++------+---------+--------+--------+
+| S#   | SNAME   | STATUS | CITY   |
++------+---------+--------+--------+
+| S2   | BRIJESH |     20 | PARIS  |
+| S3   | MARTIN  |     30 | ATHENS |
++------+---------+--------+--------+
+2 rows in set (0.00 sec)
+
+13. Display all the Suppliers except the Suppliers from London.
+
+mysql> SELECT  * FROM S
+    -> WHERE CITY != 'LONDON';
++------+---------+--------+--------+
+| S#   | SNAME   | STATUS | CITY   |
++------+---------+--------+--------+
+| S2   | BRIJESH |     20 | PARIS  |
+| S3   | MARTIN  |     30 | ATHENS |
++------+---------+--------+--------+
+2 rows in set (0.00 sec)
+
+
+14. Display only the Cities from where the Suppliers come from.
+
+mysql> SELECT CITY FROM S;
++--------+
+| CITY   |
++--------+
+| LONDON |
+| PARIS  |
+| ATHENS |
++--------+
+3 rows in set (0.00 sec)
+
+15. Assuming that the Part Weight is in GRAMS, display the same in MILLIGRAMS and KILOGRAMS.
+
+mysql> SELECT `P#`,PNAME,COLOR,WEIGHT,CITY,WEIGHT*1000 AS "MILLIGRAMS", WEIGHT/1000 AS "KILOGRAMS" FROM P;
++------+-----------------+--------+--------+--------+------------+-----------+
+| P#   | PNAME           | COLOR  | WEIGHT | CITY   | MILLIGRAMS | KILOGRAMS |
++------+-----------------+--------+--------+--------+------------+-----------+
+| P1   | OLDHAM COUPLING | GREY   |     12 | LONDON |      12000 |     0.012 |
+| P2   | BUSH            | BLACK  |     13 | PARIS  |      13000 |     0.013 |
+| P3   | ABS             | SILVER |     14 | ATHENS |      14000 |     0.014 |
++------+-----------------+--------+--------+--------+------------+-----------+
+3 rows in set (0.00 sec)
+
+
+

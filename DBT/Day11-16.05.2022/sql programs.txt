@@ -1,0 +1,104 @@
+create table tempp
+(
+fir int,
+sec char(15)
+);
+
+
+(1)
+	delimiter //
+	create procedure abc()
+	begin
+		insert into tempp values (1,'Hello');
+	end; //
+	delimiter ;
+
+
+	fir sec
+	1	Hello
+
+
+	drop procedure abc;
+
+(2)
+	delimiter //
+	create procedure abc()
+	begin
+		declare x int;
+		set x=10;
+		insert into tempp values (x,'Hello');
+	end; //
+	delimiter ;
+
+	drop procedure abc;
+
+(3)
+	delimiter //
+	create procedure abc()
+	begin
+		declare x int default 10;
+		insert into tempp values (x,'Hello');
+	end; //
+	delimiter ;
+
+
+
+drop procedure abc;
+
+(4)
+	delimiter //
+	create procedure abc()
+	begin
+		declare x char(15) default 'CDAC';
+		insert into tempp values (2,x);
+	end; //
+	delimiter ;
+
+	drop procedure abc;
+
+
+(5)
+	delimiter //
+	create procedure abc()
+	begin
+		declare x char(15) default 'KING';
+		declare y float default 3000;
+		declare z float default 0.4;
+		declare hra float;
+		set hra=y*z;
+		insert into tempp values (y,x);
+		insert into tempp values (hra,'HRA');
+	end; //
+		delimiter ;
+		
+	drop procedure abc;
+
+
+(6)
+	delimiter //
+	create procedure abc(x char(15), y float,z float)
+	begin
+		
+		declare hra float;
+		set hra=y*z;
+		insert into tempp values (y,x);
+		insert into tempp values (hra,'HRA');
+	end; //
+		delimiter ;
+		
+	call abc('King',3000,0.4);
+	call abc('Scoot',2500,0.3);
+
+
+
+first  second
+2		CDAC
+1		Hello
+10		Hello
+10		Hello
+1200	HRA
+1200	HRA
+750		HRA
+3000	KING
+3000	King
+2500	Scoot

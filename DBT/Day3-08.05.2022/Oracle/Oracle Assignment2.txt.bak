@@ -1,0 +1,40 @@
+1) Which field of the Customers table is the primary key?
+	ANSWER CUSTOMER NUMBER I.E CNUM
+
+	SQL> SELECT CNUM FROM CUSTOMERS;
+
+		  CNUM
+	----------
+		  2001
+		  2002
+		  2003
+		  2004
+		  2006
+		  2008
+		  2007
+
+
+
+2) What is the 4th column of the Customers table?
+	ANSWER RATING COLUMN
+
+	SQL> SELECT RATING FROM CUSTOMERS;
+
+		RATING
+	----------
+		   100
+		   200
+		   200
+		   300
+		   100
+		   300
+		   100
+
+
+3) What is another word for row? For column?
+	ANSWER 
+	ROW=TUPLE
+	COLUMN= ATTRIBUTE
+
+
+4) Why isn’t it possible to see the first five rows of a table?

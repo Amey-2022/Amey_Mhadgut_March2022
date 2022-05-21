@@ -1,0 +1,27 @@
+1. Display the Supplier table in the descending order of CITY.
+
+mysql> select * from s
+    -> order by city desc;
++------+---------+--------+--------+
+| S#   | SNAME   | STATUS | CITY   |
++------+---------+--------+--------+
+| S2   | BRIJESH |     20 | PARIS  |
+| S1   | AKSHAY  |     10 | LONDON |
+| S3   | MARTIN  |     30 | ATHENS |
++------+---------+--------+--------+
+3 rows in set (0.05 sec)
+
+
+
+2. Display the Part Table in the ascending order of CITY and within the city in the ascending order of Part names.
+
+mysql> select * from P
+    -> ORDER BY CITY,PNAME;
++------+-----------------+--------+--------+--------+
+| P#   | PNAME           | COLOR  | WEIGHT | CITY   |
++------+-----------------+--------+--------+--------+
+| P3   | ABS             | SILVER |     14 | ATHENS |
+| P1   | OLDHAM COUPLING | GREY   |     12 | LONDON |
+| P2   | BUSH            | BLACK  |     13 | PARIS  |
++------+-----------------+--------+--------+--------+
+3 rows in set (0.00 sec)

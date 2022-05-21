@@ -1,0 +1,87 @@
+DATABASE 
+1.	Explain a Database system?
+2.	Explain database?
+3.	Define the benefits of DBMS?
+4.	Write in brief the three levels of data abstraction.
+5.	Explain durability in DBMS?
+6.	What do you mean by atomicity and aggregation?
+7.	Explain a checkpoint and When does it occur?
+8.	Define the different phases of transaction?
+9.	What do you mean by flat file database?
+10.	Explain "transparent DBMS"?
+11.	Explain a query?
+12.	What do you mean by Correlated subquery?
+13.	How do you communicate with an RDBMS?
+14.	Explain DDL (Data Definition Language)?
+15.	Explain VDL (View Definition Language)?
+16.	Explain SDL (Storage Definition Language)?
+17.	Explain DML (Data Manipulation Language)?
+18.	Explain the "integrity rules"?
+19.	Explain Data Independence?
+20.	Explain a view? How it is related to data independence?
+21.	Explain Data Model?
+22.	Explain E-R model?
+23.	Explain Object Oriented model?
+24.	Explain an Entity?
+25.	Explain an Entity type?
+26.	Explain an Entity set?
+27.	Explain Weak Entity set?
+28.	Explain an attribute?
+29.	Explain a Relation Schema and a Relation?
+30.	Explain degree of a Relation?
+31.	Explain Relationship?
+32.	Explain Relationship set?
+33.	Explain normalization?
+34.	Explain Functional Dependency?
+35.	Explain Fully Functional dependency?
+36.	Explain 1 NF (Normal Form)?
+37.	Explain 2NF?
+38.	Explain 3NF?
+39.	Explain BCNF (Boyce-Codd Normal Form)?
+40.	Explain 4NF?
+41.	Explain Domain-Key Normal Form?
+42.	Define partial, alternate, artificial, compound and natural key?
+43.	Explain indexing and define the different kinds of indexing?
+44.	Write in brief the four types of indexes.
+45.	Explain system catalog or catalog relation? How is better known as?
+46.	Explain meant by query optimization?
+47.	Explain SQL and state the differences among SQL and other conventional programming Languages.
+48.	Explain database Trigger?
+49.	Name four applications for triggers.
+50.	Define stored-procedures? And Define the Benifits of using them?
+51.	Define cursors give different types of cursors?
+52.	Define data and information, and how are they related in a database?
+53.	Explain Enterprise Resource Planning (ERP), and what kind of a database is used in an ERP application?
+54.	Write an SQL SELECT statement to display all the columns of the STUDENT table but only those rows where the Grade column is greater than or equal to 90.
+55.	Name and briefly Write in brief the five SQL built-in functions.
+56.	Write an SQL SELECT statement to count the number of rows in STUDENT table and display the result with the label NumStudents.
+57.	Explain an SQL subquery?
+58.	Explain a foreign key, and explain it used for?
+59.	Define the steps for transforming an entity into a table?
+60.	Explain a surrogate key, Write in brief the ideal primary key and Write in brief how surrogate keys meet this ideal
+61.	Explain a cascading update?
+62.	Explain a SQL view? Briefly Write in brief the use of views.
+63.	Write in brief how to add a NOT NULL column to a table.
+64.	You have two tables, EMPLOYEE and COMPUTER that are in a one-to-one relationship. The foreign key is EmpNumber in COMPUTER which references EmpNumber as the primary key of EMPLOYEE. Write in brief what must be done to convert the one-to-one EMPLOYEE-COMPUTER relationship to a one-to-many relationship where one employee can have more than one computer.
+65.	Write in brief what we mean by an ACID transaction.
+66.	Write in brief what needs to happen to convert a relation to third normal form.
+67.	Explain denormalizations and why would someone consider doing so?
+68.	Compare a hierarchical and network database model?
+69.	Write in brief the difference among a dynamic and materialized view.
+70.	Briefly Write in brief the three types of SQL commands.
+71.	Define the steps to follow when preparing to create a table?
+72.	Write in brief a join among tables
+73.	Write in brief and contrast a trigger and a procedure.
+74.	Briefly Write in brief an outer join.
+75.	Write in brief a subquery.
+76.	Write in brief the difference among two and three-tier architectures.
+77.	Write in brief a data warehouse.
+78.	Write in brief the differences among a data warehouse and data mart.
+79.	Write in brief the difference among data and database administration.
+80.	Define some of the important security features of a DBMS?
+81.	Write in brief the difference among homogeneous and heterogeneous distributed database.
+82.	Explain a distributed database?
+83.	 Write a query to print Second highest salary.
+84.	 Define different types of clauses?
+85.	 Explain inner join? Write it’s query
+86.	 Types of joins, slowest and fastest amongst them.

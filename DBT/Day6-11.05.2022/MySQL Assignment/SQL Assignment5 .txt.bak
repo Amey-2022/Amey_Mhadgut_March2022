@@ -1,0 +1,356 @@
+SQL Exercise 5
+
+1. Display the Supplier name and the Quantity sold.
+
+		mysql> select sname,qty from s,spj
+			-> where s.`s#`=spj.`s#`;
+		+---------+------+
+		| sname   | qty  |
+		+---------+------+
+		| AKSHAY  |  100 |
+		| BRIJESH |  200 |
+		| MARTIN  |  300 |
+		+---------+------+
+
+
+		mysql> select sname,qty from s1,spj1
+			-> where s1.`s#`=spj1.`s#`;
+		+-------+------+
+		| sname | qty  |
+		+-------+------+
+		| Smith |  200 |
+		| Smith |  700 |
+		| Jones |  400 |
+		| Jones |  200 |
+		| Jones |  200 |
+		| Jones |  500 |
+		| Jones |  600 |
+		| Jones |  400 |
+		| Jones |  800 |
+		| Jones |  100 |
+		| Blake |  200 |
+		| Blake |  500 |
+		| Clark |  300 |
+		| Clark |  300 |
+		| Adams |  100 |
+		| Adams |  200 |
+		| Adams |  100 |
+		| Adams |  100 |
+		| Adams |  200 |
+		| Adams |  100 |
+		| Adams |  800 |
+		| Adams |  400 |
+		| Adams |  500 |
+		| Adams |  100 |
+		| Adams |  200 |
+		| Adams |  500 |
+		+-------+------+
+
+
+2. Display the Part name and Quantity sold.
+
+		mysql>  select pname,qty from p,spj
+			-> where p.`p#`=spj.`p#`;
+		+-----------------+------+
+		| pname           | qty  |
+		+-----------------+------+
+		| OLDHAM COUPLING |  100 |
+		| BUSH            |  200 |
+		| ABS             |  300 |
+		+-----------------+------+
+		3 rows in set (0.00 sec)
+
+		mysql> select pname,qty from p1,spj1
+			-> where p1.`p#`=spj1.`p#`;
+		+---------+------+
+		| pname   | qty  |
+		+---------+------+
+		| nut     |  200 |
+		| nut     |  700 |
+		| screw   |  400 |
+		| screw   |  200 |
+		| screw   |  200 |
+		| screw   |  500 |
+		| screw   |  600 |
+		| screw   |  400 |
+		| screw   |  800 |
+		| cam     |  100 |
+		| screw   |  200 |
+		| stapler |  500 |
+		| cog     |  300 |
+		| cog     |  300 |
+		| nut     |  100 |
+		| bolt    |  200 |
+		| bolt    |  100 |
+		| bolt    |  100 |
+		| screw   |  200 |
+		| bolt    |  100 |
+		| stapler |  800 |
+		| cam     |  400 |
+		| cam     |  500 |
+		| cam     |  100 |
+		| cog     |  200 |
+		| cog     |  500 |
+		+---------+------+
+		26 rows in set (0.00 sec)
+
+
+
+3. Display the Project name and Quantity sold.
+
+		mysql>  select jname,qty from j,spj
+			-> where j.`j#`=spj.`j#`;
+		+-------------+------+
+		| jname       | qty  |
+		+-------------+------+
+		| POWER PLANT |  100 |
+		| ENGINE      |  200 |
+		| CAR         |  300 |
+		+-------------+------+
+		3 rows in set (0.00 sec)
+
+
+		mysql> select jname,qty from j1,spj1
+			-> where j1.`j#`=spj1.`j#`;
+		+----------+------+
+		| jname    | qty  |
+		+----------+------+
+		| sorter   |  200 |
+		| console  |  700 |
+		| sorter   |  400 |
+		| punch    |  200 |
+		| reader   |  200 |
+		| console  |  500 |
+		| collator |  600 |
+		| terminal |  600 |
+		| tape     |  400 |
+		| punch    |  100 |
+		| sorter   |  200 |
+		| punch    |  500 |
+		| reader   |  300 |
+		| console  |  100 |
+		| punch    |  200 |
+		| console  |  100 |
+		| console  |  100 |
+		| console  |  200 |
+		| console  |  100 |
+		| console  |  800 |
+		| console  |  400 |
+		| collator |  500 |
+		| terminal |  500 |
+		| punch    |  200 |
+		| console  |  500 |
+		+----------+------+
+		25 rows in set (0.00 sec)
+
+
+
+4. Display the Supplier name, Part name, Project name and Quantity sold.
+
+		mysql> select sname,pname,jname,qty from s,p,j,spj
+			-> where s.`s#`=spj.`s#` and
+			->  p.`p#`=spj.`p#` and
+			->  j.`j#`=spj.`j#`;
+		+---------+-----------------+-------------+------+
+		| sname   | pname           | jname       | qty  |
+		+---------+-----------------+-------------+------+
+		| AKSHAY  | OLDHAM COUPLING | POWER PLANT |  100 |
+		| BRIJESH | BUSH            | ENGINE      |  200 |
+		| MARTIN  | ABS             | CAR         |  300 |
+		+---------+-----------------+-------------+------+
+		3 rows in set (0.00 sec)
+
+		mysql> select sname,pname,jname,qty from s1,p1,j1,spj1
+			-> where s1.`s#`=spj1.`s#` and
+			-> p1.`p#`=spj1.`p#` and
+			-> j1.`j#`=spj1.`j#`;
+		+-------+---------+----------+------+
+		| sname | pname   | jname    | qty  |
+		+-------+---------+----------+------+
+		| Smith | nut     | sorter   |  200 |
+		| Jones | screw   | sorter   |  400 |
+		| Blake | screw   | sorter   |  200 |
+		| Adams | bolt    | punch    |  200 |
+		| Jones | screw   | punch    |  200 |
+		| Blake | stapler | punch    |  500 |
+		| Jones | cam     | punch    |  100 |
+		| Adams | cog     | punch    |  200 |
+		| Jones | screw   | reader   |  200 |
+		| Clark | cog     | reader   |  300 |
+		| Smith | nut     | console  |  700 |
+		| Adams | nut     | console  |  100 |
+		| Adams | bolt    | console  |  100 |
+		| Adams | bolt    | console  |  100 |
+		| Adams | bolt    | console  |  100 |
+		| Jones | screw   | console  |  500 |
+		| Adams | screw   | console  |  200 |
+		| Adams | stapler | console  |  800 |
+		| Adams | cam     | console  |  400 |
+		| Adams | cog     | console  |  500 |
+		| Jones | screw   | collator |  600 |
+		| Adams | cam     | collator |  500 |
+		| Jones | screw   | terminal |  600 |
+		| Adams | cam     | terminal |  500 |
+		| Jones | screw   | tape     |  400 |
+		+-------+---------+----------+------+
+		25 rows in set (0.02 sec)
+
+
+
+5. Display the Supplier name, Supplying Parts to a Project in the same City.  (Ambigious )
+
+		mysql> select sname,pname,s1.city,spj1.`j#` from j1,p1,s1,spj1
+		where s1.city=j1.city and
+		 s1.city=p1.city
+		 group by sname,city;
+		+-------+-------+--------+
+		| sname | pname | city   |
+		+-------+-------+--------+
+		| Jones | bolt  | Paris  |
+		| Blake | bolt  | Paris  |
+		| Smith | nut   | London |
+		| Clark | nut   | London |
+		+-------+-------+--------+
+		4 rows in set (0.09 sec)
+		
+		select distinct sname,pname,spj1.`j#` from s1,p1,j1,spj1 
+		where spj1.`p#` = p1.`p#` and spj1.`s#` = s1.`s#` 
+		and s1.city = p1.city and s1.city = j1.city
+		group by s1.sname
+
+
+
+
+6. Display the Part name that is ‘Red’ is color, and the Quantity sold.
+
+		mysql> select pname,qty from spj1,p1
+			-> where spj1.`p#`=p1.`p#`
+			-> and color='red';
+		+---------+------+
+		| pname   | qty  |
+		+---------+------+
+		| nut     |  200 |
+		| nut     |  700 |
+		| stapler |  500 |
+		| cog     |  300 |
+		| cog     |  300 |
+		| nut     |  100 |
+		| stapler |  800 |
+		| cog     |  200 |
+		| cog     |  500 |
+		+---------+------+
+		9 rows in set (0.00 sec)
+
+
+		mysql> select pname,sum(qty) "total_qty" from spj1,p1
+			-> where spj1.`p#`=p1.`p#`
+			-> and color='red'
+			-> group by pname;
+		+---------+-----------+
+		| pname   | total_qty |
+		+---------+-----------+
+		| nut     |      1000 |
+		| stapler |      1300 |
+		| cog     |      1300 |
+		+---------+-----------+
+		3 rows in set (0.00 sec)
+
+
+7. Display all the Quantity sold by Suppliers with the Status = 20.
+
+		mysql> select sum(qty) from spj1,s1
+			-> where spj1.`s#`=s1.`s#` and
+			-> status = 20;
+		+----------+
+		| sum(qty) |
+		+----------+
+		|     1500 |
+		+----------+
+
+8. Display all the Parts and Quantity with a Weight > 14.
+
+		mysql> select pname,sum(qty) from spj1,p1
+			-> where spj1.`p#`=p1.`p#` and
+			-> weight > 14
+			-> group by pname;
+		+-------+----------+
+		| pname | sum(qty) |
+		+-------+----------+
+		| screw |     3500 |
+		| cog   |     1300 |
+		| bolt  |      500 |
+		+-------+----------+
+		3 rows in set (0.00 sec)
+
+
+
+9. Display all the Project names and City, which has bought more than 500 Parts.
+
+		mysql>  select jname,city from spj1,j1
+			->  where spj1.`j#`=j1.`j#`
+			->  and qty > 500
+			-> group by jname;
+		+----------+--------+
+		| jname    | city   |
+		+----------+--------+
+		| console  | Athens |
+		| collator | London |
+		| terminal | Oslo   |
+		+----------+--------+
+		3 rows in set (0.00 sec)
+
+
+10. Display all the Part names and Quantity sold that have a Weight less than 15.
+
+		mysql> select pname,sum(qty) from spj1,p1
+			->  where spj1.`p#`=p1.`p#`
+			-> and weight < 15
+			-> group by pname;
+		+---------+----------+
+		| pname   | sum(qty) |
+		+---------+----------+
+		| nut     |     1000 |
+		| cam     |     1100 |
+		| stapler |     1300 |
+		+---------+----------+
+		3 rows in set (0.00 sec)
+
+
+
+
+11. Display all the Employee names and the name of their Managers.
+
+		mysql>  select a.ename as "EMP_NAME", b.ename as "MGR_NAME" from emp b,emp a
+			-> where a.mgr=b.empno;
+		+----------+----------+
+		| EMP_NAME | MGR_NAME |
+		+----------+----------+
+		| ARUN     | JACK     |
+		| ALI      | ARUN     |
+		| KIRUN    | ARUN     |
+		| THOMAS   | JACK     |
+		+----------+----------+
+		4 rows in set (0.00 sec)
+
+
+		mysql> select a.ename as "EMP_NAME", b.ename as "MGR_NAME" from emp b right outer join emp a
+			-> on (a.mgr=b.empno);
+		+----------+----------+
+		| EMP_NAME | MGR_NAME |
+		+----------+----------+
+		| ALI      | ARUN     |
+		| KIRUN    | ARUN     |
+		| ARUN     | JACK     |
+		| THOMAS   | JACK     |
+		| JACK     | NULL     |
+		+----------+----------+
+		5 rows in set (0.00 sec)
+
+
+
+
+select distinct sname,pname`j#` from spj1,p1,j1,s1
+ where spj1.`p#` = p1.`p#`  and spj1.`s#` = s1.`s#` and spj1.`j#` = j1.`j#` and s1.city = j1.city and s1.city = p1.city and p1.city=j1.city group by s1.sname
+
+
+

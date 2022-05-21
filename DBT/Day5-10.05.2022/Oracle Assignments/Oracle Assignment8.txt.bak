@@ -1,0 +1,71 @@
+Assignment –8
+Formatting Query output.
+
+
+
+
+1) Assume each salesperson has a 12% commission. Write a query on the orders table that will produce the order number, the salesperson number, and the amount of the salesperson’s commission for that order.
+SQL> select onum,snum,amt,(amt*0.12) "comm" from orders;
+
+      ONUM       SNUM        AMT       comm
+---------- ---------- ---------- ----------
+      3001       1007      18.69     2.2428
+      3003       1001     767.19    92.0628
+      3002       1004     1900.1    228.012
+      3005       1002    5160.45    619.254
+      3006       1007    1098.16   131.7792
+      3009       1003    1713.23   205.5876
+      3007       1002      75.75       9.09
+      3008       1001       4723     566.76
+      3010       1002    1309.95    157.194
+      3011       1001    9891.88  1187.0256
+
+10 rows selected.
+
+
+2) Write a query on the Customers table that will find the highest rating in each city. Put the output in this form:
+For the city (city), the highest rating is : (rating).
+
+SQL> select city,max(rating) from customers
+  2  group by city;
+
+CITY       MAX(RATING)
+---------- -----------
+London             100
+Berlin             300
+Rome               200
+San Jose           300
+
+
+
+3) Write a query that lists customers in descending order of rating. Output the rating field first, followed by the customer’s name and number.
+
+SQL> select rating,cname,cnum from customers
+  2  order by rating desc;
+
+    RATING CNAME            CNUM
+---------- ---------- ----------
+       300 Grass            2004
+       300 Cisneros         2008
+       200 Liu              2003
+       200 Giovanni         2002
+       100 Pereira          2007
+       100 Clemens          2006
+       100 Hoffman          2001
+
+7 rows selected.
+
+
+
+4) Write a query that totals the orders for each day and places the results in descending order.
+
+SQL> select odate,sum(amt) from orders
+  2  group by odate
+  3  order by sum(amt) desc;
+
+ODATE       SUM(AMT)
+--------- ----------
+06-OCT-90   11201.83
+03-OCT-90    8944.59
+05-OCT-90       4723
+04-OCT-90    1788.98

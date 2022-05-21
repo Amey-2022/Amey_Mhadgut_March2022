@@ -1,0 +1,119 @@
+Assignment –5
+Relational and Logical Operators.
+
+1) Write a query that will give you all orders for more than Rs. 1,000.
+SQL> select * from orders
+  2  where amt > 1000
+  3  order by amt;
+
+      ONUM        AMT ODATE           CNUM       SNUM
+---------- ---------- --------- ---------- ----------
+      3006    1098.16 03-OCT-90       2008       1007
+      3010    1309.95 06-OCT-90       2004       1002
+      3009    1713.23 04-OCT-90       2002       1003
+      3002     1900.1 03-OCT-90       2007       1004
+      3008       4723 05-OCT-90       2006       1001
+      3005    5160.45 03-OCT-90       2003       1002
+      3011    9891.88 06-OCT-90       2006       1001
+	  
+	  
+
+2) Write a query that will give you the names and cities of all salespeople in London with a commission above .10.
+
+SQL> select sname,comm,city from salespeople
+  2  where  comm >.10 and city ='London';
+
+SNAME            COMM CITY
+---------- ---------- ----------
+Peel              .12 London
+Motika            .11 London
+
+
+3) Write a query on the Customers table whose output will exclude all customers with a rating <= 100, unless they are located in Rome.
+
+SQL> select * from customers
+  2  where  rating > 100 and city ='Rome';
+
+      CNUM CNAME      CITY           RATING       SNUM
+---------- ---------- ---------- ---------- ----------
+      2002 Giovanni   Rome              200       1003
+	  
+	  
+	  SQL> select * from customers
+  2  where  rating > 100 or city ='Rome';
+
+      CNUM CNAME      CITY           RATING       SNUM
+---------- ---------- ---------- ---------- ----------
+      2002 Giovanni   Rome              200       1003
+      2003 Liu        San Jose          200       1002
+      2004 Grass      Berlin            300       1002
+      2008 Cisneros   San Jose          300       1007
+      2007 Pereira    Rome              100       1004
+	  
+	  
+	  
+
+4) What will be the output from the following query?
+Select * from Orders
+where (amt < 1000 OR
+NOT (odate = ‘03-OCT-1990’
+AND cnum > 2003));
+
+
+SQL> Select * from Orders
+  2  where (amt < 1000 or not (odate = '03-oct-1990' and cnum > 2003));
+
+      ONUM        AMT ODATE           CNUM       SNUM
+---------- ---------- --------- ---------- ----------
+      3001      18.69 03-OCT-90       2008       1007
+      3003     767.19 03-OCT-90       2001       1001
+      3005    5160.45 03-OCT-90       2003       1002
+      3009    1713.23 04-OCT-90       2002       1003
+      3007      75.75 04-OCT-90       2004       1002
+      3008       4723 05-OCT-90       2006       1001
+      3010    1309.95 06-OCT-90       2004       1002
+      3011    9891.88 06-OCT-90       2006       1001
+
+8 rows selected.
+
+
+
+5) What will be the output of the following query?
+Select * from Orders
+where NOT ((odate = ‘03-OCT-1990’ OR snum
+>1006) AND amt >= 1500);
+
+SQL> Select * from Orders
+  2  where not ((odate = '03-oct-1990' or snum > 1006) and amt >= 1500);
+
+      ONUM        AMT ODATE           CNUM       SNUM
+---------- ---------- --------- ---------- ----------
+      3001      18.69 03-OCT-90       2008       1007
+      3003     767.19 03-OCT-90       2001       1001
+      3006    1098.16 03-OCT-90       2008       1007
+      3009    1713.23 04-OCT-90       2002       1003
+      3007      75.75 04-OCT-90       2004       1002
+      3008       4723 05-OCT-90       2006       1001
+      3010    1309.95 06-OCT-90       2004       1002
+      3011    9891.88 06-OCT-90       2006       1001
+
+8 rows selected.
+
+
+
+
+
+6) What is a simpler way to write this query?
+Select snum, sname, city, comm From Salespeople
+where (comm > .12 OR comm <.14);
+
+SQL> Select snum, sname, city, comm From Salespeople
+  2  where (comm > .12 OR comm <.14);
+
+      SNUM SNAME      CITY             COMM
+---------- ---------- ---------- ----------
+      1001 Peel       London            .12
+      1002 Serres     San Jose          .13
+      1004 Motika     London            .11
+      1007 Rifkin     Barcelona         .15
+      1003 Axelrod    New York           .1
