@@ -1,0 +1,235 @@
+mysql> select * from s;
++------+---------+--------+--------+
+| S#   | SNAME   | STATUS | CITY   |
++------+---------+--------+--------+
+| S1   | AKSHAY  |     10 | LONDON |
+| S2   | BRIJESH |     20 | PARIS  |
+| S3   | MARTIN  |     30 | ATHENS |
++------+---------+--------+--------+
+3 rows in set (0.04 sec)
+
+
+
+1. Display all the Supplier names with the initial letter capital.
+
+mysql> select concat(upper(substr(sname,1,1)),lower(substr(sname,2))) as "Init" from s;
++---------+
+| Init    |
++---------+
+| Akshay  |
+| Brijesh |
+| Martin  |
++---------+
+
+
+2. Display all the Supplier names in upper case.
+
+mysql> select upper(sname) as "SNAME" from s;
++---------+
+| SNAME   |
++---------+
+| AKSHAY  |
+| BRIJESH |
+| MARTIN  |
++---------+
+
+3. Display all the Supplier names in lower case.
+
+mysql> select lower(sname) as "SNAME" from s;
++---------+
+| SNAME   |
++---------+
+| akshay  |
+| brijesh |
+| martin  |
++---------+
+
+
+4. Display all the Supplier names padded to 25 characters, with spaces on the left.
+
+mysql> select lpad(sname,25,' ') as "SNAME" from s;
++---------------------------+
+| SNAME                     |
++---------------------------+
+|                    AKSHAY |
+|                   BRIJESH |
+|                    MARTIN |
++---------------------------+
+3 rows in set (0.00 sec)
+
+mysql> select lpad(sname,25,'*') as "SNAME" from s;
++---------------------------+
+| SNAME                     |
++---------------------------+
+| *******************AKSHAY |
+| ******************BRIJESH |
+| *******************MARTIN |
++---------------------------+
+3 rows in set (0.00 sec)
+
+
+5. Display all the Supplier names (with ‘la’ replaced by ‘ro’).
+HINT: REPLACE.
+
+mysql> select replace(sname,'A','O') as "SNAME" from s;
++---------+
+| SNAME   |
++---------+
+| OKSHOY  |
+| BRIJESH |
+| MORTIN  |
++---------+
+3 rows in set (0.00 sec)
+
+mysql> select replace(sname,'A','RO') as "SNAME" from s;
++----------+
+| SNAME    |
++----------+
+| ROKSHROY |
+| BRIJESH  |
+| MRORTIN  |
++----------+
+3 rows in set (0.00 sec)
+
+mysql> select replace(sname,'A',' ') as "SNAME" from s;
++---------+
+| SNAME   |
++---------+
+|  KSH Y  |
+| BRIJESH |
+| M RTIN  |
++---------+
+3 rows in set (0.00 sec)
+
+mysql> select replace(sname,'A','') as "SNAME" from s;
++---------+
+| SNAME   |
++---------+
+| KSHY    |
+| BRIJESH |
+| MRTIN   |
++---------+
+3 rows in set (0.00 sec)
+
+6. Implement the above command such that ‘l’ is replaced with ‘r’ and ‘a’ is replaced with ‘o’.
+
+mysql> select replace(sname,'A','O') "SNAME", replace(sname,'R','L') as "SNAME" from s;
++---------+---------+
+| SNAME   | SNAME   |
++---------+---------+
+| OKSHOY  | AKSHAY  |
+| BRIJESH | BLIJESH |
+| MORTIN  | MALTIN  |
++---------+---------+
+3 rows in set (0.00 sec)
+
+7. Display the Supplier names and the lengths of the names.
+
+mysql> select length(sname) as "SNAME" from s;
++-------+
+| SNAME |
++-------+
+|     6 |
+|     7 |
+|     6 |
++-------+
+3 rows in set (0.00 sec)
+
+
+8. Use the soundex function to search for a supplier by the name of ‘BLOKE’.
+
+mysql> select * from s where soundex(sname)=soundex('maartiin');
++------+--------+--------+--------+
+| S#   | SNAME  | STATUS | CITY   |
++------+--------+--------+--------+
+| S3   | MARTIN |     30 | ATHENS |
++------+--------+--------+--------+
+1 row in set (0.07 sec)
+
+mysql> select * from s where soundex(sname)=soundex('briijeesh');
++------+---------+--------+-------+
+| S#   | SNAME   | STATUS | CITY  |
++------+---------+--------+-------+
+| S2   | BRIJESH |     20 | PARIS |
++------+---------+--------+-------+
+1 row in set (0.00 sec)
+
+
+mysql> select * from s where soundex(sname)=soundex('akshaay');
++------+--------+--------+--------+
+| S#   | SNAME  | STATUS | CITY   |
++------+--------+--------+--------+
+| S1   | AKSHAY |     10 | LONDON |
++------+--------+--------+--------+
+1 row in set (0.00 sec)
+
+mysql> select * from s where soundex(sname)=soundex('akshiit');
+Empty set (0.00 sec)
+
+
+
+9.Write select...... display the SNAMEs centre justified with '*'  (assume sceen width as 40 characters)
+
+mysql> select lpad(rpad(sname,((40-length(sname))/2)+length(sname),'*'),40,'*') "SNAME" from s;
++------------------------------------------+
+| SNAME                                    |
++------------------------------------------+
+| *****************AKSHAY***************** |
+| ****************BRIJESH***************** |
+| *****************MARTIN***************** |
++------------------------------------------+
+3 rows in set (0.00 sec)
+
+10.Write select...... display the SNAMEs with vowels removed.
+
+mysql> select replace(replace(replace(replace(replace(sname,'A',''),'E',''),'I',''),'O',''),'U','') "SNAME" from s;
++-------+
+| SNAME |
++-------+
+| KSHY  |
+| BRJSH |
+| MRTN  |
++-------+
+3 rows in set (0.05 sec)
+
+
+
+9. Display the Supplier name and the status (as Ten, Twenty, Thirty, etc.).
+
+mysql> select  Status,city,sname,
+    ->  case
+    -> when status=10 then 'Ten'
+    -> when status=20 then 'Twenty'
+    -> when status=30 then 'Thirty'
+    -> end "STATUS"
+    -> from s;
++--------+--------+---------+--------+
+| Status | city   | sname   | STATUS |
++--------+--------+---------+--------+
+|     10 | LONDON | AKSHAY  | Ten    |
+|     20 | PARIS  | BRIJESH | Twenty |
+|     30 | ATHENS | MARTIN  | Thirty |
++--------+--------+---------+--------+
+3 rows in set (0.00 sec)
+
+
+
+
+10. Display the current day (e.g. Thursday).
+
+mysql> select dayname(sysdate()) from dual;
++--------------------+
+| dayname(sysdate()) |
++--------------------+
+| Wednesday          |
++--------------------+
+1 row in set (0.00 sec)
+
+mysql> select sysdate(),dayname(sysdate()) from dual;
++---------------------+--------------------+
+| sysdate()           | dayname(sysdate()) |
++---------------------+--------------------+
+| 2022-05-11 10:16:46 | Wednesday          |
++---------------------+--------------------+
+1 row in set (0.00 sec)
+
