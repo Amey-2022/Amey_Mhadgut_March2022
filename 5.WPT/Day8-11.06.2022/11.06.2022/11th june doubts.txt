@@ -1,0 +1,240 @@
+after the session i am not able to get the things when i satrt to study whatever you teach  
+problem of how we learn..
+1. can you summarize what we did we cover today
+after looking the pictures and notes.
+
+2. can you come with your own examples..for each topic
+which you felt summary was done by you.
+
+3. obviously 1 and 2 is difficult what is easy is doing some logic
+building program and hoping we understood.
+
+do all of us know.
+1. which part of htl changes, which part does.
+2. how to setup events.
+3. what is input we need, what is output we will get. from the logic.
+4. doing the logic.
+
+I will be build 10 examples to know the 4 things.
+m not able to get the things when i satrt to study whatever you teach  
+
+1. sumarize at end of the day what we should know.
+2. i will tell some small examples to build 
+
+changing variablesnames != programming.
+
+
+
+
+how does javascript execute.
+
+1. global section ie section outside functions.
+2. that section gets interrpeted by the browser.
+
+
+
+
+
+
+
+
+one common problem is referring to an id when browser does not even know it.
+then we get null. one way to avoid this problem
+
+is write javsacript after all the tags are interpreted by the browser.
+it is  very important in javascript to know functions
+
+1. which we are calling
+2. event handling functions.. this will be called by the system, when
+the event occurs.
+
+do you see lines of javascript outside function, yes.. i do, ok it gets executed
+when the page is loaded.
+
+
+NO I see lines of javascript in a function
+ok tell me what is your function
+event handling function  -- ok it gets called when event occurs
+normal function  --it gets called when you call the function.
+
+----------------------
+
+javascript has data types but we dont need to tell what is data type.
+
+let x=3;
+let y = x-1;
+y value will be 2, that is proof javascript knew x was a number.
+but when do you +
+since plus can done with string also and also with number
+when javascript does plus by default it assumes it to be a string rather than a number
+
+
+form tag is a mechanism to group things..
+
+
+form action="where you want to go" method="what is mode of http request">
+
+
+
+DOMContent loaded event occurs after all the html tags are loaded.So is it correct to give a class outside the Dom event . 
+creating a class != creating an object.
+
+
+data type = content + operations
+create a variable of the data type..
+
+
+creaing a class  == createinga  data type
+create a variable, create an object.
+
+intent of keeping the class outside is mainly..
+to tell that entire code will go to a separate .js one day..
+
+arrays.
+1. group of elements , linear datastructure ie
+you search is sequential..and its size is not fixed
+
+concepts i expected you know in javascript array.
+1. how to create an array
+
+let x =[];
+//how to add elements into the array.
+x.push("what you want to add");
+//assuming we have added sequentially
+x[i] where i position is zero or positive we access elements 
+
+how to remove an element from the array.
+x.splice(which position, how many elements to remove)
+
+basics of javascript.
+
+1. do know where to write javascript in the html page.
+2. global and non global javascript.(inside some function)
+3. do we know how to create variables in javscript 
+4. do we know how to create functions in javascript how
+functions gets called no matter whehter input argument is given
+or not given..
+5. can we start using javascript objects like Window,  document, Date,
+String,.
+window corresponds to the browser window.
+document corresponds to your html page..
+
+6. do we know how to access sections of the html via javascript
+7. do we know how to setup event handling.
+8. do we know depending on which object we are accessing
+properties will change.
+
+
+basics of appraochin web application presentation
+
+1. do we know how our html will look like. 
+2. think which part will change, put ids around it.
+3. setup events.
+what do you mean by event?
+
+you should think of two things
+
+1. where Event occurs (Event Source)
+what is an event.
+think of one variable, think of it changing.
+let i =3;
+i =4;
+yes i value changed, questdion is now are we telling
+other things hey i value changed ornot..
+NO  I will not tell anybody, very good it is not an event.
+I will give mechansim to tell Ok congrats it is an event.
+usually events are detected by the system and not us..
+will give you a mechanism to tell hey I am interested
+in the event..
+it will also give you amechanism to tell I am not interessted
+in the event.
+
+
+
+
+
+
+
+
+
+
+2. who is interested in the event  ( Event Listener) --most of times
+we are here only..
+
+we register with the event source, telling hey I am interested
+in the event X, when event X occurs please let me know in this function.
+
+
+
+
+
+nobody is interested for the event, then word event does not have
+any meaning.
+
+
+
+window.addEventListener('DOMContentLoaded', ()=>{
+
+ //if all the tags in the html has been loaded, then
+ //let me know..
+ console.log("all tags are interpreted");
+  
+
+});
+we are doing this line becuase we are interestedin setting up events
+after the entire html is processed.
+
+why am i asking you to write domContentLoaded event, you will get equivalent
+of these things in jquery or react.. so it is better to know this approach.
+
+Logic is like this..
+
+1. you want to tell the browwer, hey browser finish processing all the tags.
+2. once you are done, setup these events for me.
+
+
+document.querySelector("#nn");
+you are telling in javascript hey look in my html there is some tag with
+the id called nn. pick that element.
+nn is for a button. so object i get points to a button.
+nn is a for  textbox, so object i get is a textbox.. 
+
+a06basic.html
+
+dont worry about validation as of now...
+reason is very simple once we are real life validationis taken care of framework
+frameworks may use different langauges which will help kids think javascript
+is like java only.. example TypeScript.
+
+even now keep your focus on javascript , how. read from javascript.info
+or mozilla javascript..
+
+
+
+when to create a class, 
+when to just have an object.
+
+if you are going to create only one object , then no need for a class
+just create the object.
+
+if you are going to create multiple objects which have similar properties
+then class creation is needed in javascript.
+
+we want to do X, X  needs Y and we dont know Y. then challenge is
+can we learn Y with intention to solve X and not do phd on Y.
+when in doubt ability to write a "small program" and clarify the doubt
+shows that developer is intelligent...
+
+big challenge is to recognze ambuities in reqwuirements itself..
+challenge of real life make assumptions after checking with customer..
+
+
+
+
+
+
+
+
+
+
+

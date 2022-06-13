@@ -1,0 +1,323 @@
+where are we.. where are we going..
+
+1.finally the project will be done in react only and not by using raw javascript.
+so how do we prepare for this..
+
+2. what do we know in html and what do we in javascript.
+html.. id and how to create form components like textbox or radio and understand
+that each component can come up with its own set of properties.
+
+3. javascript
+at any cost no global things.
+event setup part (this can vary from framework to framework)
+we access sectiosn of the html page.. 
+
+in the beginning what we covered was .
+we a simple number
+slowly we moved to array
+and the last programwas input is an object and return type is an object.
+
+
+4. general appraoch to presentation.
+4.1 gave id correctly
+4.2 setup event handling   == registration for the event.
+we write functons which we dont call.
+4.3.1 how do we get the input.
+4.3.2 we assumed we got the output and think how to use it in the web page.
+4.4 -- writing logic to pass input and get output.
+
+
+
+
+Hope is people are focussing on the javascript language..
+
+plan is like this.
+
+1. basics of web using html and javascript
+2. little bit of css.
+3. jquery 
+  nodejs
+4. react
+5. come back to css.
+6. http headers... and relate to react..
+objects and classes.
+
+we can directly have an object, but if we want to multiple objects with
+similar properties, creataing a class helps..
+
+object oriented 
+generalize the object we can create the class.
+
+in some langauges our fate is to create the class first only then I can create
+the object example java or c++ but in javscript we dont suffer this fate..
+
+
+let x={};
+x.empno=23;
+x.deptid=44;
+let y={};
+y.empno =45;
+y.deptid=66;
+let z={};
+z.empno=77;
+z.deptid=88;
+
+if we had created a class in javascript number of lines in the code will reduce.
+number of lines in the code will reduce, surely javascript can perform faster
+in the client..
+
+
+if you tell I am going to create an object of a class called X.
+class X must compulsorily have somethings ..non static variables.
+example
+
+class X
+{
+private int i;
+
+}
+if we create two objects of class X, how many copies of i.. 2
+non static function. will have something special.. "this"
+
+big problem in design
+if "initial intent of design is X" no matter whatever changes we do in design
+X will keep screaming and it will never become Y no matter how many times
+we scream it is new , it is Y.... who cares it remains X only..
+
+windows operating system == + consumer friendly, large number of third partysoftware
+horrible stability..  --makeup on windows. for many ever years you want.
+do you feel windows will become secure.. 
+
+linux operating system..
+from day 1 it is secure, multi user, consumer freindliness was never the focus.
+
+moral of the story is "intent matters in design".
+intial design cannot be changed no matter whatever circus we do..
+
+javascript will be javascript
+javascript will be screaming sometimes I can also act like java. but if you near
+it will tell you I am javscript only..
+
+
+ java will be java..
+Java will keep screaming i can act like javascript, if you go near, it will
+scream I remain java only...
+
+who will get struck in between programmers .. they like syntax enjoy the 
+syntax entertainment..
+
+in java function input argument must be  primitive, referernce of a class
+or reference of an interface that is it. I am in java 21 who cares it will remain like that
+only , lamda entertainment is only during calling..
+
+javascript never had class. huge amount of crying from java and c++ and .net guys
+saying javascript you msut have a class ok to stop you crying I will give you class
+guys felt very happy.. but if you near it is n ot all a class.
+
+
+Today we are in world of "mass scale copy pasting"
+everything is free.
+java
+javasript
+python.
+
+what do person who develop programming langauge do.
+java programming langauge design see a feature called X which is highly popular
+in python, they will copy this X in java and call X with a new name.
+samething javascrxipt guys will do ,same things guys will do....
+
+have all you installed software.. yes or no.. you have seen great button
+called I agree.. did you read what you agree to... 
+
+
+
+in java if you cretae a class called Emp
+
+class Emp
+{
+	private int empno;
+              private int deptid.
+
+}
+
+Emp e =new Emp();
+e.email
+
+Emp e1 =new Emp();
+e1 i hate deptid let us remove it.
+class acts likea  boundary. in java.
+for what an object contains.. 
+in javascript no class, no i write class write it.. but it wont act like a boundary..
+
+
+
+
+moral of the story
+initial design matters, no matter how much of makeup we put, intial design
+will be screaming all the time.
+
+how to crete a class.
+
+
+
+
+is moral to compare java and javascript no.. 
+moral is javascript is anew langauge, learn it that way without comparing
+with anything else.
+
+
+what is summary
+1. javascript we can have an object. no class, yes no class.
+2. NO i will create a class ok create it , lines of code will reduce, but still object
+is the boss, class cannot keep any gun on the object.
+3. size of the object is dynamic becuause it is not bound by the class.
+
+
+in real life we know 
+1. service function is the boss.
+2. service function takes X as input and returns Y as output.
+3. typically in real life X will belong to class called A, Y belongs to class called B.
+4. this A and B has to created in service layer also and als in presentation layer..
+we all this A and B in architecture..--"Model"
+
+understand the class with intent to know it is different from java. that is it.
+dont do phd on the class it is not needed.. 
+
+
+
+
+
+
+kids favourite thing is only adding.. 
+adding in case it is  not workig project it is ok..
+
+let update and select work.
+for people who are brave whowant to lose thier job do a delete also..
+
+
+1. update
+2. single select == if you do query on primary key
+3. multi select.  ==if you do query on non primary key
+4. insert.
+5. last thing if somebody keeps gun at our head.. only then delete. else stay away
+from it..
+
+
+we will join back at 16.00 and continue..
+
+
+
+
+
+lot of people have tried being prepared for the project it does not work
+projects means uncertainty..
+uncertainty lack of information..
+
+what matters is are we willing to write  a small program to clarify
+our concept or syntax.
+
+
+
+
+
+
+whenever we write a function
+we should think how do we tell the caller function succeded
+function failed.
+
+thinking in every scneario
+what is output
+what is input
+is super important..
+output how do you know the logic failed.. due to what.
+1. user
+2. independent of user..
+currently let us build a kids program
+
+
+in kids program class can contin only inbuilt types
+
+class Emp
+{
+private int empno;
+private STring empname
+private Dept deptid;
+}
+
+
+
+lies ok easy to deal with.
+but myths super hard....
+
+concept is not a function of time, you can learn it immediately
+syntax is a function of time, no shortcut..
+
+
+when we have doubts in concept or syntax, dont ruin the origianl project
+suspend it and figure out doubt in a small program, that is what we call as "poc"
+proof of concept.. tiny program which will clariy the doubt..
+
+
+
+if we write code using just technology (javascript or java) == lines of code is X
+if we use framework with technology   ==lines of code is  Y
+
+100% sure Y < x;
+
+
+meaning of project success
+
+1. how many people are using the project.
+2. for how long.
+if 1 and 2 cannot be answered "english" will help..
+
+moral of the story
+
+poets can  never be programmers..
+who is poet, write code and code and hopes it works.. horrible
+what prevented us from checking the output freqwuently...
+
+write 5 lines of code and check output comes o rnot...
+output does not come remove 5 lines output should come..
+
+giving id.
+setting up events
+input and output needed for logic (high intelligence is needed why we cannot
+copy paste from google)
+doing the actua logic
+
+
+
+
+Map<String,Integer> -- kids maps..
+
+adults map
+
+Map<String, ProjectspecificObject>
+
+List<STring> =kids list.
+List<projectSpecificObject> ==real list..
+
+
+1. id giving is ok.
+2. event handling is over
+3. for each event scenario 
+for the logic what is 
+input needed
+output needed
+impact of output on the page.
+4. sit peacefuly and foucs on the logic.
+why peace, nswer yoiu know input needed and output expected
+
+if you are able to understand today program
+continue doing some small programs from the mozilla tutoria on objects.
+how to use inheritance, what is prototype..
+
+
+
+
+
+
+
+
+

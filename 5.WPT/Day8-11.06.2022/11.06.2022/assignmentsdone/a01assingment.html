@@ -1,0 +1,89 @@
+<html>
+<head>
+<script>
+
+window.addEventListener('DOMContentLoaded', 
+()=>{
+
+  let x=[11,12,13,14,15,16,17,18,19,20];
+  
+  function checkNumberinArray(numbertoCheck)
+  {
+	let found =false;
+   //dinosaur appraoch there are better approach
+   for(let i=0; i < x.length; i++)
+   {
+		if(x[i]==numbertoCheck)
+		{
+		   found = true;
+		   break;
+		   
+		}
+   
+   }
+   return found;
+  
+  }
+  
+
+
+
+//setting up blur event on the textbox.
+//get the textbox in your code..
+  const t1 =document.querySelector("#t1");
+  t1.addEventListener('blur', 
+()=>{
+	
+		let numberGiven = document.querySelector("#t1").value;
+		let found = checkNumberinArray(numberGiven);
+		if(!found)
+		{
+			
+			document.querySelector("#add").disabled=false;
+			document.querySelector("#edit").disabled=true;
+			document.querySelector("#delete").disabled=true;
+			document.querySelector("#viewall").disabled=true;
+			document.querySelector("#viewoddposition").disabled=true;
+			
+		
+		}
+		else
+		{
+			document.querySelector("#wh").innerText="number aleady present";
+		
+		
+		}
+
+
+
+});
+
+
+
+
+
+}
+);
+
+
+
+
+</script>
+<style>
+</style>
+</head>
+<body>
+<input type="text" placeholder="enter some number" id="t1"/>  <span id="wh"> what happened </span>
+<Br/><button id="add" disabled> Add a number</button>
+<button id="edit" disabled> change the number</button>
+<button id="delete" disabled> delete a number</button>
+<button id="viewall" disabled> show all numbers</button>
+<button id="viewoddposition" disabled> view numbers in odd position</button>
+
+
+<br/><p id="contents"> all arary contents will be shown here</p>
+
+
+
+</body>
+</html>

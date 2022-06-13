@@ -1,0 +1,68 @@
+<html>
+<head>
+<script>
+
+window.addEventListener('DOMContentLoaded', ()=>{
+console.log("programmers should be pessimistic");
+
+
+//setup the second event..
+//how to access the button.
+const b1 = document.querySelector("#b1");
+b1.addEventListener('click',()=>{
+
+//inputs we need.
+let howManyMutiples=document.querySelector("#nom").value;
+let factor=5;
+if(document.querySelector("#fnum7").checked ===true)
+	factor=7;
+	
+let multiples=getMultiples(howManyMutiples,factor) ;//assume this is the ouptut of the srvice
+let contents="";
+for(let x=0;x<multiples.length;x++)
+{
+contents+= "  " + multiples[x];
+}
+document.querySelector("#msg").innerHTML=contents;
+
+
+
+
+
+console.log(howManyMutiples + "" + factor);
+});
+
+//only logic  -- in reallife we will contacgint server
+//ajax call, http service call.. 
+function getMultiples(nom,factor)
+{
+let multiples=[];// array in javascript
+for(let i=1; i <= nom;i++)
+   multiples.push(factor * i);
+  
+ return multiples;
+
+
+}
+
+
+
+
+});
+
+
+
+</script>
+<style>
+</style>
+</head>
+<body>
+<input type="text" placeholder="number of multiples" id="nom"/>
+<span id="msg"> we show multiples here</span>
+<Br/>mutiples of 5<input type="radio" name="factornum" id="fnum5" checked/>
+mutiples of 7<input type="radio" name="factornum" id="fnum7"/>
+<Br/> <button id="b1"> query </button>
+
+
+</body>
+</html>

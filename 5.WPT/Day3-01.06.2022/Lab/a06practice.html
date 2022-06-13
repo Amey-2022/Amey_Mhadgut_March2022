@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple of 5_and_7</title>
+    <style>
+
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded',()=>
+        {
+            console.log("Event created");
+
+            const b1=document.querySelector("#b1");
+
+            b1.addEventListener('click',()=>
+            {
+                console.log("button is clicked");
+                const t1=document.querySelector("#t1");
+                const msg=document.querySelector("#msg");
+
+                let result=fifthmultiple(t1.value);
+
+                msg.innerHTML="Fifth multiple of "+t1.value+" is: "+result;
+            });
+
+            function fifthmultiple(val)
+            {
+                return val*5;
+            }
+
+            const b2=document.querySelector("#b2");
+
+            b2.addEventListener('click',()=>
+            {
+                console.log("button is clicked");
+                const t1=document.querySelector("#t1");
+                const msg=document.querySelector("#msg");
+
+                let result=fifthmultiple(t1.value);
+
+                msg.innerHTML="Seventh multiple of "+t1.value+" is: "+result;
+            });
+
+            function sevenththmultiple(val)
+            {
+                return val*7;
+            }
+            
+        
+        
+        });
+    </script>
+</head>
+<body>
+    <input type="text"  id="t1" placeholder="enter a number"> <span id="msg"> x </span>
+    <br/>
+    <input type="button" id="b1" value="multiple of 5">
+    <br/>
+    <input type="button" id="b2" value="multiple of 7">
+    </body>
+    </html>

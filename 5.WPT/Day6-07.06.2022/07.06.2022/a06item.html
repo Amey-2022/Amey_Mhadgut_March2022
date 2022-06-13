@@ -1,0 +1,330 @@
+<html>
+<head>
+<script>
+
+class ItemStatus
+{
+constructor(status,itemobject)
+{
+this.status=false;
+this.itemobject=itemobject;
+}
+
+};
+
+class Item
+{
+constructor(itemno,itemprice,qty)
+{
+this.itemno=itemno;
+this.itemprice=itemprice;
+this.qty=qty;
+}
+
+getItemDetails()
+{
+	return this.itemno +  "--" + this.itemprice + "--"  +
+this.qty;	
+}
+
+}
+
+
+
+
+
+
+
+class Logic
+{
+
+constructor(){ 
+
+ this.items=[ {itemno:1,itemprice:4,qty:5},
+	{itemno:2,itemprice:6,qty:7},
+	{itemno:3,itemprice:9,qty:10},
+	{itemno:4,itemprice:12,qty:13}]; //assume this is 
+
+
+}
+
+
+
+
+getItemDetailsLogic(itemno)
+{
+let output ={ result:false, itemdetails:{}};
+for(let i=0; i < this.items.length; i++)
+{
+if(this.items[i].itemno == itemno )
+{	
+	output.result=true;
+	output.itemdetails=this.items[i];
+	break;
+}
+
+}
+return output;
+}
+
+
+updateItemDetailsLogic(updateditem)
+{
+console.log(updateditem.itemno);
+let output =false;
+for(let i=0; i < this.items.length; i++)
+{
+if(this.items[i].itemno == updateditem.itemno )
+{	
+
+	this.items[i].itemno=updateditem.itemno ;// which position, how many elements to remove
+	this.items[i].itemprice=updateditem.itemprice;
+	this.items[i].qty=updateditem.qty;
+	output=true;
+	
+	break;
+}
+
+}
+console.log("inside update function" + output);
+return output;
+}
+
+removeItemDetailsLogic(itemno)
+{
+let output =false;
+for(let i=0; i < this.items.length; i++)
+{
+if(this.items[i].itemno == itemno )
+{	
+	this.items.splice(i,1); // which position, how many elements to remove
+	output=true;
+	break;
+}
+
+}
+console.log("inside delte function" + output);
+return output;
+}
+
+getAllItems()
+{
+return this.items;
+}
+
+}//end of the logic class
+
+
+
+
+
+
+
+
+window.addEventListener('DOMContentLoaded', ()=>{
+
+
+let logic = new Logic();
+showAllItems();
+
+
+const itemnoid = document.querySelector("#itemno");
+itemnoid.addEventListener('blur',()=>{
+console.log("blur event");
+
+//intellligence begins
+let itemno= document.querySelector("#itemno").value;
+console.log("input is" + itemno);
+let output= logic.getItemDetailsLogic(itemno);
+//if result is false, then assume itemno is not found, else assum eitemno is found
+
+//intelligence ends here.
+
+//after you know the output.. think how page chages.
+if(output.result)
+{
+	document.querySelector("#price").value=output.itemdetails.itemprice;
+	document.querySelector("#qty").value=output.itemdetails.qty;
+	
+	document.querySelector("#update").disabled=false;
+	document.querySelector("#delete").disabled=false;
+	document.querySelector("#clear").disabled=false;
+	document.querySelector("#msg").innerText="item details found";
+
+}
+else
+{
+	console.log("no item was found");
+		document.querySelector("#update").disabled=true;
+	document.querySelector("#delete").disabled=true;
+	document.querySelector("#clear").disabled=true;
+	document.querySelector("#msg").innerText="item no not found";
+	document.querySelector("#price").value="";
+	document.querySelector("#qty").value="";
+	
+
+
+}
+});//end of event handling registration. blue event.
+  
+
+
+const update = document.querySelector("#update");
+update.addEventListener('click',()=>{
+
+//intelligence begins
+let input= {itemno:document.querySelector("#itemno").value,
+itemprice:document.querySelector("#price").value,
+qty:document.querySelector("#qty").value};
+
+
+
+console.log(input);
+let output=logic.updateItemDetailsLogic(input);//just true or false or just an int or a string is
+//standard kids disease.
+
+//intelligence ends here..
+if(output)
+{
+document.querySelector("#msg").innerText="update suceeded";
+document.querySelector("#update").disabled=true;
+	document.querySelector("#delete").disabled=true;
+	document.querySelector("#clear").disabled=true;
+	document.querySelector("#itemno").value="";
+	
+	document.querySelector("#price").value="";
+	document.querySelector("#qty").value="";
+
+}
+else
+{
+document.querySelector("#msg").innerText="update failed";
+
+document.querySelector("#update").disabled=true;
+	document.querySelector("#delete").disabled=true;
+	document.querySelector("#clear").disabled=true;
+
+}
+showAllItems();
+//intelligence ends.
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+const deletebutton = document.querySelector("#delete");
+deletebutton.addEventListener('click',()=>{
+let input= document.querySelector("#itemno").value;
+
+console.log(input);
+let output=logic.removeItemDetailsLogic(input);//just true or false or just an int or a string is
+//standard kids disease.
+console.log("after delte function" + output);
+
+//intelligence ends here..
+if(output)
+{
+document.querySelector("#msg").innerText="delete suceeded bravery";
+document.querySelector("#update").disabled=true;
+	document.querySelector("#delete").disabled=true;
+	document.querySelector("#clear").disabled=true;
+	document.querySelector("#itemno").value="";
+	
+	document.querySelector("#price").value="";
+	document.querySelector("#qty").value="";
+
+}
+else
+{
+document.querySelector("#msg").innerText="delete failed";
+
+document.querySelector("#update").disabled=true;
+	document.querySelector("#delete").disabled=true;
+	document.querySelector("#clear").disabled=true;
+
+}
+showAllItems();
+
+});
+
+
+
+const clear = document.querySelector("#clear");
+clear.addEventListener('click',()=>{
+console.log("clear event");
+
+});//end of event handling setup for buttons
+
+
+
+function showAllItems()
+{
+console.log("show all items");
+	
+	
+	let output=logic.getAllItems();
+	
+	
+	
+	let msg="";
+	for(let i=0; i < output.length; i++) //dinosaur way..
+	  msg+= "<Br/>" + output[i].itemno +  " --- " + output[i].itemprice +
+	  "--"+ output[i].qty;
+	  
+	  document.querySelector("#contents").innerHTML=msg;
+
+
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+});
+
+</script>
+<style>
+</style>
+</head>
+<body>
+<h1> so called Item ( focus on classes) </h1>
+<hr/>
+<input type="text" id="itemno" placeholder="itemno "/>  <span id="msg"> what happened</span>
+<Br/><input type="text" id="price" placeholder="price "/>
+<Br/><input type="text" id="qty" placeholder="qty "/>
+<Br/><button id="update" disabled> update item</button>
+<button id="delete" disabled> delete item (courageous) </button>
+<button id="clear" disabled> clear all boxes </button>
+<hr/>
+<p id="contents" > here one day we will show contents </p>
+</body>
+</html>

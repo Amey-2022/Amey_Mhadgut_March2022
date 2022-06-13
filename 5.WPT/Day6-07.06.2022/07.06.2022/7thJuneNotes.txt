@@ -1,0 +1,287 @@
+what did we yesterday.
+1. we have to write code in object oriented style.
+
+Emp object and I need all the insurance doucments of that
+given Employee.
+
+
+List<Insurance> getAllInsuranceofAnEmployee(Employee employee)
+{
+
+}
+
+
+
+
+
+definer of the function
+
+Z  f1(Y obj)
+{
+//function defintion
+} 
+
+
+
+caller also needs to have Y and Z do you agree.
+
+I have javscript in my html ok...
+there are three sections to it
+
+1. event handling section.
+2. logic section ( service  )
+( all it does takes the input given and calls
+the real service layer written on the server and gets
+the output given by the real server and returns the
+data back to the event handling section)
+3. in projects return type and input argumetn is object
+so return type object and input object is usually modelled
+as a class and then object created of them... (Model)
+
+how do you recognize  model in real life
+these will be input and return type of your service functions.
+
+
+
+how to build web page.
+1. give id.
+
+--javascript begins
+2. write event handling
+3. focus on input needed and focus on output got.
+4. do the actual logic
+input and output of service functions  --models.
+
+Object  -- data type
+1. state   --non static variables
+2. behaviour  -- non static functions
+
+
+let x={length:3, breadth:4, getArea:function(){return this.length*this.breadth;
+
+whenever you see a function failing.
+1. foucs on the input
+2. focus on the output
+3. then in between the function.--logic.
+
+I have dont data to judge why program is failing ok if that is case, firstfocus
+on collecting data.
+
+
+
+
+int x[]={2,3,4} ;// we write this in java
+if you are searching for 3 in the array. should you write a for loop.. no
+
+Arrays.sort(x);
+int pos= Arrays.binarySearch(x,3);
+this story is 40 years old story, but kids like for loop so they will write..
+
+
+syntax is new.. so relax and 
+
+
+
+when you create objects and classes dont hope check at hello world
+level once it is working fine, then think of using it at event handling level.
+
+
+we will take  abreak till 4.00PM and join back..
+
+
+what does a class does -- Encapsulation.
+variables in the class.
+you access via functions..
+
+what is proof. when somebody is telling I am accessing the class X.
+usually what does it mean?-- it means that we are accessing functions of class X.
+
+earlier all the logic was just in functions, now we are trying to group
+things to classes.
+
+kids favourite word obj1.. who use obj1 ..
+
+X x=new X();//java style.
+
+let x =new X();
+
+
+style of javascript code..
+
+
+
+
+
+
+
+what is differnce you observed.
+
+entire logic part which was just some functions earlier..
+now has moved into a class.
+we have creaed the object of hte class in event handling
+when ever we want logic , we will call some function using the logic object.
+
+
+
+
+
+
+
+kids hate when they see many classes. then we should tell kid dont be in a project
+be in a class. then we will see only one class.
+
+initially the story in html was very simple.
+processing always on server... so focus on name...
+
+radio button you needa  concept of grouping..
+
+
+where are you
+
+two radio buttons
+
+India
+Outside India
+
+
+how do we write a function in javscript
+
+function functioname(x)
+{
+
+}
+
+when it came to the class.
+
+function keyword..we dont write why.. legacy.. 
+
+
+window.addEventListener("eventname",(?)=>{ here 100% return something will never appear }); //I think the question is 
+about what can come in  ?
+
+when you define the function.
+1.who is calling it.
+if sombody is calling he will decide what is function input , 
+in any event handling function you will never see the word "return"
+
+Eventsource to EventListener and not vice versa.
+
+eventlilstenre functions will always return void..
+
+? can anythinga bout the event.. but if we are using it. then we consider
+using the ?, currently since I have no plans of using  ? we did not even mention
+it in our code.
+
+
+we have a function called f1, which is going to get called during event handling.
+what is input the function f1 takes we dont decide, system decides.
+why system is going to call f1 function and not we.
+
+system tells I will give input of type X. we are in  javscript.if we write a function
+without that input X, will function get called or not get called? get called..
+that means we are ignoring x.
+
+
+1. are you sure your function is a event handling function,yes..
+2. ok then dont do astrology, open documentation and see what inputs
+will you get in a event handling function, it will depend on scenario...
+
+moral of the story 
+
+1. organize your code into 3 units in javascript
+1.1 event handling code.
+1.2 logic code.
+1.3 model code (input and output of your logic functions)
+usually 1.3 is the boss in the project becuase this is what will vary from project
+to project..
+
+I minimum for knowing the programming langauge.. what does it mean?
+1. documentation standard (1/5)
+2. variable data type, scope, casting rule (5/5)
+3. how to handle runtime problems in functions (5/5)
+4. string handling and date handling (2/5)
+5. how to use ds like array and map (3/5)
+6. how to use good editors like visual code.. or ecclipse  , how to do unit testing
+how to profile code (0.0005/5)
+let us begin our journey on CSS, super small story.
+
+1. CSS does decoration for the page.. example of decoration, is colors, fonts
+most important alignement of the page..
+2. most of times in CSS what is important to match something in the html.
+it is called as "context Selector"
+for example we tell in CSS hey find h1 in html and make it look red in color
+find h1 in html   -- context selector..
+3. color, font.. easy things in real life, alignment positioning difficult things..
+in css.
+4. CSS choosing colors, choosing alignment... different skill usually not
+expected in everyone..it is a ocean.. from our priority low priority topic..
+
+you have to spend lot of time on context selector if we want to learn
+css decently.. should we spend yes we should know context selectors.
+css properties huge we dont know we can think of later..
+some properties can be learnt..
+
+context selector as an element. what is going to happen
+every element in the html which matches the context selector will get applied
+with that property..
+
+element context selector it gets applied automatically.
+Id context selector it gets applied automatically.
+class context selector it will not get applied automatically programmer
+can apply it as and when needed and also remove it as when needed.
+
+if we need a decoration that needs to be applied across a set of tags
+controlled by us.. best option is a class.
+
+ok we will not do phd on CSS why we want to learn javascript systemically
+and that is what 99% of react ...but we cannot zero in CSS we should figure
+out how to context selectors properly and some alignement properties in css.
+
+
+
+
+
+
+
+do you know how to create a class in javscript , create an object, call its functions.
+inheritance.. works in javascript
+
+
+
+
+
+
+
+moral of the story is very simple..
+
+1. javscript section your code into classes.. 
+event handling
+models
+logic.(service)
+
+2. continue your journey reading about javacript..
+
+3. css emember context selectors.
+.A  -- Class we need to apply this, 
+
+#B  -- id
+C  -- tag 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

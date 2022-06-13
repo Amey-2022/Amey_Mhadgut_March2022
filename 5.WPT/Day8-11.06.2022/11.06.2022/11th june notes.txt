@@ -1,0 +1,48 @@
+what we plan to do today.
+
+1. look at the doubts
+2. summarize the feedback.
+
+in terms of technology.
+1. summarize all the concepts we covered so far in systematic way
+2. summarize javascript approach
+
+what we plan to do in next 2 days.
+1. learn css and use css in javascript
+2. learn jquery phase 1 and use it in our code.
+phase 1 jquery.
+how to setup events
+how to access things of the html.
+
+
+feedback 
+  1. basics needs to covered.
+  2. some formal way of clearning doubts  --google forms
+begin of the session 
+  3. more clarity on the syntax. --let us how it will be possible.
+  4. syllabus.  --map in syallbus where are we what is syllabus 
+telling
+  5. tell them early .. to cover..
+
+
+
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+1.summarize all the cocnepts in web, html, javascript covered so far.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

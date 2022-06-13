@@ -1,0 +1,40 @@
+.button{
+    width: 5vw;
+    height: 6vh;
+    color: rgb(0, 1, 4);
+    background-color: rgba(124, 120, 120, 0.493);
+    font-size: 150%;
+    margin: 0.5%;
+    border-radius: 10px;
+}
+
+.button:hover  {
+    background-color: rgb(51, 211, 72);
+    color: azure;
+}
+
+body{
+    background-image: url("images1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input{
+    height: 5vh;
+    margin: 0.5%;
+    width: 94.7%;
+    font-size: 150%;
+    border-radius: 10px;
+}
+
+.box{
+    border: 1px solid red;
+    margin-top: 10%;
+    margin-left: 38%;
+
+    width: 22.4vw;
+    height: 40vh;
+    box-sizing: border-box;
+    border-width:0.5vh;
+    
+}

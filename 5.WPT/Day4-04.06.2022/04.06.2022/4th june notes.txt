@@ -1,0 +1,291 @@
+1. hope all of us know how to write a textbox and a button
+and setup event hanlding for the button and read the textbox value
+and change some part of the html next to the textbox.
+
+while doing this, we avoid any global functions.
+depending type of object you access, properteis will change
+for example we should conscious whether we  have a textbox
+or we have a button or we have a non textbox non button
+<h1> 
+
+2. in terms of reading hopefully people know what data types
+are there in javascript and hopefully they have reached till
+arrays.
+
+basic rule we will mix html and javascript learn not separately.
+
+today objective is to get comfortable with
+javscript objects and arrays.
+
+
+depending on the type of object you get , properteis will change.
+
+
+javascript array.
+
+array is dynamic in javascript that means it does not have a size.
+let x=[];
+
+you can use a ready made function push thru which we can add an elmeent into the
+array.
+
+1. simple variable (int, char, boolean)
+2. array
+3. composite type ( class type or reference)
+4. array of composite types
+5. other datastructures which contain composite types.
+
+when any of these 5 things appear as input and return type of function
+we should be ok with it.. we should not get addicted to int
+
+
+we are passing deptid and we are getting a List of Employees.
+
+in java how will servcie function look like
+
+List<Employees> getEmployees(int deptid)
+
+List<Employees> look in javascript we should be 5/5 in this, else we are dead
+in web programming.
+
+your servie function returns X and input argument is Y.
+X serviceFunction(Y obj)
+how X and Y look in javascript we should be sure about it. else forget wb programming
+for presentation..
+
+
+
+
+
+let arrayname=[3];
+what does it mean we created an array whose first element value
+is 3..
+
+focus on array and objects in javascript. 
+
+
+
+
+
+
+
+programmers main skills.
+
+1. lower the cost of failure.. thought because of me project
+wont suceed, becuase of me project wont fail.
+2. problem solving..
+we will always get doubt... concept or syntax.. at that point of time
+can we write a "small program which works" to clarify the concept or the syntax
+(this is never done). to do this people should tolerate uncertainty..
+3. generalize the learning..
+
+
+dont worry about validation in the beginning
+let the logic work properly and then we an add the validation.
+
+
+
+
+
+
+how do you build web page.
+
+1. focus on html and focus on id.. where to give..and double check..
+2. setup events., double check are events working.
+3. what is input needed for the service function
+3.1 dont assume you got the input, do a console.log and prove
+input is correct..
+3.2 think what will return type of the service function..
+assume the value and use it..
+I have done the logic. that is ok that will come.. but focus
+on input and ouptut. how you plan to use..
+
+
+
+
+
+
+
+
+
+fastest way to tell i hate javascript is not to like function inside function.
+javscript programmer who is not cosnciouis about what type of element
+is id pointing to should not write the program.
+
+
+
+dont get overenthusiastic about service calling relax and focus on input
+needed.
+
+
+when dont have data to solve the problem focus on collecting data first..
+
+java infection in javascript is dangerous.. javascript is javascript
+and java is java... 
+
+for people who are from c,C++ or java, javascript is  big time shock
+becuase of nature of the langauge.
+
+in javscript respecting it a new langauge we are new to it, so we learn
+everything from the beginning is important..
+
+things which have not changed for last 50 years, stupidity of the progrmmer also.
+
+if we did not check any of radio button can we show some message
+very much possible.
+
+
+in real life validations are done by frameworks we can configure them
+so as a programmer we should not waste time writing our own validation
+logic.. that is telescope..
+
+1. id giving in html
+2. setup events double check
+3. input and ouptut modelling of service function(hardest part) of any real life project.
+
+4. calling service function
+5. configuring validatin if you want to..
+
+
+
+
+
+
+
+
+job of the presentation layer.
+
+
+1. know the servcie layer input and ouptut.
+2. capture what service layer needs as input from ui.. textbox radio...
+3. call the service function
+4. whatever service function returned, use it in the UI, update the UI
+
+we give accountno and we get AccountDetails of that account.
+querying logic.
+
+11.30AM and join back...
+objects in javscript
+
+
+
+
+
+
+
+
+
+
+
+
+you tell 1000 problems in web presentation appraoch is same.
+
+1. setup html id
+2. setup event handling
+
+in our scneario what is input to the function..
+
+input to the function. accno -- number ..
+return type from the function --how to talk english.. account details nice english
+Account object.
+
+how do we know we are talking with kids. life full of int only nothing else..
+first thing we should admit the kid to hospital and get rid of his "int" disease..
+a programmer shoud know that input argumetn and return types 99% in a real
+life project aare all objects and not simple things like int...
+
+Account object. yes.. 
+we are from java.. ok relax.. in javascript we can object without writing a class.
+
+how to do it.
+let x={}; //is this an object yes, it is an object.
+
+suppose we have class A. inside class A we have non static variable called i.
+if we create 3 objects of class A, how many copies of i will be there?  3.
+
+
+let account={acno:3, balance:4,email:"abc@def.com",pin:7};
+what is account an object, what are its properites acno, balance, email and pin.
+did we create a class no.. why we are in javascript we dont need a class.
+but the kid from java world keeps crying non stop saying I am unable to digest
+that we can have an object without a class. to console him javascript will
+tell if you want a class i will allow you to create it.
+
+input argumetn function is a number.
+return type is an object.
+
+
+
+
+in the html page we can 
+
+textbox
+we can radio button
+we have h1, p tag.
+
+all are tags in html.do you agree.
+in memory each of these tags have different properties..
+
+for example in a textbox we can enter something.
+radio button we can select something
+in h1. there is nothing to select or type.. but tag has got content.
+so depending on which tag you are referring to  in memory, properties change.
+
+broadly you can think in terms of 
+1. form elements.  text, radio, ...  -- 
+insdie a textbox how do you refer textbox content.. answer is value
+2. non form elements.. like h1, h2, p, span.. there is no concept called value
+becuase it is  non form component. so property innerHTML
+
+
+
+
+
+
+kid programmer favourite pastime.
+
+1. take  a program alredy written and change the variablenames..
+
+
+
+todays first program function
+
+1. input was a number, return type was an array.
+
+second program.
+input was a number, return type is an ojbect.
+
+
+third program.
+input is an object, return type is an object(this is what real life is all about )
+
+input argumetn is an object
+what is return type object.
+
+those who tell good start, they should go into details tell the properties.
+
+input argumetn object ( length, breadth)
+output argumetn object(  area, perimter)
+congrats people who tell great people..
+
+
+
+1. rule no 1 is build html with ids.
+2. setup events
+3. get input and use the output..
+4. actual logic..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

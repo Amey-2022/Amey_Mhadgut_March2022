@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiples program</title>
+    <script>
+
+        window.addEventListener('DOMContentLoaded',()=>{
+            console.log("DOM Activated");
+
+            const b1=document.querySelector("#b1");
+            b1.addEventListener('click',()=>{
+
+             let number=document.querySelector("#num").value;
+                let factor=5;
+                if(document.querySelector("#fnum7").checked===true)
+                    factor=7;
+                console.log(typeof(factor),factor);
+                    let multiples=getMultiples(number,factor);
+
+                    let contents="";
+                    for(let i=0;i<multiples.length;i++){
+                        contents +=" "+ multiples[i];
+                    }
+
+                    document.querySelector('#msg').innerHTML=contents;
+
+
+                    console.log(number + " " + factor);
+            });
+
+            
+            function getMultiples(num,factor){
+                let multiples=[];
+                for(let i=1;i<=num;i++){
+                    multiples.push(factor*i);
+                }
+                return multiples;
+            }
+
+
+
+
+        });
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Enter number of multiple" id="num"/> 
+    <span id="msg">We show multiples here</span>
+    <br><br>
+    Multiples of 5<input type="radio" id="fnum5" name="factorb" checked/> 
+    Multiples of 7<input type="radio" name="factorb" id="fnum7"/>
+    <br> <button id="b1">Query</button>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+<head>
+<script>
+
+class Logic
+{
+checkaccountdetails(accobj)
+{
+//stupid logic saying accno and pin is same assume it is valid
+console.log(accobj);
+let status= (accobj.accno == accobj.pin);
+console.log(status);
+return status;
+}
+
+}
+
+//start of event handling
+window.addEventListener('DOMContentLoaded', ()=>{
+
+	const logic =new Logic();
+	const signinButton = document.querySelector("#signinButton");//access the element in the html page
+	//whose id is signin button syntax dont byheart...
+	signinButton.addEventListener('click', ()=>{
+	
+	//hard thing begins		
+		let accountInput={ accno : document.querySelector("#acno").value, pin :document.querySelector("#apin").value };
+	console.log(accountInput);
+	
+	
+	let output=logic.checkaccountdetails(accountInput);
+	console.log("output value is"+output);
+	if(output)
+	{
+		document.querySelector("#rm").innerText=
+		"account and pin is valid";
+	}
+	else
+	{
+	document.querySelector("#rm").innerText=
+		"account and pin is invalid, "; 
+	
+	}
+	
+	//hard thing ends
+	
+	});//end of button event handling
+	
+	
+	//how do we get input
+	//hod do we know output
+	//we must know service..
+	//I dont know service, very good delete the whole page
+	//why are we building this page.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  
+
+});// end of event hanlding
+</script>
+<style>
+
+</style>
+</head>
+<body>
+
+<p  id="rm"> message will be shown here</p>
+
+<br/> <input type="text" placeholder="accountno" id="acno"/>
+<Br/>
+<br/> <input type="number" placeholder="pin" id="apin"/>
+<Br/><Br/>
+<Br/><button id="signinButton"> Sign In</button>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<html>
+<head>
+<script>
+
+
+//hey after you processed all the tags in the html
+
+window.addEventListener('DOMContentLoaded', ()=>{
+
+ //if all the tags in the html has been loaded, then
+ //let me know..
+ console.log("all tags are interpreted");
+ 
+ //setup events. tell the ssytem if this event occurs
+ //let me know  -- register for events for prvious
+ //button and next button
+ const nn =document.querySelector("#nn");
+ const pn =document.querySelector("#pn");
+ 
+ 
+ nn.addEventListener('click', 
+ ()=>{ 
+ 
+ 
+ nn.disabled=true;
+ const y = document.querySelector("#numbergiven");
+ let result = y.value +1;// why .value because 
+ 
+ result =result;
+ //you
+ //want read to text box value.
+ const rm = document.querySelector("#rm");
+ 
+ //<p> hello </p> hello is referred by innerText
+ rm.innerHTML=result;
+ 
+ 
+
+ });
+ 
+ pn.addEventListener('click', 
+ ()=>{ 
+ 
+ const y = document.querySelector("#numbergiven");
+ let result = y.value -1;// why .value because 
+ 
+ result =result;
+ //you
+ //want read to text box value.
+ const rm = document.querySelector("#rm");
+ 
+ //<p> hello </p> hello is referred by innerText
+ rm.innerHTML=result;
+ 
+ 
+
+ 
+ 
+ });
+ 
+ 
+ 
+ //setup events on nn and pn.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+});
+
+</script>
+<style>
+</style>
+</head>
+<body>
+<Br/> <input type="number" id="numbergiven"
+placeholder="enter number"/>
+<span id="rm"> what happened</span>
+<Br/> <button id="nn">Next Number</button>
+	<button id="pn"> Previous Number</button>
+</body>
+</html>

@@ -1,0 +1,151 @@
+
+https://forms.gle/Xt39URavJ1LLECvB8
+enter your doubts here we will address on it saturday..
+
+feedback.. 70% in the batch who feel they are not able to understand anything.
+so what do i Plan do about it.. give some context and revise all things which
+covered from day till now
+1. http concepts
+2. html concepts
+3. javascript concepts
+4. what is course of action.
+
+
+in this module unlike your earlier modules. you have new syntaxes waiting.
+syntax html
+syntax javascript
+syntax css
+all the 3 syntaxes are different..
+
+
+
+
+first let us complete html tags.
+let us complete css section
+let us complete javascript section
+this appraoch will not work in any project..
+
+
+
+
+in web technology module , advanced java module
+it is not the syntax that matters, it is concept it is the architecture that matters.
+
+
+usual problems in this module.
+people will not get comfortable with react..
+
+
+what is our focus.
+1. to learn to use these (html +javscript ) together by learning some basic
+html syntax and some basic javascript syntax)
+2. build some examples, take that same example try it with framework.
+3. revisit the html so called new tags or javascript new functions. or css new syntaxes
+
+
+
+
+
+
+
+project based appraoch is not a good idea when we are learning concepts
+all projects need some logic, logic is not important if we are trying to tell
+we learn concepts.
+
+1. independently learn concepts..
+2. think of the project.
+
+
+1. concept
+2. can you give an example without code
+3. write code ( to prove we know hello world syntax)
+4. find out best practices
+5. logic building  (project will kidnap us to 5, which is not a good idea if we are
+starting)
+
+
+
+h1 tag will start a new line
+span tag will not introduce a new line.
+
+
+
+syntax in javascript
+
+1. how to create a variable
+2. how to create a function.
+3. setup event.
+what is an event?
+1. change in varaible value and also intimation should happen to others
+saying that variable has changed
+
+example int i =3; i =4; is it it an event yes, if we are telling other people
+that hey look i value changed..
+
+2. event source
+
+3. event listneer.
+write a function and then tell the event source i am interested in the event.
+== Event Registration.
+
+
+what is priority in web page.. 
+1. you know your service function
+we 2,3,4 during event handling.
+
+2. capture the input
+3. call the service function
+4. update the ui.
+
+if you write a variable
+a function and then do event handling it is enough...
+
+you dont need to learn more syntax.. 
+
+
+
+
+
+
+
+
+a simple scneario what is it..
+
+
+Decision making improves only if we have time perspective..
+
+biggest challenge in the project, do we know what will change in the project
+what will not change in the project.
+
+
+
+
+
+suppose there is a table emp(empno, empname, deptid)
+
+insert into emp(empno,empname,deptid) values (1,'a',3); //good insert bad ..
+why is it bad.. tomorrow project will tell emp should have email also
+if you add a email column to the emp table. your yesterday code will stop working
+today..
+
+we will take a break till 16.00 and join back..
+
+
+
+what are we going to do next..
+1. little bit of css how to use css along with javascript
+2. jquery..
+
+
+
+
+
+
+
+
+
+
+
+
+
+

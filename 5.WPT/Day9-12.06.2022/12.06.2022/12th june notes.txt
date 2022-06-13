@@ -1,0 +1,278 @@
+1. relax if you did not understand also.
+
+what should be your focus
+
+1. html you can create texbox, button and span tag and know why 
+you will give id.
+
+2. in javascript are you knowing why are we listening to the event
+domcontentloaded. this event will gurantee us that all tags in
+the browser has been interpreted by the browser.
+window.addEventListener("domcontentloaded",()=> {} )
+
+3. how to do you any html tag which has been identfied with the help 
+of id.
+let x = document.querySelector("#abc");
+
+4. we should know what object is the id pointing to.
+example is id given for h1 tag or is id given for some form tag..
+
+5. how to setup events for button and textbox blur event.
+
+7. yesterday mindmaps we must have seen what is concept you should know.
+
+
+can we have this in talking
+
+question
+1. architecture point of view what does question indicate.
+2. take an example.
+3. in context of that example explain the architecture.
+4. talk about syntax. (function of time)
+5. be capable of coding that example if the interview guys tells hey look i will give
+you a system code what you said now, ok i will code and code..
+
+basic programmer mindset.
+1. keep your bp level normal.. why becuase of me project wont suceed
+becuase of me project wont fail.. why project is a system
+2. if you believe in 1, you will lower the cost of failure, when programs dont work
+bp wont rise we will just think whatto change.
+3. when we have doubt in syntax or concept, we are willing to write a
+small program to check the concept or syntax.
+
+minimum criteria
+1. can we give id for html and know why we are giving
+2. setup events in javascript
+3. do we know to model input and ouptut
+4. do some stupid logic 
+if we are not capable of doing 1 to 4, web technology ends here only for the people.
+
+
+architecture 
+
+what is input needed .. this english which we are using for last 3 to 4 days.
+it means..
+
+what is input needed for the service function
+what is model needed for calling the servcie function.
+
+models of think of couriers.
+
+where are we going now.
+1. little of css
+2. how to use css in context of javascript
+3. jquery.
+4.nodejs.
+
+
+
+
+we are starting with css, are we going to do phd no.. how much
+we are covering in this phase 0.5/5
+
+1. expand css.
+1.1 Cascading style sheets.
+
+2. what does it do
+2.1 it does decoration for the html page, example we have a paragraph
+that should appear in red color, think of using css.
+we have a textbox we want to make invisible ok think of css.
+we want to center some text ok think of css.
+
+2.2 what things should we know in CSS.
+most important thing is something called "context selector" what it.
+typically the logic in css is , find something in html and apply this kind of decoration
+
+example
+find X in html and do Y as decoration.
+X is context selector
+Y is called css properties.
+
+X find h1 in html
+Y is make the color of h1 as red.
+what is the idea now..
+
+1. learn tiny bit of css and learn  to use along with html and javascript.
+
+which is challenging part in CSS
+learning how to position things..
+
+
+what are the syntaxes we should know in CSS.
+
+1. w can write css at many levels we will stick with writing css
+at head level of the html page.
+
+
+
+what did you learn in CSS first?
+
+1. css under  style tag.
+2. focus on getting the context selector right.
+3. then properties this we can learn on need basis.
+
+
+
+
+
+basic issue, if intent is to apply we cannot talk things in a complicated way..
+
+
+
+
+write a simple html page
+with h1 containing hello
+with p containing hi
+with h4 having and id called x.
+
+ensure h1 appears in red color
+ensure p appears in blue color
+any element with the id x should appear in green color.
+
+if have element or id.
+example h1 or #pqr, decoration is applied by the browser automatically.
+
+
+class in css.
+1. it does not applied automatically by browser.
+2. we can apply it when need comes.
+how.
+manually thru code.
+or via javascript.
+
+if you want flexibility in terms of applying and removing the decoration
+then most preferred way is a class.
+
+among all the context selectors which is our favourite answer shoul be class.
+
+how do you write a class.
+1. use . syntax  . classname  {  css properties  }
+
+
+class is indicated by .
+who applies programmer 
+how..
+manually  ie put class="someclassname" in the tag.
+or he can do it dynamically via javascript.
+
+
+
+
+
+in css what to understand.
+
+1. cntext selector.
+h1 -- tag name
+#pqr  -- id pqr
+.abc   - classname.
+
+multiple classes can be applied on the same element this is not
+true.
+
+
+no need for phd on css or anything..
+any person who starts with syntax, that means he is already sacrified architecture
+hence useless in a project..
+
+
+css syntax.
+context selector
+
+
+property just learn two properties.
+color
+text-decoration:underline, none.
+
+
+
+cocnept is can we know how to apply html, javascript and css together.
+
+
+we will do 2 to 3 program which use html and javascript and mix a little bit of css.
+we will join back at 11.30AM
+
+
+DOMContentLoaded--event  --new --how new, copy paste from other places
+will not wait for images to load.
+load --another event  -- old  -- load will wait for images also load
+what is differenc
+
+nver touch load, as o fnow, it is n ot needed stick with domcontentloaded 
+for the event..
+
+dom content loaded = we have 10 lines of html code and 30 images let us say
+dom content loaded occurs once the 10 lines of html is interpreted, images are not
+loaded it is ok for domcontent loaded
+it is not ok for load, load means it will wait for images also to be fully loaded.
+
+on all events , dont trust anybody astrology including mine, why
+not open official documentaiton and read..
+
+on standard events like click, blur , load, domcontentloaded, dont trust astrology
+of anybody read official documntation..
+
+
+let msg =document.querySelector("#msg");
+give me the elemtn which is pointed by the id msg.
+on any element you can use this property classList..
+use the function called to add a class. 
+use the function called remove to the remove the class.
+
+singe point summary for last 8 days 
+go from architecture to code and never vice versa..
+
+what we covered is 0.5/5 in css.. but important thing
+we  should demonstrate we can use html +javascript +css together.
+
+
+
+
+
+Demonsrate a UI where input is a deptid and output given a list of Employees
+Employee means empno, empname, and deptid.
+
+
+
+during the logic what is input
+during the logic what happend, what is output.
+currently I am going to keep the kids favourite which is nothing boolean
+adults favourite is object..
+
+
+
+
+
+what is the idea behind this program
+
+write 200 lines of code nearly.. with
+
+1. did you setup event.
+2. did you access the html input
+3. did you know what is output
+4. do some stupid logic
+5. updte the ui.
+
+I will take some scnearios like given item category and show all items.
+give a deptid show all employees.
+
+
+what should i do practically in the lab.
+1. self test on css.. and mix javascript 
+2. double check have you understood the 4 assingments what has been given.
+3. transport case study if design is complete, start with the crude html pages..
+
+can we do sorting 100% yes, provided we know sorting concepts..
+to sort what is most improtant sorting concept?
+
+
+
+
+
+
+
+
+
+
+
+
+

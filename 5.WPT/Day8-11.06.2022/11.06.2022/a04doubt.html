@@ -1,0 +1,40 @@
+<html>
+<head>
+
+
+
+
+<style>
+</style>
+</head>
+<body>
+<h1> this is html</h1>
+<form action="two.html"
+<Br/><input type="text" id="t1" placeholder="first number"/>
+<Br/><input type="text" id="t2" placeholder="first number"/>
+
+<input type="button"  id="x" value="add"/>
+</form>
+<p id="pa"> hello</p>
+
+</body>
+<script>
+let x = document.querySelector("#x");
+
+x.addEventListener('click',
+			()=>{
+			
+				console.log("is button working");
+				let t1 = document.querySelector("#t1");
+				let t2 = document.querySelector("#t2");
+				let result = t1.value+ t2.value;
+				console.log(result);
+			
+			
+			}
+			);
+
+
+</script>
+
+</html>

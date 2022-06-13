@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:cornsilk;
+    }
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        color: rgb(247, 1, 50);
+    }
+
+    input[type=number] {
+        width: 6em;
+        height: 2em;
+        font-size: 30px;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    span {
+        font-size: 40px;
+        font-weight: bold;
+        
+    }
+
+    h2 {
+        text-align: center;
+        color: blue;
+        font-size: 50px;
+        padding: 1.3%;
+    }
+</style>
+
+<body >
+    <div >
+    <h1>Multiplication Tables</h1>
+    <hr>
+    
+    </div>
+    <br>
+    <p><span>Enter Number : </span><input type="number" id="num"></p>
+    <div>
+        <h2 id="multi"> </h2>
+    </div>
+</body>
+
+</html>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        let number = document.querySelector("#num");
+        console.log('event')
+        number.addEventListener('blur', () => {
+             var element = document.getElementById("multi");
+
+            while (element.firstChild) {
+                element.removeChild(element.firstChild);
+            } 
+            
+            let number = document.querySelector('#num').value;
+
+            for (let index = 1; index < 11; index++) {
+                document.querySelector('#multi').innerHTML += number + " X " + index + " = ";
+                document.querySelector("#multi").innerHTML += index * number + "</br>";
+
+
+            }
+        })
+
+    });
+</script>

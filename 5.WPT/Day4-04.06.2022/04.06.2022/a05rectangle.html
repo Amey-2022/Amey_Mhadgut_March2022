@@ -1,0 +1,84 @@
+<html>
+<head>
+<script>
+
+window.addEventListener('DOMContentLoaded', ()=>{
+console.log("programmers should be pessimistic");
+const calc = document.querySelector("#calc");
+calc.addEventListener('click',()=>{ 
+
+	//focus on input  first.
+	let rectangle={length:document.querySelector("#t1").value ,
+	breadth: document.querySelector("#t2").value };
+	
+	let perimeterarea=    calculateAreaPerimeter(rectangle);  //{ area: 4, perimeter:5};
+	
+	if(document.querySelector("#ca").checked ===true)
+	{
+	
+	document.querySelector("#area").innerText=perimeterarea.area;
+	
+	}
+	else
+	{
+	document.querySelector("#area").innerText="area not selected";
+	
+	}
+	
+	if(document.querySelector("#cp").checked ===true)
+	{
+		document.querySelector("#perimeter").innerText=perimeterarea.perimeter;
+	}
+	else
+	{
+	document.querySelector("#perimeter").innerText="perimeter not selected";
+	
+	}
+	
+
+
+
+});
+
+  
+  
+  //greatest prioirity is what is input it takes, what output does it
+  //it give are we are sure no. presentaiton earthquakes..
+  
+  function calculateAreaPerimeter(rectangle)
+  {
+  //last priority is logic
+  let perimeterarea={};
+  perimeterarea.area=rectangle.length*rectangle.breadth;
+  perimeterarea.perimeter=2*(parseInt(rectangle.length)+parseInt(rectangle.breadth));
+  return perimeterarea;
+  
+  
+  }
+  
+  
+
+});
+
+
+
+</script>
+<style>
+</style>
+</head>
+<body>
+<h1> this is html</h1>
+<input type="number" id="t1" placeholder="length"/>
+Area is <span id="area" >  x  </span>
+<Br/><input type="number" id="t2" placeholder="breadth"/>
+perimeter is <span id="perimeter" >  y  </span>
+<Br/> area <input type="checkbox" id="ca"/>
+perimeter <input type="checkbox" id="cp"/>
+
+<Br/><button id="calc"> calculate </button>
+
+
+
+
+</body>
+</html>

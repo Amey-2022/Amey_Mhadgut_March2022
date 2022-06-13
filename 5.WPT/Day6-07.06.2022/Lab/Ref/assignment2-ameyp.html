@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let emp = [{
+        empno: 101,
+        empname: "Amey",
+        empemail: "ameypatekar@gmail.com",
+        deptid: 10
+    },
+    {
+        empno: 102,
+        empname: "Chandrakant",
+        empemail: "chandrakant@gmail.com",
+        deptid: 20
+    },
+    {
+        empno: 103,
+        empname: "Akshay",
+        empemail: "akshay@gmail.com",
+        deptid: 30
+    },
+    {
+        empno: 104,
+        empname: "Ajay",
+        empemail: "ajay@gmail.com",
+        deptid: 10
+    }];
+
+    let count = emp.length;
+
+    window.addEventListener('DOMContentLoaded', () => {
+        console.log('hello assignment number 2')
+
+        /* blur on employee number */
+        const empnum = document.querySelector('#empno');
+        empnum.addEventListener('blur', () => {
+            console.log('blur event on empno ');
+            for (let i = 0; i < emp.length; i++) {
+                if (emp[i].empno == empnum.value) {
+                    document.querySelector('#modify').disabled = false;
+                    document.querySelector('#Remove').disabled = false;
+                    document.querySelector('#add').disabled = true;
+                    document.querySelector('#viewall').disabled = false;
+                    document.querySelector('#Viewondeptid').disabled = false;
+                    console.log(empnum.value)
+                    document.querySelector('#msg').innerHTML = "Found";
+                    break;
+                }
+                else {
+                    document.querySelector('#add').disabled = false;
+                    document.querySelector('#modify').disabled = true;
+                    document.querySelector('#Remove').disabled = true;
+                    document.querySelector('#viewall').disabled = false;
+                    document.querySelector('#Viewondeptid').disabled = false;
+                    document.querySelector('#msg').innerHTML = "Not Found";
+                }
+            }
+        });
+
+        /*Modify*/
+        document.querySelector('#modify').addEventListener('click', () => {
+            let empno = parseInt(document.querySelector('#empno').value);
+            let empname = document.querySelector('#empname').value;
+            let empemail = document.querySelector('#empemail').value;
+            let deptid = parseInt(document.querySelector('#empdeptid').value);
+            let obj = { empno, empname, empemail, deptid };
+            for (let i = 0; i < emp.length; i++) {
+                if (emp[i].empno == empno) {
+                    emp[i] = obj;
+                    document.querySelector('#modify').disabled = true;
+                    document.querySelector('#Remove').disabled = true;
+                    break;
+                }
+            }
+        });
+
+        /*Remove*/
+        document.querySelector('#Remove').addEventListener('click', () => {
+            let empno = parseInt(document.querySelector('#empno').value);
+            let empname = document.querySelector('#empname').value;
+            let empemail = document.querySelector('#empemail').value;
+            let deptid = parseInt(document.querySelector('#empdeptid').value);
+            let obj = { empno, empname, empemail, deptid };
+            for (let i = 0; i < emp.length; i++) {
+                if (emp[i].empno == empno) {
+                    emp.splice(i, 1);
+                    document.querySelector('#modify').disabled = true;
+                    document.querySelector('#Remove').disabled = true;
+                    break;
+                }
+            }
+        });
+
+        /* add elements to array logic */
+        let add = document.querySelector('#add');
+        add.addEventListener('click', () => {
+            addobj();
+            document.querySelector('#msg').innerHTML = "Added Successfuly";
+        });
+        function addobj() {
+            let empno = parseInt(document.querySelector('#empno').value);
+            let empname = document.querySelector('#empname').value;
+            let empemail = document.querySelector('#empemail').value;
+            let deptid = parseInt(document.querySelector('#empdeptid').value);
+            let obj = { empno, empname, empemail, deptid };
+            emp[count++] = obj;
+
+        }
+
+        /* View all array elements based on deptid logic */
+        const did = document.querySelector('#Viewondeptid')
+        did.addEventListener('click', () => {
+            console.log('view all');
+            let n = parseInt(document.querySelector('#empdeptid').value);
+            let result = "";
+            document.querySelector('#msg').innerHTML = "Not Found";
+            for (let i = 0; i < emp.length; i++) {
+                if (emp[i].deptid == n) {
+                    result = result + " " + (JSON.stringify(emp[i]));
+
+                    document.querySelector('#msg').innerHTML = "Found";
+
+                }
+
+            }
+
+            document.querySelector('#msgy').innerHTML = result;
+
+        });
+
+
+        /* View all array elements logic */
+        const vdeptid = document.querySelector('#viewall');
+        vdeptid.addEventListener('click', () => {
+            console.log('view all deptid');
+            let n = parseInt(document.querySelector('#empdeptid').value);
+            let result = "";
+
+            for (let i = 0; i < emp.length; i++) {
+
+                result = result + " " + (JSON.stringify(emp[i]));
+
+            }
+
+            document.querySelector('#msgy').innerHTML = result;
+
+        });
+
+        /*  Reset button logic */
+        document.querySelector('#reset').addEventListener('click', () => {
+            document.querySelector('#empno').value = "";
+            document.querySelector('#empname').value = "";
+            document.querySelector('#empemail').value = "";
+            document.querySelector('#empdeptid').value = "";
+            document.querySelector('#msg').innerHTML = "Message";
+            document.querySelector('#msgy').innerHTML = "Message";
+            console.log('Reset all')
+
+        });
+    });
+</script>
+
+<body>
+    <table>
+        <h1>Assignment Number 2</h1>
+        <hr>
+        <h2>Employee Number <input type="text" id="empno" style="margin-left: 80px;"><span id="msg"> Message </span>
+        </h2>
+        <h2>Employee Name <input type="text" id="empname" style="margin-left: 105px;"></h2>
+        <h2>Employee Email <input type="text" id="empemail" style="margin-left: 105px;"></h2>
+        <h2>Employee Department ID <input type="text" id="empdeptid" style="margin-left: 10px;"></h2>
+        <br>
+        <hr>
+        <button id="add" style="padding: 1%; margin: 1%;" disabled>Add</button>
+        <button id="modify" style="padding: 1%; margin: 1%;" disabled>Modify</button>
+        <button id="Remove" style="padding: 1%; margin: 1%;" disabled>Remove</button>
+        <button id="viewall" style="padding: 1%; margin: 1%;"> Viewall</button>
+        <button id="Viewondeptid" style="padding: 1%; margin: 1%;">View on deptid</button>
+        <button id="reset" style="padding: 1%; margin: 1%;">Reset</button>
+        <h2 id="msgy"> Message</h2>
+
+    </table>
+</body>
+
+</html>
