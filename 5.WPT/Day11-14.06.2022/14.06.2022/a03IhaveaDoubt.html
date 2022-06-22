@@ -1,0 +1,48 @@
+<html>
+<head>
+
+<script>
+
+	function myDisplayer(some) {
+  console.log( some);
+}
+
+let myPromise = new Promise(function(myResolve, myReject) {
+  let x = 0;
+  console.log("is it working");
+// The producing code (this may take some time)
+
+  if (x == 0) {
+	console.log("x value is zero");
+    ;//myResolve("OK");
+  } else {
+    myReject("Error");
+  }
+});
+
+
+myPromise.then(
+  function(value) { console.log("first funtion"); myDisplayer(value);},
+  function(error) {
+  console.log("second function ");
+  myDisplayer(error);}
+);
+
+
+
+
+
+</script>
+
+
+<style>
+</style>
+</head>
+<body>
+<h1> this is html</h1>
+<button  id="x"> ok</button>
+<p id="pa"> hello</p>
+</body>
+
+
+</html>

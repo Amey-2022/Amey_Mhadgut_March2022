@@ -1,0 +1,15 @@
+{
+  "name": "poc",
+  "version": "1.0.0",
+  "description": "look fro project point of view",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3"
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Pin Area</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script>
+        $( ()=>{
+            console.log('event created');
+
+         const area=[
+            {pin:416602,area:"Kankavli"},
+            {pin:416510,area:"Sawantwadi"},
+            {pin:416628,area:"Kudal"},
+            {pin:400001,area:"Mumbai"},
+            {pin:410210,area:"Kharghar"}
+        ];   
+
+        function checkArea(t1){
+            console.log('checkArea function called')
+            let output={result:false,location:{}};
+            for(let i=0;i<area.length;i++){
+                if(area[i].pin==t1){
+                    console.log(area[i]);
+                    output.location=area[i];
+                    output.result=true;
+                    console.log[output];
+                    break;
+                }
+            }
+            return output;
+        }
+
+        $('#b1').click(()=>{
+            console.log('button clicked');
+
+            let t1=($('#t1').val());
+            let output=checkArea(t1);
+            console.log(output);
+            if(output.result){
+                $("#t2").val(output.location.area);
+                console.log(t2);
+            }
+        });
+
+
+        });
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Enter PINCODE" id="t1"/>
+    <br/>
+    <input type="text" placeholder="Area" id="t2"/>
+    <br/>
+    <button id="b1">Get Area Info</button>
+
+</body>
+</html>

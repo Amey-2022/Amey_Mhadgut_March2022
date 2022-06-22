@@ -1,0 +1,81 @@
+<html>
+    <head>
+
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        ></script>
+        <script>
+
+            //console.log('is it working');
+
+                $(()=>{  
+
+                        $("#empno").blur(
+                        ()=>{
+
+                            //contact server, keep the object ready..
+                            let ip={ empno: $("#empno").val()};
+                            let parameterstothefunction=
+                        { data:ip, 
+                          url: "http://localhost:900/getEmployeeInfo",
+                          type:'get',
+                          dataType: "json",
+                          success:(datagivenbyserver)=>{ 
+                             console.log( "data given by server in success" + datagivenbyserver)
+                             //ok data is coming from server start doing makeup
+                             if(datagivenbyserver.status==true)
+                             {
+                                   $("#msg").text("emp details got"); 
+                                   $("#empname").val(datagivenbyserver.empdetail.empname);
+                                   $("#mobileno").val(datagivenbyserver.empdetail.mobile);
+                                   
+                             }
+                             else
+                             {
+                                $("#msg").text("emp details not  got");
+                                $("#empname").val("");
+                                   $("#mobileno").val("");
+                                
+
+                             }
+                             
+                            
+                            },
+                          error:(errorgivenbyserver)=> { console.log("failed to contact server "+errorgivenbyserver)}
+                        }  ;
+                        $.ajax(parameterstothefunction);
+                       
+                            
+
+
+
+                           
+                        }
+
+                        );
+
+
+
+
+                });
+        </script>
+        <style>
+            
+
+        </style>
+    </head>
+    <Body>
+        <h1> this is the h1 </h1>
+
+        
+                <Br/><input type="text" id="empno" placeholder="employee number"/>
+                <span id="msg"> what happened</span>
+                <Br/><input type="text" id="empname" placeholder="employee name"/>
+                <Br/><input type="text" id="mobileno" placeholder="employee mobileno"/>
+                
+                
+                
+ 
+        </form>
+    </Body>
+</html>

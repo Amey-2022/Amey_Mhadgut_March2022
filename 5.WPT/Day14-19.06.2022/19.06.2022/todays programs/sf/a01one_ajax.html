@@ -1,0 +1,71 @@
+<html>
+    <head>
+
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        ></script>
+        <script>
+            $(()=>{
+                    
+
+                    $("#loginbutton").click(
+                    ()=>{
+
+                        //input that the server needs
+                        let ip={ username:$("#username").val(),password:$("#password").val() };
+
+                        //show patience and keep your object and its data
+                        //correctly
+                        let parameterstothefunction=
+                        { data:ip, 
+                          url: "http://localhost:900/login",
+                          type:'get',
+                          dataType: "json",
+                          success:(datagivenbyserver)=>{ 
+                              console.log( "data given by server in success" + datagivenbyserver.status)
+                              if(datagivenbyserver.status  === true )
+                              {
+                                       $("#message").text("successful login"); //makeup
+                              } 
+                              else
+                              {
+                                    $("#message").text("userid or password wrong");
+                              }
+                                                          
+                            
+                            },
+                          error:(errorgivenbyserver)=> { console.log("failed to contact server "+errorgivenbyserver)}
+                        }  ;
+                        
+                        //time to call the function
+                        console.log("is the function working");
+                        $.ajax(parameterstothefunction);
+
+
+                        
+                    }
+
+
+                 
+
+
+                    );//end of registration for click event
+
+            });
+        </script>
+        <style>
+
+
+        </style>
+    </head>
+    <Body>
+        <h1> this is the h1 </h1>
+
+        
+                <Br/><input type="text" id="username" placeholder="username"/>
+                <Br/><input type="text" id="password" placeholder="password"/>
+                <button id="loginbutton">check</button>
+                <p id="message"> what happened to login </p>
+ 
+            </Body>
+</html>

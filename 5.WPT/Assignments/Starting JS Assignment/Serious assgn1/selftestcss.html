@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .r {
+            color: red;
+        }
+
+        .u {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('#apply').addEventListener('click', () => {
+                console.log('apply button')
+               
+                let msg = document.querySelector('#msg')
+                if (document.querySelector('#underline').checked === true && document.querySelector('#red').checked === true) {
+                    console.log('red & underline')
+                    msg.classList.add('r');
+                    msg.classList.add('u');
+                }
+                else if (document.querySelector('#red').checked === true) {
+                    console.log('red block')
+                    msg.classList.remove('u');
+                    msg.classList.add('r');
+                }
+                else if (document.querySelector('#underline').checked === true) {
+                    console.log('underline block')
+                    msg.classList.add('u');
+                    msg.classList.remove('r');
+                }
+
+
+                else {
+                    console.log('nothing')
+                    msg.classList.remove('u');
+                    msg.classList.remove('r');
+                }
+
+
+            });
+        });
+
+
+
+        
+    </script>
+</head>
+
+
+<body>
+    <h1>Self Test - CSS </h1>
+    <h2 id="msg">Amey Patekar</h2>
+    <input type="checkbox" id="red"> Red
+    <br>
+    <input type="checkbox" id="underline"> Underline
+    <br><br>
+    <button id="apply">Apply</button>
+
+</body>
+
+</html>

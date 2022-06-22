@@ -1,0 +1,307 @@
+<html>
+<head>
+<script>
+
+window.addEventListener('DOMContentLoaded', 
+()=>{
+
+let addorUpdateorDeletedone=false;
+
+  let x=[11,12,13,14,15,16,17,18,19,20];
+  //assume this comes from the server...
+  
+  function getArrayContentsFromOdd()
+  {
+  let contents = "";
+		for(let i=0; i < x.length; i++)
+	{
+		if( i%2 != 0)
+			contents += " " + x[i];
+   }
+   return contents;
+	
+  
+  }
+  
+  function getArrayContents(){
+	let contents = "";
+		for(let i=0; i < x.length; i++)
+	{
+			contents += " " + x[i];
+   }
+   return contents;
+	
+  }
+  
+  function updateArray(numberGiven,replacemenetNumber){
+	let updated = false;
+	if(!checkNumberinArray(replacemenetNumber))
+	{
+		for(let i=0; i < x.length; i++)
+   {
+		if(x[i]==numberGiven)
+		{
+		   x[i]=replacemenetNumber;
+		   updated = true;
+		   break;
+		   
+		}
+   
+   }
+		
+	}
+	
+	return updated;
+  
+  }
+  
+  function addtoArray(numbergiven)
+  {
+  let added= true;
+  x.push(numbergiven);
+  return added;
+  
+  }
+  
+  function removeFromArray(numberGiven)
+  {
+  
+  let removed =false;
+  let index=-1;
+   for(let i=0; i < x.length; i++)
+   {
+		if(x[i]==numberGiven)
+		{
+		   index =i;
+		   break;
+		   
+		}
+   
+   }
+   if(index >= 0)
+   {
+	x.splice(index,1); //index position, how many elements
+	//to remove
+	removed=true;
+   
+   }
+  
+  
+  return removed;
+  
+  
+  
+  }
+  
+  function checkNumberinArray(numbertoCheck)
+  {
+	let found =false;
+   //dinosaur appraoch there are better approach
+   for(let i=0; i < x.length; i++)
+   {
+		if(x[i]==numbertoCheck)
+		{
+		   found = true;
+		   break;
+		   
+		}
+   
+   }
+   return found;
+  
+  }
+  
+
+
+
+//setting up blur event on the textbox.
+//get the textbox in your code..
+  const t1 =document.querySelector("#t1");
+  t1.addEventListener('blur', 
+()=>{
+	
+		let numberGiven = document.querySelector("#t1").value;
+		let found = checkNumberinArray(numberGiven);
+		if(!found)
+		{
+			
+			document.querySelector("#add").disabled=false;
+			document.querySelector("#edit").disabled=true;
+			document.querySelector("#delete").disabled=true;
+			document.querySelector("#viewall").disabled=true;
+			document.querySelector("#viewoddposition").disabled=true;
+			document.querySelector("#wh").innerText="number is new to be added";
+			
+		
+		}
+		else
+		{
+			document.querySelector("#wh").innerText="number aleady present";
+			document.querySelector("#add").disabled=true;
+			document.querySelector("#edit").disabled=false;
+			document.querySelector("#delete").disabled=false;
+			document.querySelector("#viewall").disabled=true;
+			document.querySelector("#viewoddposition").disabled=true;
+			
+		
+		
+		}
+		
+		if(addorUpdateorDeletedone)
+		{
+		
+		document.querySelector("#viewall").disabled=false;
+			document.querySelector("#viewoddposition").disabled=false;
+		
+		}
+
+
+
+});
+
+//add button event handlder
+const add =document.querySelector("#add");
+add.addEventListener('click',()=>{
+
+addorUpdateorDeletedone=true;
+
+let numberGiven = document.querySelector("#t1").value;
+let output=addtoArray(numberGiven);  // true if added, returns false;
+
+if(output)
+document.querySelector("#wh").innerText="number added";
+else
+document.querySelector("#wh").innerText="number not added";
+
+
+			document.querySelector("#add").disabled=true;
+			document.querySelector("#edit").disabled=true;
+			document.querySelector("#delete").disabled=true;
+			document.querySelector("#viewall").disabled=true;
+			document.querySelector("#viewoddposition").disabled=true;
+			
+		
+		if(addorUpdateorDeletedone)
+		{
+		
+		document.querySelector("#viewall").disabled=false;
+			document.querySelector("#viewoddposition").disabled=false;
+		
+		}
+
+
+});//end of add event handler
+
+
+const deletebutton =document.querySelector("#delete");
+deletebutton.addEventListener('click',()=>{
+console.log("delte function getting called");
+addorUpdateorDeletedone=true;
+
+let numberGiven = document.querySelector("#t1").value;
+let output=removeFromArray(numberGiven);
+if(output)
+document.querySelector("#wh").innerText="number removed";
+else
+document.querySelector("#wh").innerText="number not found";
+
+
+			document.querySelector("#add").disabled=true;
+			document.querySelector("#edit").disabled=true;
+			document.querySelector("#delete").disabled=true;
+			document.querySelector("#viewall").disabled=true;
+			document.querySelector("#viewoddposition").disabled=true;
+			
+		if(addorUpdateorDeletedone)
+		{
+		
+		document.querySelector("#viewall").disabled=false;
+			document.querySelector("#viewoddposition").disabled=false;
+		
+		}
+
+
+});//end of delete logic.
+
+const edit =document.querySelector("#edit");
+edit.addEventListener('click',()=>{
+console.log("modify is it working");
+addorUpdateorDeletedone=true;
+let numberGiven = document.querySelector("#t1").value;
+let replacemenetNumber = window.prompt("enter new number"); //learn new function on need basis.
+let output=updateArray(numberGiven,replacemenetNumber);
+if(output)
+document.querySelector("#wh").innerText="number modified";
+else
+document.querySelector("#wh").innerText="number not modified";
+
+
+			document.querySelector("#add").disabled=true;
+			document.querySelector("#edit").disabled=true;
+			document.querySelector("#delete").disabled=true;
+			document.querySelector("#viewall").disabled=true;
+			document.querySelector("#viewoddposition").disabled=true;
+
+if(addorUpdateorDeletedone)
+		{
+		
+		document.querySelector("#viewall").disabled=false;
+			document.querySelector("#viewoddposition").disabled=false;
+		
+		}
+
+
+
+});//end of event handling for update
+
+
+
+const viewall =document.querySelector("#viewall");
+viewall.addEventListener('click',()=>{
+console.log("view all event handling");
+let output=getArrayContents();
+
+document.querySelector("#scontents").innerText=output;
+
+});
+
+
+const viewoddposition =document.querySelector("#viewoddposition");
+viewoddposition.addEventListener('click',()=>{
+console.log("view odd position event handling");
+let output=getArrayContentsFromOdd();
+
+document.querySelector("#scontents").innerText=output;
+
+});
+
+
+
+
+
+
+}
+);
+
+
+
+
+</script>
+<style>
+</style>
+</head>
+<body>
+<input type="text" placeholder="enter some number" id="t1"/>  <span id="wh"> what happened </span>
+<Br/><button id="add" disabled> Add a number</button>
+<button id="edit" disabled> change the number</button>
+<button id="delete" disabled> delete a number</button>
+<button id="viewall" disabled> show all numbers</button>
+<button id="viewoddposition" disabled> view numbers in odd position</button>
+
+
+<br/><p id="scontents"> all arary contents will be shown here</p>
+
+
+
+</body>
+</html>

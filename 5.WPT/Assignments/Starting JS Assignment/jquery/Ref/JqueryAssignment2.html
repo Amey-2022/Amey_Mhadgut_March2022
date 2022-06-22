@@ -1,0 +1,53 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" ></script>
+<script>
+$(()=>{
+    console.log("Event Created");
+
+    
+    $("#mult5").click(()=>{
+        let t1 = $("#t1").val();
+        if(t1==""){
+            $("#msg").text("Please Enter number");
+        }
+        else{
+        let result =t1*5;
+        $("#msg").text("5th Multiple of "+t1+" is : "+result);
+        }
+    });
+
+    $("#mult7").click(()=>{
+        let t1 = $("#t1").val();
+        if(t1==""){
+            $("#msg").text("Please Enter number");
+        }
+        else{
+        let result =t1*7;
+        $("#msg").text("7th Multiple of "+t1+" is : "+result);
+        }
+    });
+
+    $("#b1").click(()=>{
+         $("#t1").val("");
+        
+        $("#msg").text("Multipication");
+    });
+
+});
+
+
+
+</script>
+<style>
+</style>
+</head>
+<body>
+<Br/><input type="text1" id="t1" placeholder="Enter number"/>
+<span id="msg">Multipication</span>
+<br>Multiply by 5<input type="radio"  id="mult5" name="mult">
+Multiply by 7<input type="radio"  id="mult7" name="mult">
+<br><br><button id="b1">Clear</button>
+
+</body>
+</html>

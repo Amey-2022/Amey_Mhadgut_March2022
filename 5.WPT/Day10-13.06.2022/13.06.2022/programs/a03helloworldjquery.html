@@ -1,0 +1,46 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" ></script>
+<script>
+
+$(()=>{console.log("those who byheart syntax see you in hell");
+
+$("#b1").click(()=>{
+
+//I want to read textbox value.
+	let x = $("#t1").val();
+	
+	//logic is not going to change whether jquery
+	//or no jquery react or no react..
+	let msg ="odd number got";
+	if( x % 2   ==0 )
+	{
+		msg ="even number got";
+	}
+	$("#msg").html(msg);
+
+
+
+console.log("button is clicked, those who byheart enjoy the fun");
+
+});
+
+}
+
+
+);
+
+
+
+
+
+</script>
+<style>
+</style>
+</head>
+<body>
+<Br/><input type="text" id="t1" placeholder="poc"/>
+<span id="msg"> some message</span>
+<br><button id="b1"> some logic</button>
+</body>
+</html>

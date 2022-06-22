@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(() => {
+            console.log('Dom loaded');
+            $('#btninsert').click(() => {
+                console.log('insert button clicked');
+
+                let ip = {
+                    employeeid: $('#empid').val(),
+                    employeename: $('#empname').val(),
+                    deptname: $('#deptname').val(),
+                    salary: $('#salary').val()
+                };
+
+                let parameterstothefunction = {
+                    data: ip,
+                    url: "http://localhost:900/insert",
+                    type: 'get',
+                    dataType: "json",
+                    success: (data) => {
+                        console.log("data given by server in success " + data.status);
+
+                        if (data.status == true) {
+
+                            $('#msg').html(data.message);
+                        }
+                        else {
+
+                            $('#msg').html(data.message);
+                        }
+
+                    },
+                    error: (data) => { console.log("failed to contact server " + data.status) }
+                };
+
+
+                console.log("is the function working");
+                $.ajax(parameterstothefunction);
+
+            });
+
+
+            $('#btnupdate').click(() => {
+                console.log('update button clicked');
+
+                let ip = {
+                    employeeid: $('#empid').val(),
+                    employeename: $('#empname').val(),
+                    deptname: $('#deptname').val(),
+                    salary: $('#salary').val()
+                };
+
+                let parameterstothefunction = {
+                    data: ip,
+                    url: "http://localhost:900/update",
+                    type: 'get',
+                    dataType: "json",
+                    success: (data) => {
+                        console.log("data given by server in success " + data.status);
+
+                        if (data.status == true) {
+                            
+                            $('#msg').html("Employee information updated");
+                        }
+                        
+
+                    },
+                    error: (data) => { console.log("failed to contact server " + data.status) }
+                };
+
+
+                console.log("is the function working");
+                $.ajax(parameterstothefunction);
+            });
+
+
+            $('#res').click(() => {
+                console.log('reset button clicked');
+
+                $('#empid').val("");
+                $('#empname').val("");
+                $('#deptname').val("");
+                $('#salary').val("");
+                $("#empid").prop('disabled', false);
+                $('#msg').html("Message");
+                $("#btnupdate").prop('disabled', false);
+            });
+
+
+            $('#empid').blur(() => {
+                console.log('blur event occured');
+
+
+                let ip = {
+                    employeeid: $('#empid').val()
+                };
+
+                let parameterstothefunction = {
+                    data: ip,
+                    url: "http://localhost:900/showinfo",
+                    type: 'get',
+                    dataType: "json",
+                    success: (data) => {
+                        console.log("data given by server in success in blur" + data.status);
+
+                        if (data.status == true) {
+                            $('#empname').val(data.ename);
+                            $('#deptname').val(data.dname);
+                            $('#salary').val(data.sal);
+                            $('#msg').html(data.message);
+                            $("#empid").prop('disabled', true);
+                            $("#btnupdate").prop('disabled', false);
+                        }
+                        else {
+
+                            $('#msg').html(data.message);
+                            $("#btnupdate").prop('disabled', true);
+                        }
+
+                    },
+                    error: (data) => { console.log("failed to contact server " + data.status) }
+                };
+
+
+                console.log("is the function working");
+                $.ajax(parameterstothefunction);
+
+            });
+
+        });
+
+
+
+    </script>
+</head>
+
+<body style="background-color:blanchedalmond;">
+    <h1>Employee Details</h1>
+    <hr>
+    <input type="text" placeholder="Enter Employee ID" id="empid"><br>
+    <input type="text" placeholder="Enter Employee Name" id="empname"><br>
+    <input type="text" placeholder="Enter Employee Dept Name" id="deptname"><br>
+    <input type="text" placeholder="Enter Employee Salary" id="salary">
+    <hr>
+    <input type="button" value="Insert" id="btninsert">
+    <input type="button" value="Update" id="btnupdate">
+    <input type="button" value="Reset" id="res">
+    <hr>
+    <span id="msg">Message</span>
+</body>
+
+</html>

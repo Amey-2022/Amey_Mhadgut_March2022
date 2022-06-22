@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rectangle area perimeter</title>
+    <script>
+        window.addEventListener('DOMContentLoaded', ()=>{
+        console.log("DOM Activated");
+
+        const b1=document.querySelector('#b1');
+        b1.addEventListener('click',()=>{
+
+        let rectangle={length:document.querySelector('#t1').value,
+                        breadth:document.querySelector('#t2').value }
+        
+        let perimeterarea = calculateAreaPeri(rectangle);
+
+        if(document.querySelector('#area').checked===true){
+            document.querySelector('#ar').innerHTML=perimeterarea.area;
+        }else{
+            document.querySelector('#ar').innerHTML="area not found";
+        }
+        if(document.querySelector('#peri').checked===true){
+            document.querySelector('#pr').innerHTML=perimeterarea.perimeter;
+        }else{
+            document.querySelector('#pr').innerHTML="perimeter not found";
+        }
+
+
+        });
+        
+        function calculateAreaPeri(rectangle){
+
+            let perimeterarea={};
+
+            perimeterarea.area=rectangle.length*rectangle.breadth;
+            perimeterarea.perimeter=2*(parseInt(rectangle.length)+parseInt(rectangle.breadth))
+
+            return perimeterarea;
+
+        }
+
+        });
+
+
+
+    </script>
+</head>
+<body>
+        <h1>rectangle area perimeter</h1>
+        <input type="text" placeholder="length" id="t1"/>
+        Area is :<span id="ar">x</span>
+        <br/>
+        <input type="text" placeholder="breadth" id="t2"/>
+        Perimeter is :<span id="pr">y</span>
+        <br/>
+        area<input type="checkbox" id="area"/>
+        perimeter <input type="checkbox" id="peri">
+        <br/>
+        <button id="b1">calculate</button>
+</body>
+</html>

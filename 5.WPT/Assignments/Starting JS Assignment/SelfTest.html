@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Test</title>
+    <script>
+        window.addEventListener('DOMContentLoaded',()=>{
+            const text=document.querySelector("#t1");
+
+            text.addEventListener('blur',()=>{
+                console.log("blur event occured");
+            document.querySelector("#msg").innerHTML="  "+text.value;
+
+            });
+
+            const b2=document.querySelector("#b2");
+            b2.addEventListener('click',()=>{
+                document.querySelector("#msg").innerHTML="You Typed"
+                text.value="";
+            });
+
+
+
+
+        });
+    </script>
+</head>
+<body>
+    <h1>Self Test</h1>
+    <input type="text" id="t1" placeholder="Enter Text"> <span id="msg">You Typed</span>
+    <br/><br/>
+    <button id="b2">Reset</button>
+</body>
+</html>

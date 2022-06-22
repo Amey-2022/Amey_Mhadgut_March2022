@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  ></script>
+        <!--
+        <script
+  src="https://code.jquery.com/jquery-3.5.0.js"
+  integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+  crossorigin="anonymous"></script>
+
+  -->
+        <script>
+            $(()=>{
+                    
+                        let input={ username:'a',password:'b' };
+
+                        //show patience and keep your object and its data
+                        //correctly
+                        let parameterstothefunction=
+                        { data:input, 
+                          url: "http://localhost:900/login",
+                          type:'get',
+                          dataType: "text",
+                          success:(data)=>{ console.log( "data given by server in success" + data)},
+                          error:(data)=> { console.log("failed to contact server "+data)}
+                        }  ;
+                        
+                        //time to call the function
+                        console.log("is the function working");
+                        jQuery.ajax(parameterstothefunction);
+
+                    
+            });
+        </script>
+        <style>
+
+
+        </style>
+    </head>
+    <Body>
+        <h1> this is the h1 </h1>
+
+        
+                <Br/><input type="text" name="username" placeholder="username"/>
+                <Br/><input type="text" name="password" placeholder="password"/>
+                <button id="loginbutton">check</button>
+                <p id="message"> what happened to login </p>
+ 
+            </Body>
+</html>

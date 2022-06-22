@@ -1,0 +1,263 @@
+<html>
+<head>
+<script>
+
+window.addEventListener('DOMContentLoaded', 
+()=>{
+
+//assume these details came from the server.
+let items=[];
+items.push({itemno:1,itemname:'pencil',price:3});
+items.push({itemno:2,itemname:'scale',price:5});
+items.push({itemno:3,itemname:'box',price:50});
+
+//logic function
+function getItemOnItemno(itemno){
+ 
+ let output ={ itemnofoundstatus:false , itemdetails:{itemno:3,itemname:'box',price:50} };
+ for(let i=0; i < items.length;i++)
+	{
+	if(items[i].itemno == itemno)
+	{
+		output.itemnofoundstatus=true;
+		output.itemdetails=items[i];
+		break;	
+	
+	}
+		
+	}
+ 
+ 
+return output;
+
+
+}
+
+
+function addItem(input)
+{
+	let added = false;
+	items.push(input);
+	added=true;
+	return added;
+	
+
+
+
+
+}
+
+
+function updateItem(updatedObject)
+{
+let updated = false;
+for(let i=0; i < items.length;i++)
+	{
+	if(items[i].itemno == updatedObject.itemno)
+	{
+		items[i].price=updatedObject.price;
+		items[i].itemname=updatedObject.itemname;
+		updated=true;
+		break;
+		
+	
+	}
+	}
+
+return updated;
+
+
+}
+
+
+//ui function
+function showContents()
+{
+	let contents=document.querySelector("#contents");
+	let itemscontents="";
+	for(let i=0; i < items.length;i++)
+	{
+	itemscontents += "<br/>" + items[i].itemno + "  " + items[i].itemname + " " + items[i].price;
+	}
+	contents.innerHTML=itemscontents;
+	
+}
+showContents();
+
+//setting up on blur.. writing comments not a good idea.
+
+let itemno=document.querySelector("#itemno");
+itemno.addEventListener('blur',()=>{
+
+//difficult things begin
+//the below line is input
+let itemno=document.querySelector("#itemno").value;
+
+document.querySelector("#itemno").disabled=true;
+
+let output= getItemOnItemno(itemno);
+
+
+
+
+//difficult things end.
+
+//process the output
+let message=document.querySelector("#message");
+
+if(output.itemnofoundstatus)
+{
+
+
+message.innerText="item details found";
+document.querySelector("#itemname").value=
+output.itemdetails.itemname;
+document.querySelector("#itemprice").value=
+output.itemdetails.price;
+
+
+
+
+
+
+
+}
+else
+{
+message.innerText="item details not found";
+document.querySelector("#itemname").value=
+"";
+document.querySelector("#itemprice").value=
+"";
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});//end of the blur event on itemno
+
+
+//setup the add button event 
+
+let add=document.querySelector("#add");
+add.addEventListener('click',()=>{
+  
+  let input={itemno:document.querySelector("#itemno").value,
+  itemname:document.querySelector("#itemname").value,price:document.querySelector("#itemprice").value}; //we know
+  //what will the input..
+  
+  let output=addItem(input);//kids world
+  let message=document.querySelector("#message");
+
+  if(output)
+  {
+  message.innerText="added successfully";
+  
+  }
+  else
+  
+  {
+  message.innerText="could not add item";
+  
+  }
+  document.querySelector("#itemname").value=
+"";
+document.querySelector("#itemprice").value=
+"";
+
+	showContents();
+	
+	document.querySelector("#itemno").disabled=false;
+
+}); //end of add event
+
+
+
+let update=document.querySelector("#update");
+update.addEventListener('click',()=>{
+
+//hard thing begins
+let updatedObject ={itemno:document.querySelector("#itemno").value,
+  itemname:document.querySelector("#itemname").value,price:document.querySelector("#itemprice").value}; 
+  
+   let output=updateItem(updatedObject);//this is output
+  
+   let message=document.querySelector("#message");
+
+  if(output)
+  {
+  message.innerText="updated successfully";
+  
+  }
+  else
+  
+  {
+  message.innerText="could not update item";
+  
+  }
+  document.querySelector("#itemname").value=
+"";
+document.querySelector("#itemprice").value=
+"";
+
+	showContents();
+
+  document.querySelector("#itemno").disabled=false;
+  document.querySelector("#itemno").focus();
+  
+  //hard thing ends
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+});
+
+
+
+
+</script>
+<style>
+.em  { color:red }
+.nm { color:blue }
+
+</style>
+</head>
+<body>
+<Br/>
+<input type="text" id="itemno" placeholder="item number"/>
+<span id="message"> what happened</span>
+<Br/>
+<input type="text" id="itemname" placeholder="item name"/>
+<Br/>
+<input type="text" id="itemprice" placeholder="item price"/>
+<br/><br/><button id="add">Add Item</button>
+<button id="update">update Item</button>
+<hr/>
+<p id="contents"> all items show it here</p>
+
+
+</body>
+</html>

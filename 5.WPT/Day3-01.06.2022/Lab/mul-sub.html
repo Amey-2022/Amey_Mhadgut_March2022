@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiply and Substract</title>
+    <style>
+
+    </style>
+
+    <script>
+        window.addEventListener('DOMContentLoaded',()=>
+        {
+            console.log("Event created");
+
+            const b1=document.querySelector("#b1");
+
+            b1.addEventListener('click',()=>
+            {
+                console.log("multiply button clicked");
+
+                const t1=document.querySelector("#t1");
+                const msg=document.querySelector("#msg");
+                const t2=document.querySelector("#t2");
+                
+
+                let result=multiply(t1.value,t2.value);
+                msg.innerHTML="Multiplication is "+result;
+
+            });
+
+            function multiply(num1,num2) 
+            {
+                return num1*num2;
+            }
+
+            const b2=document.querySelector("#b2");
+
+            b2.addEventListener('click',()=>
+            {
+                console.log("substraction button clicked");
+
+                const t1=document.querySelector("#t1");
+                const msg=document.querySelector("#msg");
+                const t2=document.querySelector("#t2");
+                
+
+                let result=substraction(t1.value,t2.value);
+                msg.innerHTML="Substraction is "+result;
+
+            });
+
+            function substraction(num1,num2) 
+            {
+                return num1-num2;
+            }
+
+            
+
+
+        });
+
+
+    </script>
+</head>
+<body>
+    <input type="text" id="t1" placeholder="num1"> <span id="msg">Result:</span><br/> <br/>
+    <input type="text" id="t2" placeholder="num2"> <br/> <br/>
+    <input type="button" id="b1" value="Multiply"> <span><input type="button" id="b2" value="Substraction"></span>
+</body>
+</html>

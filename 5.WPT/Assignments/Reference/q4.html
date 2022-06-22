@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(()=>{
+            console.log('DOM Loaeded')
+            $('#pin').blur(()=>{
+                console.log('blur event occured')
+                let pin={pincode:$('#pin').val()};
+
+                let parameterstothefunction={
+                         data:pin, 
+                          url: "http://localhost:900/pin",
+                          type:'get',
+                          dataType: "json",
+                          success:(data)=>{ 
+                              console.log( "data given by server in success " + data.status);
+                            
+                              if(data.status==true)
+                            {
+                                $('#area').val(data.city);
+                                $('#msg').html(data.message);
+                            }
+                            else{
+                                $('#area').val(data.city);
+                                $('#msg').html(data.message);
+                            }
+                            
+                            },
+                          error:(data)=> { console.log("failed to contact server "+data.status)} 
+                };
+                
+                
+                console.log("is the function working");
+                 $.ajax(parameterstothefunction);
+
+            });//blur
+           
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Question 4</h1>
+    <input type="text" placeholder="Enter Pincode" id="pin"><br>
+    <input type="text" placeholder="Area" id="area"><br>
+    <span id="msg">Message</span>
+</body>
+
+</html>

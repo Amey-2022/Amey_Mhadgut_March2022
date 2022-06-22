@@ -1,0 +1,9 @@
+a02itemscenario.html
+
+in this when onblur happens if itemno is found
+enable only update button
+
+if itemno is not found enable only update button.
+
+when we clickany of these buttons then disable
+the respective button.

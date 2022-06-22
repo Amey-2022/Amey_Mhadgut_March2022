@@ -1,0 +1,165 @@
+where are we.
+
+1. html give ids and know which part will change and which part will not change.
+2. setup event handling.
+3. complete the client part..
+3.1 what is output how it will be utilized in the page..
+4. come to the server part.
+in nodejs.
+think of the uri.
+think of reading the parameters
+send some output.
+5. come to the client again.
+do the .ajax call in jquery.
+
+
+I think it is super boring now, to create textbox , crete button, setup event handling
+this is  old thing for us now.
+
+yesterday story is very simple.
+1. we didnot write poems.
+example first step we proved database is working 
+we wrote database part without trying to use http.
+we write database part by using http.
+in all cases if we dont know which one is the event handling function
+then we have unlimited misery.
+
+
+summarize how to build server side and link client with server.
+one last program which starts with clientside, server side...
+
+what is next course of action.
+1. what we did with jquery
+event handling
+call the server.
+change parts of the html page.
+
+2. do it with react.
+event handling
+call the server.
+change parts of the html page.
+ 
+
+
+jquery, react..
+1. build the client part
+2. build the server part.
+3. link the client with server.
+
+exam question
+a scenraio with three textboxes and one button
+two events.
+two ajax calls
+insert, multi select.
+single select and update.
+90 minutes..
+
+people who write poems deserve misery and they should suffer.
+
+we will take a break till 4.00PM and join back..
+
+how do you accept multiple inputs.
+
+query parameters it is ok
+body of http request
+
+
+
+https://www.cleartrip.com/flights/results?adults=6&childs=2&infants=2&class=Economy&depart_date=14/07/2022&from=BOM&to=CCU
+
+
+
+https://www.redbus.in/bus-tickets/mumbai-to-mangalore?fromCityName=Mumbai&fromCityId=462&toCityName=Mangalore&toCityId=95222&onward=23-Jun-2022&srcCountry=IND&destCountry=IND&opId=0&busType=Any
+if your logic is taking any input, in the server do a console.log and see
+is input from the client reaching the server or not.
+obviously in the browser you will check whteher output from the server
+is reaching the client or not.
+before you start your db adventures.
+
+
+
+
+int x =3;
+if (  x> 1)
+  printf("hello");
+else if( x > 2)
+ printf("hi");
+else if( x ==3)
+ printf("great");
+
+program working or not working who cares, but read the error message completely.
+
+server is not working and we are trying to connect thru ajax pathetic thing
+avoid it..
+
+idea is
+always assume things have failed.
+only when you are 100% sure things have suceeded change the variable.
+
+
+
+
+
+
+1. client side correct.
+no link with server but we are sure about what is output, what is input
+how is input pickedup from html
+how is output showed in the html.
+what events we want to react to.
+
+
+2.write the server.
+again focus on input
+focus on output
+prove server can read input
+prove client can get output
+
+3. link client with server.
+.ajax call.
+
+4. in a separate program clarify your db adventures, why we are new..
+
+5. in the server , include the db part.
+
+program is over.
+
+
+
+
+
+
+
+nodejs 
+
+react while we are coding we use nodejs
+so figure out how to install react on nodejs how by visiting official website.
+how to create  hello world react app (is server invovled no. is textbox involved)
+
+react equivalent of $(()=>{ console.log("hello world jquery");} );
+
+jquery we learnt one syntax.
+react welcome to new syntax.
+angular welcome to new syntax.
+run behind syntax fastest way to be in the hospital.
+
+what we will do next
+whatever we did in jquery we will do it in react including contacting the server.
+
+assingments..
+convert jquery assingments into react.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,254 @@
+1. for people who did not understand in last 8 to 10 days today is a day
+we will summarize
+2. in terms of code, we will see how to talk with database from nodejs(telescope
+is important and not microscope .. more than syntax what is architecture we want)
+3. in terms of your focus .
+i like to read.. continue reading on javascript on the pdf given on wednesday.
+I like to program. ok try your best to code ajax programs using jquery for presentation
+and nodejs with express on your server side.
+4. install react on your system..
+
+
+what is assumption i i will do.
+html
+people who to create  textbox and atleast a button.
+span tag or p tag
+for any tag in html how to give a id.
+
+javascript
+1. setup the event..
+raw javascript  -- addEventListener
+by using jquery -- $("#b1").click(...
+2. how to access textbox content or html content.
+.val() or .html (with jquery
+.value or .innerText or  .innerHTML (raw -javascript without framework)
+
+CSS
+1. class.
+2. you can apply the class manually or by using javascript
+javascript
+without framework
+with jquery framework --this is important..
+
+nodejs.
+1.hello world nodejs program without any http.
+2. stupid thing of setting http server with inbuilt nodejs http module.( freaky
+not required.. but then we should know some module is there..)
+3. http server by using express framework.. (this is important)
+3.1 how to setup the server.
+3.2 how to setup the functions which get called for a particular URI
+app.get("/addItem",(req,res)=> {console.log("function to ac}
+
+how to do ajax in nodejs. 
+ajax is done on client side.
+
+how to do ajax in jquery or in react or in angular..
+how to do ajax in jquery, when server side used is nodejs.
+how to do ajax in jquery, when server side used is java or spring framework.
+
+this module and advanced java it is more about architecture and less about
+syntax..
+
+
+
+if we dont knwo the meaning of step by step.. poems will be written
+poems are horrible to debug..
+
+experience is an overrated thing in the IT industry.. so dont take xperience
+in IT industry seriously...
+20 years experience so what.. in this project show how useful you are..
+
+
+database 
+1. is nodejs database code difficult or java database code difficult
+or c++ database code difficult answer is  NO ...
+
+what is difficult is do we know database concepts..
+drop a table accidentally to get it back, what command should i use
+rollback or commit?
+
+people who do memory tests on database are unfit to be database programmers.
+what is memory test.
+giing wrong tablename
+giving wrong columnname
+giving wrong data type and finding out that  sql command is not working.
+from java or from nodejs from c++ is pathetic. do your sql command creativity
+on mysqsl console and not from java.. or .net or javascript world.
+
+
+mariadb you can use mysql nothing wrong both are cousins who got lost
+in a village fair..
+
+we have done zero programs in db with nodejs, so relax and assume our programs
+will not work..
+so complicate misery by adding http adventure to it..
+
+in any databse program.
+1. talking to table will happen if are connected to the databse in which the table
+is present.
+different technologies have diffeent names for concept that connect to the database
+in java World we use the word connection.
+in nodejs world we can use word connection.
+
+put all the energy on are we getting connection, I know insert command relax..
+that is not needed first focu son getting connection.
+
+how to get connection it is other person design, we cannot predict..
+so find out..
+
+1.database name we want to connect to.
+2. what is userid
+3. what is passowrd
+4. what is port on which database server is running.
+
+express modules was not by default installed during nodejs installation t/f =true
+similary databse part for which ever database we are using is not installed
+in nodejs so we have to install it. how... for mysql which module dont know
+find out..
+
+in official documentation there will be two things.
+
+1. guide  --text book - if new go this.
+2. documentation  -- dictionary
+
+ok our program should  contact the database in mysql
+what to do in nodejs.
+install a module called mysql2, how did i know .. rag picking in google and doing
+a poc.
+
+how to make database with mysql work in your system.
+
+
+1. install the mysql2 package .
+2. a01db.js
+double check userid, password, databasename portno and then run the a01db.js
+and check whether it is working.
+3. observe we did not use any http. not needed as of now.
+when it comes to database.
+1. insert
+2. update
+3. single select , where condtion on primary key
+4. multi select., where condition is non primary multiple rows can be expected
+5. brave people delete..
+
+
+let program not work it i sok.. but then read the complete error message
+two times.
+
+just like yesterday ajax. on all important functions
+dont be happy when it works, check yoursefl whether you know how to
+know when the function failed.
+
+11.00 to 11.30AMand we will try select command single select and multi select
+we will think how to put real databse in our server which uses http.
+
+
+1. show you can get connection
+2. con.query(sqlcommand, fillup?markswitharrayvalues, callback function(err,res){})
+how do you judge insert suceeded , success will get called.
+how do you know you got error in insert
+
+single select or multi select does not matter, database concept do you
+rmember when it comes to select  "cursor"
+it contains some rows and columns depending on your select query
+using this rows and columns is what we should do we tell we are selecting.
+
+we should see the select query in terms of what the where condition
+is where condition based on primary key or nont on primary key.. 
+
+itemno ( integer)  -pk
+itemname (varchar(15)
+itemprice (integer)
+
+
+select * from item where itemprice < 10;
+
+trying to put for loop and showing contents of the array in nodejs pathetic..
+not worth.. becuase that is presentation job
+what is server job, give the array to the presentation.. let the presentation
+decide to what to do..
+
+
+con.query(1,2,3)
+1 parameter is your sql comand with ?
+2 parameter is an array which will fill up the ?
+3 paramter is call back function..this function will be called by the system
+after the query has got executed.
+
+insdie this call back function.
+insert, update or delete 
+second object you get is status of your insert, update or delete. 
+you look for affected rows.. when during insert,update, or delete.
+
+(err, x) => { }
+if you are using insert, update or delete look for this property x.affectedRows.
+if you are using select, then know 100% x is an array its length will tell you
+wherhe where succeded or where failed.
+
+now we plan to link a01ajax.html with real database and get things going.
+
+how do you start understand html.
+
+1. start with html first. and not with javascript.
+2. think what is logic you plan to do and what is input and what is output
+and how the output will be used..
+input is userid and password.
+output is some object.. { status: true , message:ldfslsfd  } who told us
+nobody it is our design.
+
+what is input needed
+what is output
+cannot be copy pasted from google we have to think..
+3. focus on the event.
+which event you want to contact the server.
+
+
+I want to contact databse.. whre in the client or in the server?
+in the server. so opening html file and thinking what to write to contact database
+total stupidness.
+
+i want to make web talk with database, but i am doing my first database program
+now. horrible then dont touch web focus on databsae only..
+
+the most important thing in the server, after we connected with databse.
+we are sending data to the client ie resp.send(), not in the call back function
+of the URI rather in call back function of the query, which we used in database.
+
+
+
+first understand the program
+
+a01one_ajax.html
+a07_wewithdb.js
+
+understand the database programs.
+and in a07_wewithdb.js look where are telling resp.send...
+try the assingments doubts..
+
+
+hopefully you understand that we dont need more syntax in html or javascript
+or css or nodjs, what we need minimum syntax and build the architecture first
+properly..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

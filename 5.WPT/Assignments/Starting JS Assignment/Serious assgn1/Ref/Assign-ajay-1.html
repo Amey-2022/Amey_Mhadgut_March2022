@@ -1,0 +1,165 @@
+<html>
+<head>
+    <script>
+    
+       
+
+    window.addEventListener("DOMContentLoaded", ()=>{
+        console.log("Started Running");
+
+
+        const arr=[];
+        for (let index = 0; index <10; index++) {
+             let x=Math.floor(Math.random()*100)+1;              
+           arr.push(x);
+            
+        }
+       
+
+    function showAll(){
+        document.querySelector("#msg").innerHTML='All Elements are :'+arr.toString();
+
+    }
+
+    function checkNum(x){
+            for (let index = 0; index < arr.length; index++) {
+                if(x == arr[index])
+                {
+                    console.log("Already elemet present");
+                    return true;
+                }
+
+              }
+            return false;
+         }
+
+
+
+        
+        //Text blur event.............
+      const textId=document.querySelector("#t1");
+      
+      textId.addEventListener('blur',()=>{
+       
+        let textId=document.querySelector('#t1').value;
+
+       
+        
+          if(checkNum(textId)){
+
+
+            console.log("Edit and Delete option available");
+
+            document.querySelector("#edit").disabled=false;
+            document.querySelector("#delete").disabled=false;
+            document.querySelector("#add").disabled=true;
+            document.querySelector("#viewAll").disabled=true;
+            document.querySelector("#showOdd").disabled=true;
+           
+                
+        }else{
+
+
+                console.log("Edit and delete option disabled");
+
+                    document.querySelector("#add").disabled=false;
+                    
+                    document.querySelector("#edit").disabled=true;
+                    document.querySelector("#delete").disabled=true;
+                    document.querySelector("#viewAll").disabled=false;
+                    document.querySelector("#showOdd").disabled=false;
+            
+
+                }
+
+                });
+
+                //Add Event....
+           const addNum=document.querySelector('#add');
+           addNum.addEventListener('click',()=>{
+          
+            arr.push(document.querySelector('#t1').value);
+
+            document.querySelector("#add").disabled=true;
+           
+
+           });  
+           
+           // ViewAll Event ...
+           const viewAll = document.querySelector('#viewAll');
+           viewAll.addEventListener('click',()=>{
+            showAll();
+           });
+
+         // Show Odd Position Event...
+           const showOdd=document.querySelector('#showOdd');
+           showOdd.addEventListener('click',()=>{
+               let arr1=[];
+               for(let i =0;i<arr.length;i++){
+                   if(i%2!== 0){
+                       arr1.push(arr[i]);
+                   }
+               }
+
+               document.querySelector("#msg").innerHTML= 'Odd Positions in List are: '+arr1.toString();
+           });
+
+
+           //Delete Event...
+
+           const deleteNum =document.querySelector("#delete");
+           deleteNum.addEventListener('click',()=>{
+               let textNum = document.querySelector("#t1").value;
+               arr.pop(textNum);
+               document.querySelector("#delete").disabled=true;
+               document.querySelector("#edit").disabled=true;
+               
+			   
+
+               document.querySelector("#msg").innerHTML='Number '+textNum+' deleted from list';
+			  
+           });
+
+           //Edit Event....
+        const editId=document.querySelector("#edit");
+        editId.addEventListener('click',()=>{
+           let original= document.querySelector('#t1').value;
+            let randomVal = Math.floor(Math.random()*100)+1;
+             let val = prompt("Enter the Value : "+"(Suggested Value "+randomVal+" )");
+             if(!checkNum(val)){
+                  arr.pop(original);
+                  arr.push(val);
+                  document.querySelector("#edit").disabled=true;
+                  document.querySelector("#delete").disabled=true;
+                 
+                  document.querySelector("#msg").
+                  innerHTML='Number '+original+' changed to '+val;
+
+            } else{
+            document.querySelector("#msg").innerHTML='Number '+original+' already present in the list';
+            }
+
+        });
+
+                
+
+    });
+    </script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <input type="text" id="t1" typeholder="Enter the number">
+    <br>
+    <button id="add" disabled> Add </button>
+    <button id="edit" disabled> Edit</button>
+    <button id="delete" disabled> Delete</button>
+    <button id="viewAll" disabled> View All</button>
+    <button id="showOdd" disabled> Show Odd Position</button>
+    <br>
+    <span id="msg">Data will be Shown Here</span>
+    
+</body>
+
+</html>

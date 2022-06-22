@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acno html</title>
+    <script>
+        window.addEventListener('DOMContentLoaded',()=>{
+            console.log("DOM Activated");
+
+            let acno=document.querySelector("#acno");
+            acno.addEventListener('blur',()=>{
+
+            let acno=document.querySelector("#acno").value;
+            
+            let account=getAccountDetails(acno);
+            if(account.acno != -1)
+            {
+                document.querySelector('#pin').value=account.pin;
+                document.querySelector('#balance').value=account.balance;
+                document.querySelector('#email').value=account.email;
+                document.querySelector('#msg').innerHTML="Account details found";
+
+            }else{
+                document.querySelector('#pin').value="";
+                document.querySelector('#balance').value="";
+                document.querySelector('#email').value="";
+                document.querySelector('#msg').innerHTML="Account details not found";
+            }
+
+
+        });
+
+        function getAccountDetails(accno){
+        
+            let account={};
+            if(accno == 1){
+
+                account.acno=accno;
+                account.pin=10;
+                account.balance=11;
+                account.email="A@B.com";
+
+            }else if(accno == 2){
+
+                account.acno=accno;
+                account.pin=20;
+                account.balance=21;
+                account.email="C@D.com";
+
+            }else{
+
+                account.acno= -1
+            }
+
+            return account;
+         }
+
+        });
+
+
+    </script>
+
+
+
+
+</head>
+<body>
+    <h1>Acno html</h1>
+    <input type="text"  placeholder="Account number" id="acno">
+    <span id="msg">what happened to accounts </span>
+        <br/>
+        <input type="text" placeholder="pin" id="pin">
+        <br/>
+        <input type="text" placeholder="balance" id="balance"/>
+        <br/>
+        <input type="text" placeholder="enter email" id="email">
+</body>
+</html>

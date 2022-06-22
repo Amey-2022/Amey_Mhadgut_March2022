@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,
+        option {
+            text-align: center;
+        }
+
+        body {
+            background-color: paleturquoise;
+        }
+    </style>
+
+    <script>
+        let user = [{
+            username: "ameypatekar",
+            password: "amey@123"
+        },
+        {
+            username: "ajayyadav",
+            password: "ajay@123"
+        }];
+
+        let admin = [{
+            username: "rajmotors",
+            password: "raj@123"
+        }];
+
+        window.addEventListener('DOMContentLoaded', () => {
+            console.log('dom loaded')
+            /*user login*/
+            let checkuser = document.querySelector('#user');
+            checkuser.addEventListener('click', () => {
+                document.querySelector('#admin').checked = false;
+                if (document.querySelector('#user').checked === true) {
+                    document.querySelector('#login').disabled = false;
+                    document.querySelector('#pwd').disabled = false;
+                    document.querySelector('#loginbtn').disabled = false;
+
+                    let log = document.querySelector('#loginbtn');
+                    log.addEventListener('click', () => {
+
+                        for (let i = 0; i < user.length; i++) {
+                            if ((user[i].username == document.querySelector('#login').value) && (user[i].password == document.querySelector('#pwd').value)) {
+                                document.querySelector('#vname').disabled = false;
+                                document.querySelector('#vtype').disabled = false;
+                                document.querySelector('#showall').disabled = false;
+                                document.querySelector('#loginmsg').innerHTML = "Login successful";
+                                break;
+                            }
+                            else {
+                                document.querySelector('#loginmsg').innerHTML = "Wrong Login Details"
+                                document.querySelector('#vname').disabled = true;
+                                document.querySelector('#vtype').disabled = true;
+                                document.querySelector('#showall').disabled = true;
+                                document.querySelector('#modify').disabled = true;
+                                document.querySelector('#delete').disabled = true;
+                            }
+                        }
+
+
+                    });
+
+                }
+            });
+
+            /*admin login*/
+            let checkadmin = document.querySelector('#admin');
+            checkadmin.addEventListener('click', () => {
+                document.querySelector('#user').checked = false;
+                if (document.querySelector('#admin').checked === true) {
+                    document.querySelector('#login').disabled = false;
+                    document.querySelector('#pwd').disabled = false;
+                    document.querySelector('#loginbtn').disabled = false;
+
+                    let log = document.querySelector('#loginbtn');
+                    log.addEventListener('click', () => {
+
+                        for (let i = 0; i < admin.length; i++) {
+                            if ((admin[i].username == document.querySelector('#login').value) && (admin[i].password == document.querySelector('#pwd').value)) {
+                                document.querySelector('#vname').disabled = false;
+                                document.querySelector('#vtype').disabled = false;
+                                document.querySelector('#showall').disabled = false;
+                                document.querySelector('#modify').disabled = false;
+                                document.querySelector('#delete').disabled = false;
+                                document.querySelector('#add').disabled = false;
+                                document.querySelector('#loginmsg').innerHTML = "Login successful";
+                                break;
+                            }
+                            else {
+                                document.querySelector('#loginmsg').innerHTML = "Wrong Login Details"
+                                document.querySelector('#vname').disabled = true;
+                                document.querySelector('#vtype').disabled = true;
+                                document.querySelector('#showall').disabled = true;
+                                document.querySelector('#modify').disabled = true;
+                                document.querySelector('#delete').disabled = true;
+                                document.querySelector('#add').disabled = true;
+                            }
+                        }
+
+
+                    });
+
+                }
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <h1>Vehicle Rental Management</h1>
+    <input type="checkbox" id="user">user
+    <input type="checkbox" id="admin">admin
+    <br><br>
+    Login Id : <input type="text" id="login" placeholder="Enter user name" disabled>
+    <br><br>
+    Password : <input type="password" id="pwd" placeholder="Enter password" disabled>
+    <br><br>
+    <button id="loginbtn" disabled>Login</button><span id="loginmsg"></span>
+    <br><br>
+    Enter Vehicle Name
+    <input type="text" id="vname" disabled>
+    <br><br>
+    Select Vehicle Type
+    <select id="vtype" disabled>
+        <option value="select"> Select</option>
+        <option value="2-Wheeler"> 2-Wheeler</option>
+        <option value="4-Wheeler"> 4-Wheeler</option>
+        <option value="Heavy Wheeler"> Heavy Wheeler</option>
+    </select>
+    <br><br>
+    Select Vehicle class
+    <select id="vclass" disabled>
+        <option value="select"> Select</option>
+        <option value="Economy class"> Economy class</option>
+        <option value="Luxury class">Luxury classr</option>
+
+    </select>
+    <br><br>
+    Heavy Wheeler Type
+    <select id="hvtype" disabled>
+        <option value="select"> Select</option>
+        <option value="Truck"> Truck</option>
+        <option value="Tempo"> Tempo</option>
+        <option value="Cargo Tempo">Cargo Tempo</option>
+
+    </select>
+
+    <br><br>
+    Heavy Vehicle Usage
+    <select id="hvtype" disabled>
+        <option value="select"> Select</option>
+        <option value="National permit"> National permit</option>
+        <option value="Local"> Local</option>
+
+
+    </select>
+
+    <br><br>
+    <button id="add" disabled>Add Vehicle</button>
+    <button id="modify" disabled>Modify Vehicle</button>
+    <button id="delete" disabled>Delete Vehicle</button>
+    <button id="showall" disabled>Show all Vehicles</button>
+
+
+
+</body>
+
+</html>

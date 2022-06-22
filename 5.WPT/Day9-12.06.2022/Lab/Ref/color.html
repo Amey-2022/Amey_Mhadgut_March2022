@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #d1{
+            width: 300px;
+            height: 150px;
+            margin-left: 37%;
+            border: 1px solid black;
+
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        input{
+            margin: 50px;
+            margin-left: 15%;
+        }
+
+    
+    </style>
+
+    <script>
+
+        window.addEventListener('DOMContentLoaded',()=>{
+            let redcolor=0;
+            let greencolor=0;
+            let bluecolor=0;
+            
+            let color;
+
+            let red = document.querySelector('#red');
+            red.addEventListener('change',()=>{
+                console.log('red event created');
+                redcolor=document.querySelector('#red').value;
+                color='rgba('+redcolor+' '+greencolor+' '+bluecolor+')';
+                document.querySelector('#d1').style.backgroundColor=color;
+                document.querySelector('#redval').innerHTML=redcolor;
+            });
+
+            let green = document.querySelector('#green');
+            green.addEventListener('change',()=>{
+                console.log('green event created');
+                greencolor=document.querySelector('#green').value;
+                color='rgb('+redcolor+' '+greencolor+' '+bluecolor+')';
+                document.querySelector('#d1').style.backgroundColor=color;
+                document.querySelector('#greenval').innerHTML=greencolor;
+            });
+
+            let blue = document.querySelector('#blue');
+            blue.addEventListener('change',()=>{
+                console.log('blue event created');
+                bluecolor=document.querySelector('#blue').value;
+                color='rgb('+redcolor+' '+greencolor+' '+bluecolor+')';
+                document.querySelector('#d1').style.backgroundColor=color;
+                document.querySelector('#blueval').innerHTML=bluecolor;
+            });
+        });
+    </script>
+</head>
+<body>
+<h1 > Color Scale </h1>
+<div id="d1"></div>
+
+<input type="range" min="0" max="255" value="0"  id="red">
+<input type="range" min="0" max="255" value="0" id="green">
+<input type="range" min="0" max="255" value="0" id="blue">
+
+<span style="color: red; margin-left: 19%; font-size: 30px;">Red</span>
+<span style="color: green; margin-left: 24.5%; font-size: 30px;">Green</span>
+<span style="color: blue; margin-left: 25%; font-size: 30px;">Blue</span>
+<br><br>
+
+<span id="redval" style="color: red; margin-left: 20%; font-size: 30px;">0</span>
+<span id="greenval" style="color: green; margin-left: 28%; font-size: 30px;">0</span>
+<span id="blueval" style="color: blue; margin-left: 29%; font-size: 30px;">0</span>
+
+
+</body>
+</html>

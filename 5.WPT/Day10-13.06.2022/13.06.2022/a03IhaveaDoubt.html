@@ -1,0 +1,43 @@
+<html>
+<head>
+
+<script>
+
+
+console.log("all tags interpreted");
+let x = document.getElementsByClassName('r');//return a collection
+let y = document.querySelector(".r");//will never return
+// a collection it returns a single object.
+console.log(x);
+console.log(y);
+
+
+
+window.addEventListener('DOMContentLoaded', 
+()=>{
+let x = document.getElementsByClassName('r');
+console.log("after page processed");
+console.log(x);
+
+
+});
+
+
+</script>
+
+<style>
+.r { color:red}
+
+</style>
+
+
+<style>
+</style>
+</head>
+<body>
+<div class="r"> this is h1</div>
+<div class="r"> this is h2</div>
+</body>
+
+
+</html>

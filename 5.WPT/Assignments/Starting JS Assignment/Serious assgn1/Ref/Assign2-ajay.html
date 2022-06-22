@@ -1,0 +1,316 @@
+<html>
+    <head>
+        <script>
+
+            window.addEventListener("DOMContentLoaded",()=>{
+                console.log("Program Begins");
+
+
+                const emp=[
+                    {
+                        empNo:1,
+                        empName:'Abc',
+                        email:'abc@company.com',
+                        deptId:'01',
+
+                    },{
+                        empNo:2,                                              
+                        empName:'Def',
+                        email:'def@company.com',
+                        deptId:'02',
+                    },{
+                        empNo:3,
+                        empName:'Pqr',
+                        email:'pqr@company.com',
+                        deptId:'01',
+                    },{
+                        empNo:4,
+                        empName:'Xyz',
+                        email:'xyz@company.com',
+                        deptId:'02',
+                    }
+                ];
+
+               
+
+             
+
+               
+      // Blur Event....................
+
+                const textEvent=document.querySelector("#empNo");
+                textEvent.addEventListener('blur',()=>{
+                    console.log("Blur event working");
+                    let empno=document.querySelector("#empNo").value;
+                    let output=getEmpDetails(empno);
+
+                    if(output.result){
+
+                         document.querySelector("#empName").value=output.empDetails.empName;
+                         document.querySelector("#email").value=output.empDetails.email;
+                         document.querySelector("#deptId").value=output.empDetails.deptId;
+                  
+
+                         document.querySelector("#modify").disabled=false;
+                         document.querySelector("#remove").disabled=false;
+                         document.querySelector("#add").disabled=true;
+                        
+                    }else{
+
+                        document.querySelector("#empName").value="";
+                        document.querySelector("#email").value="";
+                        document.querySelector("#deptId").value="";
+
+                        document.querySelector("#modify").disabled=true;
+                         document.querySelector("#remove").disabled=true;
+                         document.querySelector("#add").disabled=false;
+                        
+
+                    }
+
+
+                }); //Blur Event Ended....
+
+
+        //Add Event....
+
+                const addEmp=document.querySelector("#add");
+                addEmp.addEventListener('click',()=>{
+                    console.log("Add Event working");
+                   
+                    let dummy={ empNo:document.querySelector('#empNo').value,
+                        empName:document.querySelector('#empName').value,
+                        email:document.querySelector("#email").value,
+                        deptId:document.querySelector('#deptId').value
+                     };
+
+                  if(addElement(dummy))
+                  document.querySelector("#changes").innerHTML="New Employee  Added";
+                  else
+                  document.querySelector("#changes").innerHTML="Cannot Add Employee With Same EmpNo";
+
+
+                }); //Add Event Ended.......
+
+
+       
+       // Modify Event...
+
+                const modify=document.querySelector("#modify");
+                modify.addEventListener('click',()=>{
+                    console.log("Modify Event working");
+                    let dummy={ empNo:document.querySelector('#empNo').value,
+                    empName:document.querySelector('#empName').value,
+                    email:document.querySelector("#email").value,
+                   deptId:document.querySelector('#deptId').value
+                };
+
+                   if(modifyElement(dummy)){
+                       document.querySelector('#changes').innerHTML='Employee Details Modified';
+                   }else{
+                   document.querySelector('#changes').innerHTML='Already Modified';
+
+                   }
+                }); // Modify Event Ended......
+
+
+
+
+        //Remove Event...
+
+                const removeElement = document.querySelector("#remove");
+                removeElement.addEventListener('click',()=>{
+                    console.log("Remove Event working");
+
+                    let temp = document.querySelector("#empNo").value;
+                   if( removeEmp(temp))
+                   document.querySelector('#changes').innerHTML='Emp Details Removed';
+                   else
+                   document.querySelector('#changes').innerHTML='Details not Found';
+                    document.querySelector("#modify").disabled=true;
+
+                }); //Remove Event Ended....
+
+        
+        //View All Event
+
+                const viewAll=document.querySelector("#viewAll");
+                viewAll.addEventListener('click',()=>{
+                  
+                    console.log("ViewAll Event working");
+                  let msg=viewAllEmp();
+                
+                    document.querySelector("#msg").innerHTML="Details of Employee:<br>"+msg;
+                    document.querySelector("#changes").innerHTML="Showing All  Employee"; 
+
+                }); // View All Event Ended.........
+
+        
+        
+        // View By DeptId.......  
+                const deptNew = document.querySelector("#viewId");
+                      deptNew.addEventListener('click',()=>{
+                        console.log("ViewById Event working");
+
+                        let deptNewId = document.querySelector("#deptId").value;
+                        
+                        document.querySelector("#msg").innerHTML=showEmp(deptNewId); 
+                        document.querySelector("#changes").innerHTML="Showing Results For Employee"; 
+
+
+                      }); // View By DeptId Event Ended.....
+
+
+    // All Functions Goes Here............
+
+         function getEmpDetails(empno) {
+                   
+                   let output ={ result:false, empDetails:{}};
+                   for(let i=0; i < emp.length; i++)
+                   {
+                   if(emp[i].empNo == empno )
+                   {	
+                      
+                       output.empDetails=emp[i];
+                       output.result=true;
+                      return output;
+                   }
+
+                   }
+                   return output;
+                   }
+
+
+        function addElement(dummy){
+
+           for (let i = 0; i < emp.length; i++) {
+
+                if(emp[i].empNo==dummy.empNo){
+                   return false;
+                }
+
+           }
+               emp.push(dummy);
+               return true;
+
+            }
+
+
+        function modifyElement(dummy){
+
+           for (let i = 0; i < emp.length; i++) {
+
+                  
+                if(emp[i].empNo==dummy.empNo && emp[i].empName==dummy.empName 
+                    && emp[i].email==dummy.email && emp[i].deptId==dummy.deptId ){
+                                        
+                        return false;
+                    }
+
+                        emp[i].empNo= dummy.empNo;
+                        emp[i].empName= dummy.empName;
+                        emp[i].email= dummy.email;
+                        emp[i].deptId= dummy.deptId;
+
+                        return true;
+                      
+                   }
+                 
+            }
+
+
+           function removeEmp(temp){
+                    for (let i = 0; i < emp.length; i++) {
+                        if(emp[i].empNo==temp){
+                            let tempEmp={};
+                            tempEmp=emp[i];
+                            emp.splice(i,1); 
+                            return true;
+                        }
+                        
+                    }
+                    return false;
+
+                }
+
+
+           function showDetails(){
+                    for (let i = 0; i < emp.length; i++) {
+                    
+                        document.querySelector('#msg').innerHTML= emp[i].empNo;
+                    }
+                }
+
+
+
+
+           function showEmp(deptNewId){
+                let  msg="";
+              
+                let count =0;
+                            
+                for (let i = 0; i < emp.length; i++) {
+                        
+                    if(emp[i].deptId === deptNewId){
+                           
+                         msg += "<Br/>" +"EmpNo == "+emp[i].empNo + ", EmpName == " + emp[i].empName +", EmailId == "
+	                                + emp[i].email+","+" DeptId == "+ emp[i].deptId ; 
+                            
+                        count=count+1;
+                             
+                        }
+                       
+                    }
+					 if(count == 0 ){
+                        
+                            return "Employee Not Found";
+                        }
+                        
+                    return msg;
+                    
+                }
+
+
+
+
+
+            function viewAllEmp(){
+                let msg='';
+                for (let i = 0; i < emp.length; i++) {
+                        
+                    msg += "<Br/>" +"EmpNo == "+emp[i].empNo + ", EmpName == " + emp[i].empName +", EmailId == "
+                            + emp[i].email + ", DeptId == "+ emp[i].deptId;
+                        
+                   }
+                        return msg;
+                }
+
+
+
+                }); //DOM Event Ended......
+
+
+            
+        </script>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <input type="text" id="empNo" placeholder="EmpNo"> 
+        <span id="changes">What Happened</span>
+        <br><input type="text" id="empName" placeholder="EmpName">
+        <br><input type="text" id="email" placeholder="Email">
+        <br><input type="text" id="deptId" placeholder="DeptId">
+      <br><br>
+        <button id="add" disabled>Add</button>
+        <button id="modify" disabled >Modify</button>
+        <button id="remove" disabled >Remove</button>
+        <button id="viewAll"  >ViewAll</button>
+        <button id="viewId"  >View On DeptId</button>
+        <br><br>
+        <span id="msg">Details will be shown Here</span>
+
+
+    </body>
+</html>

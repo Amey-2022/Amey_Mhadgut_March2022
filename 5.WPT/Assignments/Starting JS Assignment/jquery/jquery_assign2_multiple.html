@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery 2 multiples</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" ></script>
+    <script>
+        $(()=>{
+            console.log('event created');
+
+            $('#mult5').click(()=>{
+                let t1=$('#t1').val();
+                if(t1=="")
+                $('#msg').text("Please enter number");
+                else{
+                    let result=t1*5;
+                    $('#msg').text(+t1 +" multiple of 5 is : "+result);
+                }
+            });
+
+            $('#mult7').click(()=>{
+                let t1=$('#t1').val();
+                if(t1=="")
+                $('#msg').text("Please enter number");
+                else{
+                    let result=t1*7;
+                    $('#msg').text(+t1 +" multiple of 7 is : "+result);
+                }
+            });
+
+            $('#b1').click(()=>{
+                $('#t1').val("");
+                $('#msg').text("Multiplication");
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Enter a number" id="t1">
+    <span id="msg">Multipication</span>
+    <br>Multiply by 5 <input type="radio" name="mult" id="mult5">
+    Multiply by 7 <input type="radio" name="mult" id="mult7">
+    <br><button id="b1">Clear</button>
+</body>
+</html>

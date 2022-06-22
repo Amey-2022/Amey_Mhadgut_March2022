@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBassign1Q4</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(()=>{
+            console.log("DomLoaded");
+
+            $('#t1').blur(()=>{
+                console.log("blur on pincode");
+            
+            let ip={pincode: $('#t1').val()};
+            
+            let paramtofunction=
+            {
+                data:ip,
+                url: "http://localhost:786/areadetails",
+                type:'get',
+                dataType: "JSON",
+                success: (dgbs)=>{
+                    
+                    if(dgbs.status===true){
+                        console.log("ok.. data given by server " +dgbs.status)
+                        $('#t2').val(dgbs.city);
+                        $('#msg').html(dgbs.message);
+                    }else{
+                        console.log("ohh.. data given by server " +dgbs.status)
+                        $('#t2').val(dgbs.city);
+                        $('#msg').html(dgbs.message);
+                    }
+                },
+                error: (dgbs)=>{
+                    console.log("failed to connect " +dgbs.status)
+                }
+            };
+            $.ajax(paramtofunction);
+
+
+
+
+
+
+
+
+
+
+
+
+
+            });
+
+       
+    
+       
+        });
+    </script>
+</head>
+<body>
+    <h1>Question 4</h1>
+    <input type="text" placeholder="PINCODE" id="t1">
+    <br/>
+    <input type="text" placeholder="Location" id="t2">
+    <br/>
+    <span id="msg">Message</span>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color and underline</title>
+    <style>
+        .r{color: red;}
+        .u{text-decoration: underline;}
+    </style>
+    <script>
+        window,addEventListener('DOMContentLoaded',()=>{
+            console.log('DOM loaded');
+
+            const b1=document.querySelector('#b1');
+            b1.addEventListener('click',()=>{
+                console.log("Button clicked");
+
+                document.querySelector('#msg').innerHTML=document.querySelector('#t1').value;
+
+                if(document.querySelector('#red').checked===true && document.querySelector('#ul').checked===true)
+                    {
+                        msg.classList.add('r');
+                        msg.classList.add('u');
+                    }
+                else if(document.querySelector('#red').checked===true && document.querySelector('#ul').checked===false)
+                    {
+                        msg.classList.add('r');
+                        msg.classList.remove('u');
+                    }
+                else if(document.querySelector('#red').checked===false && document.querySelector('#ul').checked===true)
+                    {
+                        msg.classList.remove('r');
+                        msg.classList.add('u');
+                    }
+                else
+                    {
+                        msg.classList.remove('r');
+                        msg.classList.remove('u');
+                    }
+            });
+
+            const b2=document.querySelector('#b2');
+            b2.addEventListener('click',()=>{
+                console.log('reset clicked');
+
+                document.querySelector('#msg').innerHTML="";
+
+            });
+        
+
+        });
+    </script>
+</head>
+<body>
+    <h1>Assignment no 1 12.06.2022</h1>
+    <h2>Color and UnderLine</h2>
+    <input type="text" id="t1"> <span id="msg"></span>
+    <br/>
+    Red Color<input type="checkbox" id="red">
+    Underline<input type="checkbox"  id="ul">
+    <br/>
+    <button id="b1">Apply</button>
+    <button id="b2">Reset</button>
+</body>
+</html>

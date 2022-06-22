@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <style>
+
+        </style>
+
+        <script>
+            //window => corresponds to browser object
+            //addEventListener => genereal function to register for any event
+            //'DOMContentLoaded' => name of the event
+            //function need to be call when event occurs
+            window.addEventListener('DOMContentLoaded',()=>
+            {
+                console.log("Event created");
+                //got access the button in the button
+                //querySelector => querySelector is a function of document object. We are telling through the function locate the element
+                // with the id b1
+                //got access on button whose id is b1.
+                const b1 = document.querySelector("#b1");
+
+                //setting up event on button whose id is b1.
+                b1.addEventListener('click',()=>
+                {
+                    console.log("is buton is clicked");
+                    const t1 = document.querySelector("#t1");
+                    const msg = document.querySelector("#msg");
+
+                    //.value => used for ui componet like text, button etc...
+                    let result=fifthMultiple(t1.value);
+                    //.innerHTML => used for span,h1,paragraph etc..
+                    msg.innerHTML="Fifth Multiple of "+t1.value+" is : "+result;
+                }
+                );
+
+                function fifthMultiple(x)
+                {
+                    return x*5;
+                }
+                const b2 = document.querySelector("#b2");
+
+                //setting up event on button whose id is b2.
+                b2.addEventListener('click',()=>
+                {
+                    console.log("is buton is clicked");
+                    const t1 = document.querySelector("#t1");
+                    const msg = document.querySelector("#msg");
+
+                    //.value => used for ui componet like text, button etc...
+                    let result=seventhMultiple(t1.value);
+                    //.innerHTML => used for span,h1,paragraph etc..
+                    msg.innerHTML="Seventh Multiple of "+t1.value+" is : "+result;
+                }
+                );
+
+                function seventhMultiple(x)
+                {
+                    return x*7;
+                }
+
+            }
+            );
+
+            
+        </script>
+    </head>
+    <body>
+        <input type="text" id="t1"> <span id="msg"> X </span>
+        <br>
+        <input type="button" id="b1" value="5th multiple">
+        <br>
+        <input type="button" id="b2" value="7th multiple">
+
+    </body>
+
+</html>

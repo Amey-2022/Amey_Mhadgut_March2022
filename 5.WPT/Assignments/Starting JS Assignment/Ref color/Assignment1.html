@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .r{color: red; }
+        .u{text-decoration: underline;}
+    </style>
+
+    <script>
+        window.addEventListener('DOMContentLoaded',()=>{
+            console.log("DOMContentLoaded event created");
+            const b1=document.querySelector("#b1");
+
+            b1.addEventListener('click',()=>{
+                console.log("click event created");
+                
+                document.querySelector("#msg").innerHTML = document.querySelector("#t1").value;
+                
+                //console.log(msg);
+                if(document.querySelector("#cr").checked===true && document.querySelector("#cu").checked===true)
+                {
+                    msg.classList.add("u");
+                    msg.classList.add("r");
+                }
+                else if(document.querySelector("#cr").checked===true && document.querySelector("#cu").checked===false)
+                {
+                    msg.classList.remove("u");
+                    msg.classList.add("r");
+                }
+                else if(document.querySelector("#cr").checked===false && document.querySelector("#cu").checked===true)
+                {
+                    msg.classList.add("u");
+                    msg.classList.remove("r");
+                }
+                else
+                {
+                    msg.classList.remove("u");
+                    msg.classList.remove("r");
+                }
+
+
+            });
+            
+        });
+    </script>
+</head>
+<body>
+    <h1>Asignment No.1</h1>
+    <input type="text" id="t1" placeholder="Enter Something">
+    <span id="msg">Message</span>
+    <br>
+    Red Color <input type="checkbox" id="cr">
+    UnderLine <input type="checkbox" id="cu">
+    <br><br>
+    <button id="b1">Apply</button>
+
+</body>
+</html>

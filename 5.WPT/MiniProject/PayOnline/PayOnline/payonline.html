@@ -1,0 +1,561 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="htmlcss bootstrap menu, navbar, hover, vanilla js, nav menu CSS examples" />
+	<meta name="description" content="Bootstrap 5 navbar hover example with vanilla javascript by bootstrap methods" />
+	<link rel="shortcut icon" href="../PayOnline/images/logo.png" type="image/x-icon">
+	<title>PayOnline </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+		crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+
+
+	<!--   CSS -->
+
+	<link rel="stylesheet" href="payonline.css">
+
+	<script type="text/javascript" src="./payonline.js"></script>
+
+</head>
+
+<body>
+
+
+
+
+
+	<div class="container-fluid" id="firstpage">
+
+		<!-- ============= COMPONENT ============== -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top fw-bold">
+			<div class="container-fluid">
+
+				<a class="navbar-brand" href="" id="payonline"> <img src="../PayOnline/images/title.png" alt=""> </a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="main_nav">
+					<ul class="navbar-nav">
+
+						<li class="nav-item dropdown" id="navbank">
+							<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Bank </a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#" id="bankT0"> Link Bank Account</a></li>
+								<li><a class="dropdown-item" href="#" id="bankT1"> Bank Transfer</a></li>
+								<li><a class="dropdown-item" href="#" id="bankT2"> Bank Balance </a></li>
+								<li><a class="dropdown-item" href="#" id="bankT3"> Bank Transactions </a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown" id="navwallet">
+							<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Wallet </a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#" id="walletT1"> Wallet Recharge</a></li>
+								<li><a class="dropdown-item" href="#" id="walletT2"> Wallet Balance </a></li>
+								<li><a class="dropdown-item" href="#" id="walletT3"> Wallet Transactions </a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#" id="about"> About </a></li>
+						<li class="nav-item"><a class="nav-link" href="#"> Services </a></li>
+						<li class="nav-item"><a class="nav-link" href="#" id="Reviews"> Reviews </a></li>
+						<li class="nav-item"><a class="nav-link" href="#" id="FeedBack"> FeedBack </a></li>
+					</ul>
+					<ul class="navbar-nav ms-auto">
+
+						<li class="nav-item"><a class="nav-link" href="#" id="userid"> </a></li>
+						<li class="nav-item"><a class="nav-link" href="login&signup.html" id="logout"> Log Out </a></li>
+						<li class="nav-item dropdown">
+
+						</li>
+					</ul>
+				</div> <!-- navbar-collapse.// -->
+			</div> <!-- container-fluid.// -->
+		</nav>
+
+		<!-- ============= COMPONENT END// ============== -->
+
+		<section class="section-content ">
+			<!-- 1st div display page-->
+
+			<div style="background-image:linear-gradient(to bottom right, #0100EC,#FB36F4); color: white; text-align: center; " id="dashboardpage">
+			<div>
+				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+					  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<img src="./images/display1.jpeg" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+						  <h5></h5>
+						  <p></p>
+						</div>
+					  </div>
+					  <div class="carousel-item">
+						<img src="./images/display2.jpeg" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+						  <h5></h5>
+						  <p></p>
+						</div>
+					  </div>
+					  <div class="carousel-item">
+						<img src="./images/display3.jpeg" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+						  <h5></h5>
+						  <p></p>
+						</div>
+					  </div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Next</span>
+					</button>
+				  </div>
+
+
+			</div>
+				
+
+			</div>
+
+
+			<!-- 2nd div Bank Transfer-->
+			<div style="background-image:linear-gradient(to bottom right, #0100EC,#FB36F4);color: white; text-align: center;height:100vh" id="divBankTransfer">
+				<br>
+				<h1>Bank Transfer </h1>
+				<br>
+				<form>
+					<div class="row mb-3 justify-content-center">
+						<label for="inputEmail3" class="col-sm-3 col-form-label fs-4">Account Number</label>
+						<div class="col-sm-2 fs-4">
+							<input type="password" class="form-control" id="inputEmail3">
+						</div>
+					</div>
+					<div class="row mb-3 justify-content-center">
+						<label for="inputPassword3" class="col-sm-3 col-form-label fs-4">Confirm Account Number</label>
+						<div class="col-sm-2 fs-4">
+							<input type="text" class="form-control" id="inputPassword3">
+						</div>
+					</div>
+					<div class="row mb-3 justify-content-center">
+						<label for="inputPassword3" class="col-sm-3 col-form-label fs-4">IFSC</label>
+						<div class="col-sm-2 fs-4">
+							<input type="text" class="form-control" id="inputPassword3">
+						</div>
+					</div>
+					<div class="row mb-3 justify-content-center">
+						<label for="inputPassword3" class="col-sm-3 col-form-label fs-4">Account Holder Name</label>
+						<div class="col-sm-2 fs-4">
+							<input type="text" class="form-control" id="inputPassword3">
+						</div>
+					</div>
+					<div class="row mb-3 justify-content-center">
+						<label for="inputPassword3" class="col-sm-3 col-form-label fs-4">Amount</label>
+						<div class="col-sm-2 fs-4">
+							<input type="text" class="form-control" id="inputPassword3">
+						</div>
+					</div>
+
+
+					<div class="row mb-3 justify-content-center">
+						<label for="inputEmail3" class="col-sm-3 col-form-label fs-4">Payment Option</label>
+						<div class="col-sm-2 fs-4">
+							<select class="form-control" id="inputEmail3">
+								<option value="">Select payment option</option>
+								<option value="visa">UPI</option>
+								<option value="mastercard">Wallet</option>
+								
+							</select>
+						</div>
+					</div>
+					<div class="row mb-3 justify-content-center">
+						<label for="inputEmail3" class="col-sm-3 col-form-label fs-4">Enter UPI PIN</label>
+						<div class="col-sm-2 fs-4">
+							<input type="password" class="form-control " maxlength="6" id=""
+								placeholder="6 Digit UPI PIN" required> 
+						</div>
+						
+					</div>
+
+
+					<br>
+					<button type="submit" class="btn btn-light btn-lg rounded-pill btn-outline-warning" id="banktransfersubmit">Proceed</button>
+					<br><br><br><br><br><br><br><br><br>
+
+				</form>
+			</div>
+
+
+			<!-- 3rd div  Bank balance page-->
+			<div style="background-image:linear-gradient(to bottom right, #0100EC,#FB36F4);color: white; text-align: center;height:100vh" id="divBankBalance">
+				<br><br>
+				<h1>Bank Balance </h1>
+				<br><br>
+				<form>
+					<div class="row mb-3 justify-content-center">
+						<label for="inputEmail3" class="col-sm-2 col-form-label fs-4">Enter UPI PIN</label>
+						<div class="col-sm-2">
+							<input type="password" class="form-control fs-4" maxlength="6" id="inputpin"
+								placeholder="6 Digit UPI PIN" required> 
+						</div>
+						
+					</div>
+					<br>
+					<button type="submit" class="btn btn-light btn-lg rounded-pill btn-outline-warning" id="balance_submit">Proceed</button>
+					<br><br>
+					<b><span class="text-dark fs-4" id="verifypin"></span></b>
+					<br><br>
+					<div class="row mb-3">
+						<h2><span id="displaybalance"></span></h2>
+						
+					</div>
+					<br><br><br>
+
+				</form>
+			</div>
+
+			<!-- 4th div  Bank Transfer Receipt-->
+			<div style="background-image:linear-gradient(to bottom right, #0100EC,#FB36F4);color: white; text-align: center;height:100vh" id="banktransferreceipt">
+				<br>
+				<h1>Bank Transfer Receipt </h1>
+				<br>
+				<h2>Transasction Successful </h2>
+				<br>
+				<form>
+					<div class="row mb-3 fs-4">
+						<p>Transaction ID : <span id="transactionid">--</span></p>
+					</div>
+					<div class="row mb-3 fs-4">
+						<p>Account Holder Name : <span id="accountholder">--</span></p>
+					</div>
+					<div class="row mb-3 fs-4">
+						<p>Account Number : <span id="accountnumber">--</span></p>
+					</div>
+					<div class="row mb-3 fs-4">
+						<p>Amount : <span id="receiptamount">--</span></p>
+					</div>
+					<div class="row mb-3 fs-4">
+						<p>Payment Option : <span id="paymentoption">--</span></p>
+					</div>
+					<div class="row mb-3 fs-4">
+						<p>Date & Time : <span id="datetime">--</span></p>
+					</div>
+					<br><br>
+
+				</form>
+			</div>
+
+
+			<!-- 5th div Wallet Recharge -->
+			<div style="background-image:linear-gradient(to bottom right, #0100EC,#FB36F4);color: white; text-align: center;height:100vh" id="divWalletRechargePage">
+				<br><br>
+				<h1>Wallet Recharge</h1>
+				<br><br>
+				<form>
+					<div class="row mb-3 justify-content-center">
+						<label for="inputPassword3" class="col-sm-2 col-form-label fs-4"> Recharge Amount</label>
+						<div class="col-sm-2 fs-4">
+							<input type="text" class="form-control " id="inputAmt" pattern="[0-9]{1,9}" required>
+						</div>
+					</div>
+					<div class="row mb-3 justify-content-center">
+						<label for="inputEmail3" class="col-sm-2 col-form-label fs-4">Enter UPI PIN</label>
+						<div class="col-sm-2">
+							<input type="password" class="form-control fs-4" id="walletinputpin" pattern="([1-9]{1}[0-9]{5}|[1-9]{1}[0-9]{3}\\s[0-9]{3})"
+								placeholder="6 Digit UPI PIN" required> 
+						</div>
+						
+					</div>
+					
+
+					<br>
+					<button type="submit" class="btn btn-light btn-lg rounded-pill btn-outline-warning" id="walletrechargesubmit">Proceed</button>
+					<br>
+					<br>
+					<b><span class="text-dark fs-4" id="walletverifypin"></span></b>
+					<br><br>
+					<div class="row mb-3">
+						<h2> <span id="displaywalletbalance"></span>  </h2>
+					</div><br><br><br>
+				</form>
+			</div>
+
+			<!-- 6th div Wallet balance -->
+			<div style="background-image:linear-gradient(to bottom right, #0100EC,#FB36F4);color: white; text-align: center;height:100vh" id="divWalletBalance">
+				<br><br>
+				<h1>Wallet Balance </h1>
+				<br><br>
+				<form>
+					<div class="row mb-3 justify-content-center">
+						<label for="inputEmail3" class="col-sm-2 col-form-label fs-4">Enter UPI PIN</label>
+						<div class="col-sm-2">
+							<input type="password" class="form-control fs-4" id="walletinputpin1"pattern="([1-9]{1}[0-9]{5}|[1-9]{1}[0-9]{3}\\s[0-9]{3})"
+								placeholder="6 Digit UPI PIN">
+						</div>
+					</div>
+					<br>
+					<button type="submit" class="btn btn-light btn-lg rounded-pill btn-outline-warning" id="walletbalsubmit">Proceed</button>
+					<br><br>
+					<b><span class="text-dark fs-4" id="walletverifypin1"></span></b>
+					<br><br><br>
+					<div class="row mb-3">
+						<h2><span id="diswalletbalance"></span></h2>
+					</div>
+					<br><br><br>
+
+				</form>
+			</div>
+
+
+			<!-- 9th div  Link Bank Account-->
+			<div style="background-image:linear-gradient(to bottom right, #0100EC,#FB36F4);color: white; text-align: center;height:100vh" id="divLinkBank">
+				<br><br>
+				<h1>Add Your Bank Account</h1>
+				<br><br>
+				<form>
+					<form>
+						<div class="row mb-3 justify-content-center ">
+							<label for="inputEmail3" class="col-sm-3 col-form-label fs-4">Account Number</label>
+							<div class="col-sm-2 fs-4">
+								<input type="password" class="form-control" id="inputEmail3">
+							</div>
+						</div>
+						<div class="row mb-3 justify-content-center">
+							<label for="inputPassword3" class="col-sm-3 col-form-label fs-4">IFSC Code</label>
+							<div class="col-sm-2 fs-4">
+								<input type="text" class="form-control" id="inputPassword3">
+							</div>
+						</div>
+						<br>
+						<button type="submit" class="btn btn-light btn-lg rounded-pill btn-outline-success fs-4">Add Bank Account</button>
+						<br>
+						<br><br><br><br><br><br><br><br>
+					</form>
+			</div>
+
+			<!-- 10th div  Feedback Form-->
+			 <div class="mt-0 " id="divfeedback" style="background-image:linear-gradient(to bottom right, #0100EC,#FB36F4);height:100vh">
+				
+					
+					<div class=" d-flex align-items-center justify-content-center ">
+						<div class="bg-white col-md-4 mt-3">
+							<div class="p-4 rounded shadow-md">
+								<div>
+									<h2 class="text-center">FeedBack Form</form></h2>
+								</div>
+								<div>
+									<label  class="form-label">Enter Name</label>
+									<input type="text"  class="form-control" placeholder="Enter Name" id="feedbackname" required>
+								</div>
+								<div class="mt-3">
+									<label  class="form-label">Enter Email</label>
+									<input type="text"  class="form-control" placeholder="Enter Email" id="feedbackemail" required>
+								</div class="mt-3">
+								
+								<div class="mt-3 mb-3">
+									<label  class="form-label">Message</label>
+									<textarea  cols="20" rows="6" class="form-control"
+										placeholder="message" id="addTxt"></textarea>
+								</div>
+								<button class="btn btn-primary" id="formsubmit">
+									Submit 
+								</button>
+							</div>
+						</div>
+						
+					</div>
+					
+				
+
+				</div>
+		
+
+				<!-- 11th div  Reviews-->
+				<div style="background-image:linear-gradient(to bottom right, #0100EC,#FB36F4);color: black; text-align: center;height:100vh" id="divReviews">
+				<div class="row" id="addfeedback">
+					<!-- <div class="col-sm-6 col-md-2 m-5 " id="addfeedback">
+					  <div class="card">
+						<div class="card-body">
+						  <h5 class="card-title" id="cardName"></h5>
+						  <p class="card-text" id="cardMsg"></p>
+						  
+						</div>
+					  </div>
+					</div> -->
+					
+					  
+				  </div>
+				</div>
+							
+			
+				
+			
+
+			<!-- 11th div  Aboutus-->
+			<div class="text-center" style="background-image:linear-gradient(to bottom right, #0100EC,#FB36F4); color: white;height:100vh" id="divabout">
+
+				<div >
+					
+					<h2 class="pt-5">We will bring</h2>
+					<h2 > Half-a-Billion Indians</h2>
+					<h2> to the Mainstream Economy.</h2>
+					<br>
+				</div>
+				<div>
+					<h2 class="textcontent pt-5">We started the Digital Revolution in India.<h2>
+
+							<h2 class="textcontent"> And we went on to become India’s leading Payments App.</h2>
+							<h2 class="textcontent">Today, more than 20 Million merchants &</h2>
+							<h2 class="textcontent"> businesses are powered by Online Money Transfer </h2>
+							<h2 class="textcontent"> to Accept Payments digitally.</h2>
+				</div>
+				<br>
+			</div>
+
+
+
+			<footer class="text-center text-lg-start text-white sm-left" style="background-color: #2f2e2e">
+				<!-- Section: Social media -->
+				<section class="d-flex justify-content-between p-4" style="background-image:linear-gradient(to bottom right, #121C84,#8278DA)">
+					<!-- Left -->
+					<div class="me-5">
+						<span>Get connected with us on social networks:</span>
+					</div>
+					<!-- Left -->
+
+					<!-- Right -->
+					<div>
+						<a href="" class="text-white me-4" style="text-decoration: none;">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="" class="text-white me-4" style="text-decoration: none;">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="" class="text-white me-4" style="text-decoration: none;">
+							<i class="fab fa-google"></i>
+						</a>
+						<a href="" class="text-white me-4" style="text-decoration: none;">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="" class="text-white me-4" style="text-decoration: none;">
+							<i class="fab fa-linkedin"></i>
+						</a>
+						<a href="" class="text-white me-4" style="text-decoration: none;">
+							<i class="fab fa-github"></i>
+						</a>
+					</div>
+					<!-- Right -->
+				</section>
+				<!-- Section: Social media -->
+
+				<!-- Section: Links  -->
+				<section class="">
+					<div class="container text-center text-md-start mt-5">
+						<!-- Grid row -->
+						<div class="row mt-3">
+							<!-- Grid column -->
+							<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+								<!-- Content -->
+								<h6 class="text-uppercase fw-bold">Pay Online</h6>
+								<hr class="mb-4 mt-0 d-inline-block mx-auto"
+									style="width: 60px; background-color: #02387b; height: 2px" />
+								<p>
+									PayOnline Services in India are provided by
+									PayOnline Payments Private Limited.
+									Users are advised to read the
+									terms and conditions carefully.
+								</p>
+							</div>
+							<!-- Grid column -->
+
+							<!-- Grid column -->
+							<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+								<!-- Links -->
+								<h6 class="text-uppercase fw-bold">About us</h6>
+								<hr class="mb-4 mt-0 d-inline-block mx-auto"
+									style="width: 60px; background-color: #7c4dff; height: 2px" />
+								<p>
+									<a href="#!" class="text-white" style="text-decoration: none;">Company</a>
+								</p>
+								<p>
+									<a href="#!" class="text-white" style="text-decoration: none;">Feedback</a>
+								</p>
+								<p>
+									<a href="#!" class="text-white" style="text-decoration: none;">Newsroom</a>
+								</p>
+								<p>
+									<a href="#!" class="text-white" style="text-decoration: none;">CSR</a>
+								</p>
+							</div>
+							<!-- Grid column -->
+
+							<!-- Grid column -->
+							<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+								<!-- Links -->
+								<h6 class="text-uppercase fw-bold">Useful links</h6>
+								<hr class="mb-4 mt-0 d-inline-block mx-auto"
+									style="width: 60px; background-color: #7c4dff; height: 2px" />
+								<p>
+									<a href="#" class="text-white " style="text-decoration: none;">Jobs</a>
+								</p>
+								<p>
+									<a href="#" class="text-white" style="text-decoration: none;">Sitemap</a>
+								</p>
+								<p>
+									<a href="#" class="text-white" style="text-decoration: none;">Developers</a>
+								</p>
+								<p>
+									<a href="#" class="text-white" style="text-decoration: none;">Partners</a>
+								</p>
+							</div>
+							<!-- Grid column -->
+
+							<!-- Grid column -->
+							<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+								<!-- Links -->
+								<h6 class="text-uppercase fw-bold">Contact</h6>
+								<hr class="mb-4 mt-0 d-inline-block mx-auto"
+									style="width: 60px; background-color: #7c4dff; height: 2px" />
+								<p><i class="fas fa-home mr-3"></i> Nariman Point, 400012, India</p>
+								<p><i class="fas fa-envelope mr-3"></i> payonline@gmail.com</p>
+								<p><i class="fas fa-phone mr-3"></i> + 022 91546784</p>
+								<p><i class="fas fa-print mr-3"></i> + 022 92456588</p>
+							</div>
+							<!-- Grid column -->
+						</div>
+						<!-- Grid row -->
+					</div>
+				</section>
+				<!-- Section: Links  -->
+
+				<!-- Copyright -->
+				<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+					© 2022 Copyright:
+					<a class="text-white" href="https://mdbootstrap.com/">payonline@gmailcom</a>
+				</div>
+				<!-- Copyright -->
+			</footer>
+
+
+		</section>
+
+	</div><!-- container //  -->
+
+
+</body>
+
+</html>

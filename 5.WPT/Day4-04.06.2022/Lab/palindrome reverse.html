@@ -1,0 +1,85 @@
+<html>
+<head>
+    <script>
+        window.addEventListener('DOMContentLoaded',()=>{
+          
+		  console.log( " Program started"  );
+
+
+
+       
+       //for palindrome Event
+        const pdd=document.querySelector("#pd");
+         pdd.addEventListener('click',()=>{
+
+            let comp=document.querySelector("#t1").value;
+            
+            let palindrom=checkPd(comp);
+            console.log("Palindrome Working");
+           
+        document.querySelector("#num").innerHTML=palindrom;
+           
+      
+
+        });
+
+        // For reverse Event
+        const rever=document.querySelector("#rev");
+        rever.addEventListener('click',()=>{
+            let comp=document.querySelector("#t1").value;
+
+           console.log("reverse Working");
+            let reverse=doReverse(comp);
+    
+            document.querySelector("#num").innerHTML=reverse;
+
+        });
+       
+
+        function checkPd(check){
+            const len = check.length;
+
+              // loop through half of the string
+            for (let i = 0; i < len / 2; i++) {
+
+              // check if first and last string are same
+               if (check[i] !== check[len - 1 - i]) {
+                    return 'It is not a palindrome';
+                 }
+              }
+           return 'It is a palindrome';
+        }
+		
+		
+		
+        function doReverse(check){
+            return check.split("").reverse().join("");
+        }
+
+      
+
+        });
+		
+		
+    </script>
+	
+    <style>
+
+    </style>
+</head>
+ <body>
+     <input type="text" placeholder="Enter the data" id="t1">
+     Result: <span id="num"></span>
+     <br>
+     <!--
+     Palindrome<input type="radio" name="calc" id="pd">
+     Reverse<input type="radio" name="calc" id="rev">
+      -->
+     <input type="button" name="calc" id="pd" value="Palindrome">
+     <input type="button" name="calc" id="rev" value="Reverse">
+
+     
+
+ </body>
+ 
+</html>

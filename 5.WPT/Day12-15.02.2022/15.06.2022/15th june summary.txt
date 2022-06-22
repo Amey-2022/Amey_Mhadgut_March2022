@@ -1,0 +1,419 @@
+framework and library, no time in project to think in these lines..
+
+spring, angular, react 
+framework.. it will have an opinion on architecture
+and then you ready made functions and classes.
+
+library = ready made functions and classes with
+no strong opinion on architecture..
+
+best thing we can do, learn the official version what they
+call it and stick to thier calling.
+
+jquery library 
+angular framework.
+
+reactas a library.
+
+
+
+where are we..
+
+1.can we setup events and access parts of html and change
+parts of html using 
+1.javascript without jquery
+2. javascript with jquery.
+
+2. yesterday we started seeing something called promise.
+it is not happening now it will happen one day..
+creation of promise.
+create a promise called x
+using of promise
+x.then(successfunction,failurefunction)
+person who created the promise
+using the promise
+are different people.
+
+3. what is a web service.
+3.1 we have some logic written  in a technology called X ( we have writen
+service using technology X. i have written addding of two numbers using java )
+service..
+
+3.2 we want the service function to be called from other technologies like Y, or Z.
+how to call it,we have wrap our service layer in http . call functions via http
+our logic functions how have we called so far.. answer is very simple
+by using functionname.
+ so far although we have used so "much ?" of so called web technology
+still we are zero in web technology why so far we have never used http
+in any of our examples.
+
+
+once you make it as web service what is advantage we get..
+any presentation can call it
+service is written in java.
+presentation can be written inpython
+presentation can be written in .net
+in our prsentation will be writtein in javascript..(react)
+example
+
+
+what is json..? people will chew the brain.
+
+expansion is JavaScript object notation.
+what is it?
+a string standard to represent variables.
+commonly used during web services.
+presentation and service pass variables in json format.
+
+nodejs
+1. server side javscript runtime.
+2. we want to build service layer and dao layer using nodejs.
+i want to something insert some row into the table by using nodejs.
+
+
+I want insert some row into the table by using jquery no no..
+
+
+1.to run java programs we need jvm do you agree.?
+2. to run nodejs programs we need the nodejs runtime.
+
+we are in the world of "mass scale copy paste"
+java guys will copy from python, python from java. .net guys from copy both..
+after copying these guys wants to show originality how to show origanlity
+simple change the name of it..
+
+spring framework
+
+In every programming we will have way to modularize our code..
+
+1. C header files.
+2. java --packages.
+3. javascript --same story think how to module system..
+to understnd module system or package or header files it is understood
+we should write more than 1 file do you agree.
+
+
+we have to learn node js how.
+first tinybit in nodejs
+1. simple javscript programs run it.
+2. module system. in nodejs
+3. how event handling works in nodejs.
+
+write a simple js function which returns upper case of a given string
+put in a separate .js file and try to use in another .js by using require syntax.
+
+just like in java we have many packages.
+nodejs comes with lot of inbuilt modules . modules for http. modules for io
+, modules of ...
+
+by default nodejs is event driven. that means you know our fate..
+our fate.. same fate like last 8 days..
+we were listening for the event.
+now in nodejs what we will do samething listen for the event.
+but earlier we were busy with click, blur, $, domcontentloaded.. 
+now we are busy with events like hey if ou have a http server.. then do this for me.
+if you are trying to insert command , then do this for me..
+
+ok we want to build a simple http server. how to build it anwer is simple
+we need to use nodejs http module how will it look like..
+
+
+after you create an object what do you do?
+call non static functions.
+where everywhere.. in java ..net., in python . in javascript.
+
+once we are in jquery, react or node js world whenever
+we see a fucntion being called ensure you read documentation
+
+what is reading documentation
+1. knowing what the function does.
+2. what is its input argument
+3. what is return type
+4. how do we know function suceeded or failed.
+reading documentation 100% never means knowing what is written inside
+the function no that is what we are interested in..
+
+what should a server do.
+1. get parametrs from the request.
+2. do some logic
+3. return some output via response
+this is what is expected from http request and http response.
+
+in nodejs syntaxes.
+1. after the hello world.
+2.one small example for module system.
+3. one small example for http.
+how do you read the parameter from the http request.. answer is depends
+on the framework you are using...
+
+1. java world you will get syntax.
+2. php world you will get syntax
+3. nodejs world you will get one syntax.
+syntaxes will vary .. dont byheart find out and use it.
+
+figure how to read a parameter from the request and send it as a response.
+syntax we are using is useless there are better mechanisms avaialble
+currently let us stick with only get mode of request..
+
+
+
+to build a nodejs program where input is a  number and return will
+be a 5th multiple of that number.
+
+
+
+https://localhost:99?adults=1&childs=0&infants=0,
+we should know how to read the parameters..
+
+
+https://localhost:99?adults=1&childs=0&infants=0, ==URL
+import the url module
+and parse the url we got from the user how..
+
+let x= url.parse(req.url);
+x.adults 
+x.child
+x.infant
+
+how do you create an object of the class Student in java.
+
+
+Student student =new Student(); //all real llife code will look like what is proof
+//open open source projects and see the style of coding.
+
+
+
+Student obj1=new Student();//kid not suitable for  project
+
+
+
+
+
+
+
+
+
+visual code.. tool --here we dont need to explore unencessary lot of plugins
+what we do is once we join the company ask the project team what plugins
+are you using and use it first.. first imitate, later on if we find interesting plugins
+we can suggest the project team hey we can use this plugin..
+
+tools is company specific..it is important.. but we cannot equate to the cost
+of knowing architecture..
+broom, vacuum cleaner..
+
+project success = process * technology * tools * ...
+we cannot be 5/5 in everything 
+aim for 2/5 in process
+aim for 3.5/5 in technology
+aim for 2/5 in tools.
+NO I will be 5/5in all the things, ok give a chocolate and run away from the person..
+
+
+worksapce folder as  workspace
+
+
+
+
+
+
+
+
+
+
+
+
+what is json
+
+moral of the story is.
+
+1. if you set up http server in any technology, ensure you learn the syntax
+of reading the paramter first and do some stupid loginc on the paramter
+and return it as a response...
+
+we will join back at 16.00.
+
+
+hope is you have done your some practicals on jquery and javacript
+we want do some practicals
+
+what happens in web technology of nodejs.
+http functionality.. inbuilt module of nodejs called http.
+there is a small library called express-js which again is used for building
+web applications on top of nodejs..
+dont byheart the syntax but do the programs mechanically..
+
+
+let us say we want to read three paramters
+from http request..
+1. empno
+2. empname.
+3. deptid.
+from the http request
+response. I want to show back these parameters.
+
+so far ..we use http module of nodejs which is inbuilt.
+we want to use some third party web framework on nodejs
+one such framework is express.
+
+what is npm.
+when we installed nodejs we had some libraries in our system.
+now we want to download some new libraries which are not part of nodejs
+default installation..
+how to install it.. NPM (expansion is Node Package Manager)
+what is this.. this is a mechanism thru which
+
+people who create libaries for nodejs can put in some central place
+in the internet, which is availalbe to everyone.
+
+npm will give you commands thru whcih we can download these libraries
+to our system.
+
+what does npm do , it tries to keep a file called package.json 
+what does it do, it carries the basic information about the project 
+and also it stores which libraries and which version of the libraries
+we are using in the project.
+
+later on we will see what is advantage of package.json
+using npm some X can publish the library
+and using npm some Y can use the library published by X.
+
+nodejs and npm are managed by different companies..
+I am installing express module in nodejs why. we want to build some
+small web applications by using express.
+
+earlier also we built yes.. by using inbuilt http module of nodejs
+now we are going to build by using express, we will meet many advantages
+becuase of using express. what is it we will see hold on.
+
+I want to work my sql in nodejs. ok install mysql library.
+
+const http = require('http');
+const url = require("url");
+http.createServer().listen(8080);
+
+
+
+is proof that we are not using express we are using nodejs inbuilt http module.
+
+in express the same thing, syntax will change becuase module name will change.
+const express = require('express');
+const app = express();
+app.listen(80, ()=>{});
+
+1. dont byheart any of the syntaxes..
+what was shown to you is to tell syntax will vary...
+
+in any http module what to observe.
+
+1. how the server is setup
+2. how the request is processed
+3. in express, we can differentiate requests by using something called URI.
+for example we can tell
+if the URI is login, then X function is called.
+if the URI is register, then Y function is called
+== registration for the events of http.
+
+
+self test..
+
+1. use inbuilt http module of nodejs.
+2. do you know how to read some parameters that
+comes as part of the URL.
+http://localhost:71?length=3&breadth=4
+read length and breadth... a04web.js.
+
+----------------------------------
+express.
+1. install express.
+using npm.
+2. set up a simple web server on port 800.
+if request is ijk. ensure a function prints Ijk in the browser.
+if request is pqr, ensrue a function prints pqr in the browser.
+------------------------------------------------------------------
+one simple advantage of using express is.
+
+when we have static html files. we can tell express hey when some makes
+the request for these html files dont process it, just give to the client
+as it is.
+
+for the first time you are seeing an html being used with http
+
+http://localhost:900/one.html
+---------------------------
+
+1. can you set up the server, can you set two different uri
+2. can you set up a static folder ( a folder which is not processed by the server)
+---------------------------------
+
+1. we have installed express module that is not part of nodejs.
+npm install express --save.. ( dont byheart on need basis find out and use it)
+
+
+http://localhost:900/login-- request is made..
+
+// request processing function
+app.get("/login",(req,resp)=>{
+
+    resp.send("ok for login we need to do some logic")//this is response.
+});
+
+
+in your project when you do.
+80% of service and dao in java ie spring boot
+20% keep it nodejs ie javascript.
+so that you can tell look I know how to build service and DAO in both javaas well
+as javascript
+
+presentation goes. 100% javascript
+90% javascript
+10% java (jsp, servlet)
+
+
+simplest thing in nodejs 
+1. setting http via nodejs inbuilt module
+just a request, read some parameter and show the response
+
+2. setting http via express module in nodejs
+tell different uri, will be processed by different functions.
+usage of the static folder.
+
+
+http://localhost:900/sf/one.html, it is mistaking for  URI
+and tells if you give this as a request, I dont have any function
+which can process it.
+
+now we have to tell express hey express , this is not what you should process.
+rather this is simple html file, you just give it as it is to the browser..which is client.
+this english how to do.. app.use(express.static("foldername"));
+
+
+finally itemscenario has becomea  web application.
+
+file:///D:/$$dacmumbai/15.06.2022/a02itemscenario.html, this is not a web
+application.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

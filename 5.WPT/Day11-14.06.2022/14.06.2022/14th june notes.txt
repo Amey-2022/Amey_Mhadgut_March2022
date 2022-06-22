@@ -1,0 +1,429 @@
+hopefully we know that we can do
+
+
+1. giving id in html
+2. setting events in javascript
+3. modelling input and output
+3.1 think how input is picked up from the ui.
+3.2 how the ouptut is used in the ui.
+4 stupid logic.
+
+-- above points hopefully everybody are comfortable ---
+
+5. how to contact server and get data.
+6. how to do routing ie go from one place to another
+example login to postlogn page. 
+postlogin page to update profile.
+7. session handling
+99% of web applications.
+
+jquery
+1. jquery is javascript a web based presentation framework 
+which helps in manipulating the dom.
+what is dom.. in the html we have tags. when the page is loaded
+these tags get represented in a hierarchy, example input tag
+may be under form, h1 tag may be under body... this hierarchy
+in memory is called as DOM.
+
+2. example. what you do in jquery.
+1. wait for the whole page to be loaded.. how use the $ function.
+2. setup events on the ui components based on need.
+3. access the ui components value or html tags innerText or innerHTML.
+4. if need be we can contact server by using some jquery functions
+like .get, .post. or .ajax.
+
+forget the words, can we contact the server from a javascript event handling
+function answer is yes.
+
+I hate framework. ok use the fetch api.
+I will use the framework, ok use the framework specific function.
+
+what the minimum things we are supposed to know in jquery.
+
+1. how to setup events.
+2. how to read ui componet input
+3. how to read html tags input.
+4. how to add or remove css classes from elements.
+5. how to contact server from jquery.
+
+
+
+try writing a01jquery.html without using jquery, using javascript without frameworks.
+observe lines of code, jquery will reduce lines of code, normal framework increses
+lines of code..
+
+all these syntaxes which we use for disablingor enabling .. most frameworks
+show unnecessary creativity and they will change the syntax for these things.
+hence learn new syntax.
+
+what syntax should we remember.
+
+1. syntax we have used in the project..
+
+in lab exam for web technology module you will give all the syntaxes
+only thing is you have to think how to use the syntax, this is my way
+of telling dont byheart syntax focus on architeccture first..
+
+
+what should you fous on lab.
+
+1. take some assingments any 3.
+one example must have an object array.
+try converting thta example into jquery.. whatever doubts you have let me know..
+
+
+ bit of jquery is over.
+
+
+asynchronous.. it wont happen now, it will happen in the future do you 
+agree.
+
+
+Future and CAllable.  in java.
+Promise in javascript
+welcome to real life, where same thing people are busy changing names
+to sound "unique"
+
+Promises in javascript.
+someactivity .. which happens in future.
+that activity if it succeeds you do an activity called 
+if fails you do an activity called Z.
+
+learn new syntax in javsacript called promise.
+
+what is it...
+1. some activity will occur one day..
+2. we need to to know what happened to the activity.
+2.1 suceeded  -- function that needs to get called when it suceeds
+2.2 failed  --function that needs to get called when it fails.
+
+
+we create a promise object.
+what do we pass to promise object, we pass a callback function.
+what is call back when some event occurs that function will be called.
+
+
+when we create a promise object we pass a function which takes two input
+arguments. 
+what are those input arguments, function that needs to be called during
+success and function that needs to be called during failure.
+
+people who did not understand promise relax.. but keep your focus in javascript
+now on topic called promise.
+
+we will join back at 16.00
+
+
+
+try to get some syntax in jquery.
+in javascript start looking at promises
+
+
+let myPromise = new Promise(function(myResolve, myReject) {
+  let x = 0;
+  console.log("is it working");
+// The producing code (this may take some time)
+
+  if (x == 0) {
+	console.log("x value is zero");
+    ;//myResolve("OK");
+  } else {
+    myReject("Error");
+  }
+});
+
+promise being created..
+promise being used.
+
+promise.then(f1, f2);
+f1 will get called when promise feels it suceeded
+f2 will get called when promise feels it failed.
+
+
+
+x.then when you see a syntax like this.
+it is better to assume that x is a promise..
+promise something is executing which will return after some time.
+
+during threads in java
+run method is called by us or called by the system..
+system.
+
+
+
+
+//defined the promise  -- is done person X  -- framework
+let x =new Promise((x,y)=>{z});
+we should x and y are functions
+in Z what we do some activity.
+judge whether activity is success  -- promise will call the function x 
+judge wheter activity is failure  -- promise will call the function y
+
+ 
+//use the promise  --person Y  --programmer
+x.then((correctdata)=> {   },
+          (faileddata)==> {  });
+p function will become x
+q function will become y
+
+number 1 reason for confusion in many technical topics is becuase kid is addicted
+to the word "I".
+
+example who wrote the super class I
+who wrote the subclass I
+100% gurantee the  person will not understand inheritance..
+
+who wrote the class I
+who created the object of the class I
+100% person will not understand constructor.
+
+
+
+Object is super class for every class in java , are we owners of object class.no
+we are writing class A, we are owner good subclass is written by a differnt person
+and super class is written by a different person
+so you know meaning of toString 
+
+
+jquery doing  --M
+jquery can give us a promise saying I will contact server..
+and I can detect whether contacting server suceeded or failed.
+but what you want me to do, that I cannot tell you only must tell me.
+
+what we are doing.
+
+take the promise of jquery  -- N
+heyjquerypromise.then((data)=>{ call this if you feel success },(error)=>
+{call this if you feel failure});
+
+
+
+
+
+
+
+
+what we will today.
+1. jquery  
+2. nodejs
+
+
+what are we trying to do practically.
+1. how to build some server side component ie a component
+that talks with the database .
+2. how to contact the client and the server 
+2.1 ajax   --mechanism of the client contacting the server
+in the background.
+xmlhttprequest
+fetch
+framework specific functions ( axios, .ajax in jquery...)
+
+
+
+
+
+
+
+
+
+fetch('http://example.com/movies.json')
+  .then(response => response.json(),error=> {console.log("getting data");})
+  
+
+
+
+
+
+if possible copy paste some java programs on Future and Callable
+copy paste some example on promise in javascript 2 examples
+not understanding ok..
+1. promise creation done by person X
+2. promise usage is done by person Y.
+
+
+Web services.
+web
+services. this is old word to indicate -- Logic we do.
+I am doing adding of two numbers, ok that is service.
+I am getting empno and getting emp detials ok that is a service.
+I am getting a pdf of insurance policies if i give mobile no, ok that is a service.
+what will service not have
+1. it will never have presenation..
+
+public int add(int x, int y)
+{
+return x+y;
+
+
+}
+service should never have presentation inside.. why only then service
+can be reused.
+
+service and presentation should never be mixed, this is minimum decency while
+writing code.
+web services.
+
+we have discussed service.
+what does web mean ? http.
+ok 
+
+nobody should use the word web service for a service layer which cannot
+be called via http.
+
+1. focus on the service and prove it works properly
+2. then think of web part for the service.
+
+why we should write webservice?
+we have service, and once we make it as web service
+different presentations call our service. example
+
+web service explain
+1. it is service only.
+2. we cover http on top of it .. why
+2.1 so that any kind of presentation can call the service.
+example adding of two numbers written in java.
+calling is done from python code.
+
+web service ensures service is callable by variety of presentation.
+
+
+
+simple english what we are trying to do
+1. we have ui. textbox button.
+2. we know input and output.
+3. we want the call the server from javascript event  ( promise comes in)
+4. server is going to called via http and it is going to return something
+called json.. to understand json we should know what is web service.
+
+
+
+
+we want the call the server from javascript event  ( promise comes in)
+example  -- we have entered an empno and we have clicked on the button.
+inside the click of the button we want to contact the server pass this empno
+and get details of the employee or get details of the error message and then
+use it in the page...)
+
+in computer science finally everything is just a series of function calls. do you agree.
+I am calling the service layer = I am calling the service function.
+
+if we are calling the function, then we must have input and output data types
+what the function takes.. do you agree.
+
+
+what is json, kids favourite question dont tell me what is  json
+expand json. .ok JavaScript Object Notation..
+now comes the serious question what is JSON?
+
+JSON is a format to represent variables.
+what is advantage it is a standard every programming langauge java or python
+or c++ agrees json is a standard. they will give you ready made
+functions which convert json into the langauge specific object.
+langauge specific object into json.
+
+
+we have json X --> java object or python object or c++ object
+
+I have java object or c++ object or python --> json format.
+
+advantaeg of it is understood by every programming langauge and hence
+is used during web services.
+
+how does  json syntax look like.
+json is a string.
+how do you prove it you can do string operations on it.
+
+let x ="{"key":1,"key1": 3,"key2":[2,3,6]}"
+
+
+
+
+
+
+NOdejs
+
+1. Node js is a javascript runtime used for building server side components.
+2. nodejs is also as a development environment to build web based presentation
+using frameworks like react or angular.
+
+
+1. Node js is a javascript runtime used for building server side components.
+I want to use javascript connect to the myserver and supply the empno
+and pickup the emp details. these things cannot be done by using
+javascript we have in the brwoser. so for that reason we can think of using
+nodejs.
+
+2.web based presentation who is the boss?
+all web based presentations have to agree with the boss?
+browser. browser understands only html, css and javascript. that's it..
+when we are using react or angular, we directly dont starting html , css, javascript
+rather we will use lot of features of nodejs to build our web page.
+dont expect nodejs to give you anything that can access sections of the html page
+or the textbox value.. no that is not the purpose of nodejs...
+react will give me
+angular will give me
+but nodejs wont ..
+
+please install nodejs software. 
+please install postman.
+
+
+node --version
+
+
+
+
+
+
+you should know theory on web services, and what is json is theory.
+install nodejs
+and pratice simple hello world js(dont touch ui), simply write some logic
+and most important call the function and see whether it works.
+
+in real life telescope and microscope
+starting always is telescope..
+we have to include other people files in our code, many a times.
+"including the library"...
+
+when we installed jdk we had some classes X, Y and Z.
+if we are using these classes X , Y and Z we dont need to include new libraries
+becuase they are part of the software installation.
+
+we need to use a class called Q which is not part of jdk.
+then we have to download the q library and start using it. downloading
+the jar file in java..
+
+when install nodejs.. we have some objects installed by default..let us P, Q
+we need M, it is not installed as part of nodejs, then we need to download
+the M.
+
+what you should focus on
+1. jquery basics are you ok with it.
+2. spend time on promise.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

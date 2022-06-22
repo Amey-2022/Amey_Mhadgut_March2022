@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Q-2</title>
+    <script>
+        window.addEventListener('DOMContentLoaded',()=>{
+            console.log("DomLoaded");
+
+            const arr=[10,20,30,40,50,60,70,80,90,100];
+            let b1=document.querySelector('#b1');
+
+            b1.addEventListener('click',()=>{
+                console.log("array clicked");
+                document.querySelector("#array").innerHTML=arr.toString();
+            });
+
+            let b2=document.querySelector('#b2');
+
+            b2.addEventListener('click',()=>{
+                console.log("sum clicked");
+                document.querySelector("#sum").innerHTML=sumOfArray();
+            });
+
+            function sumOfArray(){
+                let sum=0;
+                for(let i=0;i<arr.length;i++){
+                    sum += arr[i];
+                }
+                return sum;
+            }
+
+        });
+    </script>
+</head>
+<body>
+    <h1>Question - 2</h1>
+    <input type="button" value="Display Array Elements" id="b1"/>
+    <input type="button" value="Sum of Array Elements" id="b2"/>
+    <br/>
+    Array:<span id="array"></span>
+    <br/> 
+    Sum:<span id="sum"></span>
+
+</body>
+</html>

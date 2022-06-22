@@ -1,0 +1,337 @@
+1. all you know how to setup event handling in jquery
+2.hope you still remember.
+2.0 dont know service function nothing to do in presentation.
+2.1 html you give id.
+2.2 setup events.
+2.3 input and output.
+2.4 stupid logic..
+3. mystery part..
+3.1 is nodejs http module working for you.
+3.2 are you able to install express.
+3.3 you are able to setup http server by using express.
+3.4 are you able to make a folder as a static folder a folder where html files
+or javascript fies will not be processed by nodejs.
+3.5 URI ie you give X, some call back function should get called which prints
+X is getting called.
+3.5 URI ie you give Y, some call back function should get called which prints y.
+
+what should you focus on next 3 days in programming.
+how to write a html , use jquery and contact nodejs server runtime.
+example we give accno, can we get name by contacting the server first phase.
+example we give accno, can we get name by contacting the server , server will
+contact the database and get the thing done.
+
+in nodejs files, if you see any html tags being used , understand that is a bad architecture and not good for todays world.
+
+what will keep inside the static folder in context of express
+1. html files
+2. css files
+3. javscript files like jquery.. 
+which should not be processed by nodejs but should be processed by the browser.
+
+
+
+for everydoubt answer always should be searched first in architecture..
+
+
+
+in any every web technology figure out where to
+keep client side comonents
+and where to keep server side components, how to ask this..
+
+ok you are building a web application, I have a css file withme 
+pelase show me where you keep it and tell why you kept it there..
+taht folder static resources( server is not going to prcoess, only browser will process it)
+if you have a server side component, what client sees is the output of server side
+processing.. so view source you will not see anything actually written on the server
+
+
+if you have a client side component, what client sees is complete thing writte
+in the client side component, example .css, .html
+
+
+currently dont do any expereimentation on mode of request.
+keep it as get mode of request only..
+
+app.get("some uri", whcih function to call)
+
+how to read the paramter from the request.
+now again dont get confused in syntax, syntax will be different ine xpress
+syntax will be different if we are not using express.
+
+
+create emp.html in the "static" folder of your nodejs express web application.
+write a nodejs file, which will process the request.
+
+mode of request is get.
+uri is "empprocess"
+read tthe parameter called empno
+and print its value.
+
+currently all our program is kids program. why string, int is there but no object
+is there.. no objects ok congrats on continuing writing a kids program.
+
+
+if you give empno as 23, return the object  { empno:23, empname:"A", mobileno:87}
+in other cases
+return { empno:0, empname:"na":mobileno:0}
+
+
+how should you plan.
+
+1. what is input you need.
+2. what is output you will give.
+3. what does output mean for the page.
+4. foucs on nodejs code first.
+5. in the static folder create a html
+write the textboxes according to what nodejs expects
+ensure you use the <button> tag why it will submit.
+use a form tag, action="your functon uri" method="get"
+
+
+
+when we click on the button we it will go thte sever and check who will process
+login. but we ran the nodejs program, we have registered with the server
+hey if somebody tells login I will process.
+
+
+if( x>0)
+ print("x is greater than zero");
+else
+print("x is less than zero");// kids program.
+
+string msg ="x is less than zero";
+if( x>0);
+    msg ="x isgreater than zero";
+
+print msg;
+
+
+
+I will give empno and we want to get emp details.. emp details what does it mean
+empno, empname, mobileno.
+
+every scenario you have to start thinking likes this.
+
+1. what is your URI- tells nodejs when the function should be called.
+(Event registration) 
+getEmployeeInfo.
+
+2. what is mode of request.
+get 
+
+3. setup a function which can handle the request
+if the URI is given.
+
+app.get("/getEmployeeInfo,(req,res)=>{ });
+
+4. think what is input you plan to read, how will it
+come in the http request, currently ensure it is a query parameter only.
+i need empno for my logic 
+it will come as a parameter called empno.
+
+5. what will be output, how will guy know that things suceeded or failed.
+output will be a status object.
+what will status object have
+
+let x={ status:true, empdetails:{empno:2,empname:'A',mobileno:4}
+this will value assuming empno is 2.
+in all other cases.
+let x={ status:false, empdetails:{empno:0,empname:'',mobileno:0}
+
+thinking of input and ouptut is hardest thing, when we cannot do that
+keep on learning new html tag or new javascript function or new css property
+and be busy in life with zero context..
+
+kid will scream, no this logic is wrong you should go database and give empno
+and pick up the detail, you should tell the kid relax.. first..
+
+
+99% of the misery in project comes from people who write poems..
+what is poems
+write the entire program and pray it will work. it wont work..
+lot of mistakes in terms of syntax..
+
+i wil give  you itemno and you should item details
+itemname, price, category
+itemno is 3, then keep item as pencil, price is 3, category is "stn"
+in other cases return item object
+where itemno is -1, price is -1, itemname is empty and category is empty.
+
+we dont want to contact the server byusing form action and submit... no 
+
+rather During some event in javascript in the client side.. example
+onblur , onclick we want to contact the server by passing
+whatever is needed and server will return data that will come to us
+
+
+in the event handling functon , data returned from server will be avialable as
+a variable.  we want to use it in the code
+
+
+join back at 16.00 -- how to do ajax..
+
+one important in nodejs functions avoid the temptation of return simple typeslike
+string or a number.. no why in no project will ever be done, always focus
+on returning objects..
+
+
+how to contact the server in the background ( ajax )
+
+what is ajax.
+we are in html page. during some event of the html page , we will
+contact the server.
+
+
+we are in html page. during some event of the html page , some particular
+javascript funtion will be called by system.
+in that function we will use some ready made function let us X and call
+the server pass the variables, get the data given by the server.
+
+
+$("#t1").blur(
+()=>{
+
+console.log("blur event occured");
+X(); 
+}
+
+)
+;
+
+what will x function do.
+1. ready made function  .ajax
+2. you should not byheart becuase it can keep changing.
+3. ready made function will tell 
+3.1 tell the uri.
+3.2 what is input you want to pass.
+3.3 what is mode of http request, in which input will be passed.. get or put or post...
+3.4 success event  -- where you can mention what function to call
+3.5 failure event == hwere you can mention which function to call.
+
+
+
+
+one.html -- we made a request using form submission -- reached
+the function present in a04we.js , here uri for /login was present
+that function which is responsible for handling the uri /login got called.
+
+there are many functions in jquery to contact the server. you dont think
+of all the functions, just think of one function called .ajax.
+all of you currently put your focus on understanding this function called .ajax.
+
+
+any function which helps you contact the server, you should also know
+how to know if server has failed also thru the function.
+
+collect your input as a object.
+
+
+
+
+in react or in jquery or in java or in spring boot everywhere fix your version
+and have small plrograms which prove syntax is working..
+
+if you keep data type json, what jquery function will do
+convert your json into a javascript object.
+
+
+
+
+let parameterstothefunction=
+                        { data:ip, 
+                          url: "http://localhost:900/login",
+                          type:'get',
+                          dataType: "json",  // data given server is json format so please
+//convert this json into a jvascript object.
+
+                          success:(datagivenbyserver)=>{ 
+                              console.log( "data given by server in success" + datagivenbyserver.status)
+                              if(datagivenbyserver.status  === true )
+                              {
+                                       $("#message").text("successful login"); 
+                              } 
+                              else
+                              {
+                                    $("#message").text("userid or password wrong");
+                              }
+                                                          
+                            
+                            },
+                          error:(errorgivenbyserver)=> { console.log("failed to contact server "+errorgivenbyserver)}
+                        }  ;
+                      
+what you should observe is how many steps we did it, we never wrote the poem
+in one go..
+
+
+
+
+whenever we use a function which contacts server.
+be 100% sure you can take care of failure also and not only success.
+or else dont use the function.
+
+
+
+
+
+
+
+we have three textboxes.
+
+[  ]=num1
+[]=num2
+[] = symbol + or -
+contat the server after the onblur happens on the symbol and show
+the result below the symbol textbox.
+
+pass it to server, let the server based on the symbol return an object
+
+
+{ status: true : result: -1}
+
+
+when any concept comes, ability to write a small program without anybody
+telling us to do it, is a important skill.
+
+
+you need to think in terms of
+
+1. client side.. already we told.. nothing to think..
+
+give ids
+setup events
+think of input and ouptut
+contact the server.
+
+
+2. server.
+2.1 think of uri.
+2.2 keep the http mode of request as get.
+2.3 think of input.
+2.3 think of the output
+2.4 do the stupid logic
+2.5 send the data.
+
+
+3. contaccting server.
+3.1 get the version right.. one time.
+3.2 dont worry about reading input from textbox.. relax send some
+hardcoded input to the server.
+3.3 keep the data type as Text.. why. let server give data we will see.
+3.4 prove data is got from server correctly.
+3.5 then data type to json.
+3.6 start your ritual.. updating the ui.
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" ></script>
+<script>
+
+$(  ()=>{
+    console.log("Evet Created");
+
+    const area=[
+        {pin:425502 , area:"Savda"},
+        {pin:425503 , area:"Faizpur"},
+        {pin:425201 , area:"Bhusawal"},
+        {pin:400008 , area:"Mumbai"}
+        
+    ];
+
+    function checkArea(t1)
+    {
+        console.log("checkArea function called ");
+        let output = {result:false , areapin:{}};
+        for(let i=0;i<area.length;i++)
+        {
+            
+            if(area[i].pin==t1)
+            {
+                console.log(area[i]);
+                output.areapin = area[i];
+
+                output.result = true;
+                console.log(output);
+                break;
+            }
+        }
+        return output;
+    }
+
+$('#b1').click( ()=>{
+    console.log("click event Created");
+    let t1 = $("#t1").val();
+    
+   
+    let output=checkArea(t1);
+    console.log(output);
+    if(output.result){
+        
+        $("#t2").val(output.areapin.area);
+    console.log(t2);
+    }
+    
+});
+
+});
+
+
+
+</script>
+<style>
+</style>
+</head>
+<body>
+<Br/><input type="text1" id="t1" placeholder="Enter Pin Code"/>
+<Br/><input type="text2" id="t2" placeholder="Area"/>
+<br><button id="b1">Get Area Info</button>
+</body>
+</html>

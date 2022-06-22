@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    let emparray=[{ename:"a",eamil:"a@.com",eid:101,deptno:1},{ename:"b",eamil:"b@.com",eid:102,deptno:2},{ename:"c",eamil:"c@.com",eid:103,deptno:1},{ename:"d",eamil:"d@.com",eid:104,deptno:2}];
+    let count=emparray.length;
+   window.addEventListener('DOMContentLoaded', ()=>{
+    const ename = document.querySelector("#ename");
+    let ename1;
+    ename.addEventListener('blur',()=>{
+        ename1=document.querySelector("#ename").value;
+        console.log("onblurr");
+        let see=false;
+        console.log(emparray);
+        for(let x=0;x<emparray.length;x++){
+            if(emparray[x].ename==ename1){
+                console.log("we got it");
+                document.querySelector("#modify").disabled=false;
+                    document.querySelector("#remove").disabled=false;
+                    document.querySelector("#add").disabled=true;
+                    see=true;
+                break;
+            }
+           }
+           if(!see){
+           document.querySelector("#add").disabled=false;
+           document.querySelector("#modify").disabled=true;
+                    document.querySelector("#remove").disabled=true;
+        }
+    });
+    let add=document.getElementById("add");
+    add.addEventListener('click',()=>{
+        add1();
+    });
+
+    
+function add1(){
+  let  ename=document.querySelector("#ename").value;
+  
+  let  eamil=document.querySelector("#email").value;
+  let  eid=document.querySelector("#eid").value;
+  
+  let  depit=document.querySelector("#deptno").value;
+    let obj={ename,eamil,eid,depit};
+    emparray[count++]=obj;
+    console.log(emparray);
+    
+    
+}
+
+let modify=document.getElementById("modify");
+modify.addEventListener('click',()=>{
+    let  ename=document.querySelector("#ename").value;
+  
+  let  eamil=document.querySelector("#email").value;
+  let  eid=document.querySelector("#eid").value;
+  
+  let  depit=document.querySelector("#deptno").value;
+    let obj={ename,eamil,eid,depit};
+    for(let x=0;x<emparray.length;x++){
+            if(emparray[x].ename==ename1){
+                console.log("we got it jjjj");
+                emparray[x]=obj;
+                document.querySelector("#modify").disabled=true;
+                    document.querySelector("#remove").disabled=true;
+                    console.log(emparray);
+                break;
+            }
+           }
+
+});
+let remove=document.getElementById("remove");
+remove.addEventListener('click',()=>{
+    let  ename=document.querySelector("#ename").value;
+  
+  let  eamil=document.querySelector("#email").value;
+  let  eid=document.querySelector("#eid").value;
+  
+  let  depit=document.querySelector("#deptno").value;
+    let obj={ename,eamil,eid,depit};
+    for(let x=0;x<emparray.length;x++){
+            if(emparray[x].ename==ename1){
+                console.log("we got it tttt");
+                emparray.splice(x,1);
+                document.querySelector("#modify").disabled=true;
+                    document.querySelector("#remove").disabled=true;
+                    console.log(emparray);
+                    break;
+                
+            }
+           }
+        });
+        let viewall=document.getElementById("viewall");
+        viewall.addEventListener('click',()=>{
+           
+            let y="";
+        for(let x=0;x<emparray.length;x++){
+            console.log("ffcafa"+x);
+            //y=y+" --------"+emparray[x].ename+" "+emparray[x].eamil+" "+emparray[x].eid+" "+emparray[x].deptno;
+            y=y+" "+JSON.stringify(emparray[x]);
+            
+           }
+           document.querySelector("#msg").innerHTML=y;
+           console.log(y);
+        });
+        let deptno=document.getElementById("deptno");
+        deptno.addEventListener('blur',()=>{
+
+            document.querySelector("#viewondeptid").disabled=false;
+            
+
+            let y=parseInt(document.querySelector("#deptno").value);
+            console.log(y);
+        });
+        let viewondeptid=document.getElementById("viewondeptid");
+        viewondeptid.addEventListener('click',()=>{
+            console.log("hhhh");
+            let y=parseInt(document.querySelector("#deptno").value);
+            console.log(y);
+            let r="";
+            for(let x=0;x<emparray.length;x++){
+            if(emparray[x].deptno==y){
+                console.log(emparray[x]);
+               // r=r+" --------"+emparray[x].ename+" "+emparray[x].eamil+" "+emparray[x].eid+" "+emparray[x].deptno;
+               r=r+" "+JSON.stringify(emparray[x]);
+               console.log(JSON.stringify(emparray[x]));
+                
+            }
+           }
+           document.querySelector("#msg").innerHTML=r;
+
+        });
+   });
+
+</script>
+<body>
+    <table>
+        <tr>
+            <td><lable for="ename" >ename:</lable></td>
+            <td> <input type="text" id ="ename"></td>
+        </tr>
+        <tr>
+            <td> <lable for="email" >email:</lable></td>
+            <td> <input type="text" id ="email"></td>
+        </tr>
+        <tr>
+        <td><lable for="eid" >eid:</lable></td>
+            <td><input type="text" id ="eid"></td>
+        </tr>
+        <tr>
+        <td> <lable for="deptno" >deptno:</lable></td>
+            <td><input type="text" id ="deptno"></td>
+        </tr>
+
+   </table>
+   <button id="add" disabled>ADD </button> <span> <button id="modify" disabled>MODIFY</button></span>
+   <span> <button id="remove" disabled>REMOVE</button></span>
+   <span> <button id="viewall" >VIEWALL</button></span>
+   <span> <button id="viewondeptid" disabled>VIEWONDEPTID</button></span>
+   <hr>
+   <p id="msg">gagags</p>
+</body>
+</html>

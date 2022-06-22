@@ -1,0 +1,46 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" ></script>
+
+
+<script>
+
+$(  ()=>{
+console.log('let this work');
+
+$("#r1").click(()=>{
+let num = $("#t1").val();
+let result = num *5;
+$("#msg").html(result);
+
+
+console.log("r1 is clicked");
+});
+
+$("#r2").click(()=>{
+console.log("r2 is clicked");
+let num = $("#t1").val();
+let result = num *7;
+$("#msg").text(result);
+});
+$("#t1").prop("disabled",true);
+
+}
+);//end of $ event handler 
+
+
+
+
+
+
+</script>
+<style>
+</style>
+</head>
+<body>
+<Br/><input type="text" id="t1" placeholder="poc"/>
+<span id="msg"> some message</span>
+<br><input type="radio" id="r1" name="poc"> multiple of 5
+<input type="radio" id="r2" name="poc"> multiple of 7
+</body>
+</html>

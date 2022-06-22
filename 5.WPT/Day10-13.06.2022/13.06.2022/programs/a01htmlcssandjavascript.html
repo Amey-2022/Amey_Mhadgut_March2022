@@ -1,0 +1,83 @@
+<html>
+<head>
+
+<script>
+
+
+window.addEventListener('DOMContentLoaded', ()=>{
+console.log("is it working");
+
+function checkEven(num)
+{
+return (num %2 ==0);
+}
+
+
+
+
+
+const x = document.querySelector("#x");
+x.addEventListener('click',()=>{
+console.log("click event on the button")
+// I will commit sin..
+let input =document.querySelector("#somenum").value;
+
+
+let output= checkEven(input);  //assume false means odd number true
+//means even number who told this.. answer service function
+if(output)
+{
+let msg =document.querySelector("#msg");
+document.querySelector("#msg").innerText="number is even";
+//remove the class and then add the class.
+msg.classList.remove("r");
+msg.classList.add("b");
+
+
+}
+else
+
+{
+
+let msg =document.querySelector("#msg");
+document.querySelector("#msg").innerText="number is odd";
+
+msg.classList.remove("b");
+msg.classList.add("r");
+
+}
+
+
+
+
+});
+
+
+
+
+
+});
+
+</script>
+
+
+
+<style>
+.r  { color:red }
+.b  { color:blue }
+
+
+</style>
+</head>
+<body>
+<br/><input type="text" placeholder="some number" id="somenum"/>
+<span id="msg"> message </span>
+<BR/><Br/> <!-- bad priority when program is n ot working
+focussing on makeup of the program -->
+
+<Br/><button  id="x"> check odd or even</button>
+
+</body>
+
+
+</html>
