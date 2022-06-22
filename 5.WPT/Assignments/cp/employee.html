@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Deatils</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(()=>{
+            console.log("DomLoaded");
+
+            $('#b1').click(()=>{
+                console.log("insert btn clicked");
+
+                let ip={ empid: $('#eid').val(),
+                         empname: $('#ename').val(),
+                         deptname: $('#edept').val(),
+                         empsal: $('#esal').val()
+                        };
+                    
+                let parameterstothefunction=
+                    {
+                      data : ip,
+                      url : "http://localhost:900/insert",
+                      type :  'get',
+                      dataType :"JSON",
+                      success : (data)=>{
+                        console.log("data given by server in success " + data.status);
+                            if(data.status == true){
+                                $('#msg').html(data.message);
+                                showContents();
+                            }else{
+                                $('#msg').html(data.message);
+                            }
+                        },
+                      error: (data)=>{console.log("failed to connect server "+data.status);}
+                    };
+                    console.log("is function working??");
+                    $.ajax(parameterstothefunction);
+            });
+
+
+            $('#b4').click(()=>{
+                console.log("delete btn clicked");
+
+                let ip={ empid: $('#eid').val()  };
+    
+                      
+                    
+                let parameterstothefunction=
+                    {
+                      data : ip,
+                      url : "http://localhost:900/delete",
+                      type :  'get',
+                      dataType :"JSON",
+                      success : (data)=>{
+                        console.log("data given by server in success " + data.status);
+                            if(data.status == true){
+                                $('#msg').html(data.message);
+                                showContents();
+                            }else{
+                                $('#msg').html(data.message);
+                            }
+                        },
+                      error: (data)=>{console.log("failed to connect server "+data.status);}
+                    };
+                    console.log("is function working??");
+                    $.ajax(parameterstothefunction);
+            });
+
+
+
+            $('#eid').blur(()=>{
+                console.log("blur on empid");
+
+                let ip={ empid: $('#eid').val() };
+                       
+                    
+                let parameterstothefunction=
+                    {
+                      data : ip,
+                      url : "http://localhost:900/showinfo",
+                      type :  'get',
+                      dataType :"JSON",
+                      success : (data)=>{
+                        console.log("data given by server in success " + data.status);
+                            if(data.status == true){
+                               $('#ename').val(data.ename);
+                               $('#edept').val(data.dname);
+                               $('#esal').val(data.sal);
+                                $('#msg').html(data.message);
+                                $('#eid').prop('disabled',true);
+                                $('#b1').prop('disabled',true);
+                                $('#b2').prop('disabled',false);
+                                $('#b4').prop('disabled',false);
+                            }else{
+                                $('#msg').html(data.message);
+                                $('#b4').prop('disabled',true);
+                                $('#b2').prop('disabled',true);
+                            }
+                        },
+                      error: (data)=>{console.log("failed to connect server "+data.status);}
+                    };
+                    console.log("is function working??");
+                    $.ajax(parameterstothefunction);
+            });
+
+
+
+
+            $('#b2').click(()=>{
+                console.log("update btn clicked");
+
+                let ip={ empid: $('#eid').val(),
+                         empname: $('#ename').val(),
+                         deptname: $('#edept').val(),
+                         empsal: $('#esal').val()
+                        };
+                    
+                let parameterstothefunction=
+                    {
+                      data : ip,
+                      url : "http://localhost:900/update",
+                      type :  'get',
+                      dataType :"JSON",
+                      success : (data)=>{
+                        console.log("data given by server in success " + data.status);
+                            if(data.status == true){
+                                showContents();
+                                $('#msg').html("Employee details updated succesfully ");
+                            }else{
+                                $('#msg').html("Need to insert details");
+                            }
+                        },
+                      error: (data)=>{console.log("failed to connect server "+data.status);}
+                    };
+                    console.log("is function working??");
+                    $.ajax(parameterstothefunction);
+            });
+
+            function showContents(){
+                let ajaxparams={
+                    data : {},
+                      url : "http://localhost:900/getAllDetails",
+                      type :  'get',
+                      dataType :"JSON",
+                      success : (data)=>{
+                            emp=data;
+
+                        let empdetails ="";
+                        for (let i = 0; i < emp.length; i++) {
+                            empdetails +="<br/>"+ emp[i].empid+" "+emp[i].ename+" "+emp[i].dname+" "+emp[i].sal;
+                        }
+                        $('#contains').html(empdetails);
+                         },
+                        error : (error)=>{console.log("Error" +error);}
+                    };
+                    $.ajax(ajaxparams);
+            }
+
+            showContents();
+
+            $('#b3').click(()=>{
+                console.log("reset btn clicked");
+
+                $('#eid').val("");
+                $('#ename').val("");
+                $('#edept').val("");
+                $('#esal').val("");
+                $('#eid').prop('disabled',false);
+                $('#b1').prop('disabled',false);
+                $('#b2').prop('disabled',false);
+                $('#b3').prop('disabled',false);
+                $('#b4').prop('disabled',false);
+                
+            });
+
+
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body style="background-color: rgba(200, 255, 0, 0.329) ;">
+    <h1>Employee Details</h1>
+    <hr/>
+    <input type="text" placeholder="Enter Employee ID" id="eid"/> <br/>
+    <input type="text" placeholder="Employee Name" id="ename"/> <br/>
+    <input type="text" placeholder="Employee Dept. Name" id="edept"/> <br/>
+    <input type="text" placeholder="Employee Salary" id="esal"/>
+    <hr/>
+    <input type="button" value="Insert" id="b1"/>
+    <input type="button" value="Update" id="b2"/>
+    <input type="button" value="Delete" id="b4"/>
+    <input type="button" value="Reset" id="b3"/>
+    <hr/>
+    <span id="msg">Message</span>
+    <hr/>
+    <span id="contains"></span>
+</body>
+</html>
