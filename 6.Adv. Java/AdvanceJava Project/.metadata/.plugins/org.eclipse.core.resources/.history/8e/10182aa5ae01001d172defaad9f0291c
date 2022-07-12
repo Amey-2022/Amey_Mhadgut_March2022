@@ -1,0 +1,13 @@
+package com.cdac.app;
+
+import com.cdac.entity.ApplicationContext;
+import com.cdac.entity.ClassPathXmlApplicationContext;
+import com.cdac.entity.UserDao;
+
+public class App {
+	public static void main(String[] args) {
+		//Loading Spring/IOC Container
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("my-spring-config.xml");
+		
+		UserDao dao=new UserDao();
+}

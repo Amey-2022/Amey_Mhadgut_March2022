@@ -1,0 +1,17 @@
+package com.cdac.entity;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name="tbl_author")
+public class Author {
+	private int id;
+	private String name;
+	private Sring email;
+	
+	private List<Book> books;
+}

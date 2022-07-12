@@ -1,0 +1,44 @@
+package com.cdac.app;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.cdac.dao.GenericDao;
+import com.cdac.entity.Author;
+import com.cdac.entity.Book;
+
+public class BookAuthorExample {
+	public static void main(String[] args) {
+		GenericDao dao=new GenericDao();
+		
+		//adding few authors
+//		Author author =new Author();
+//		author.setName("Alexandar Bail");		
+//		author.setEmail("alex@gmail.com"); dao.save(author);
+//		dao.save(author);
+		
+		//adding a book along with the author details
+//		Book book = new Book();
+//		book.setName("Head First Design Patterns");
+//		book.setCost(2500);
+//		
+//		List<Author> authors=new ArrayList<>();
+//		authors.add((Author) dao.fetchById(Author.class, 1));
+//		authors.add((Author) dao.fetchById(Author.class, 2));
+//		
+//		book.setAuthors(authors);
+//		
+//		dao.save(book);
+		
+		
+		//assuming that first we want to add the book
+		 Book book = new Book();
+		 book.setName("Head First JavaScript");
+		 book.setCost(1500);
+		 dao.save(book);
+		 
+		//then mention the authors of this book
+		
+	}
+
+}

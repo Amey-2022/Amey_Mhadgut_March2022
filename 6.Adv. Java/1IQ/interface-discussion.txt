@@ -1,0 +1,29 @@
+- Object should have a well defined interface
+- one class should not communicate will another class directly,
+  rather we should use an interface in between
+
+Suppose i tell you to design a Calculator which will perform addition and substraction of numbers
+
+interface Calculator {
+ int add(int x, int y);
+ int sub(int x, int y);
+}
+
+class MyCalculator implements Calculator {
+	
+	...
+}
+
+Suppose i tell you to design a phonebook which will allow users to add, edit, remove, sort, search contacts
+
+interface PhoneBook {
+  void add(String name, String number);
+  void remove(String name);
+  void sort(String order);
+  void search(String name);
+}
+
+//Developing PhoneBook using Android
+class MyPhoneBook extends Activity implements PhoneBook {
+
+}

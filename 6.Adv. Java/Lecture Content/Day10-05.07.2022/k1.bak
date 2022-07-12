@@ -1,0 +1,37 @@
+Album album = new Album();
+album.setName("cat");
+album.setReleaseDate(LocalDate.of(2011, 04, 20));
+album.setCopyright(" Ozark Music");
+
+
+//Album album	= (Album)dao.fetchById(Album.class, 1);
+List<Song> list = new ArrayList<Song>();
+Song song = new Song();
+song.setTitle("song");
+song.setArtist("abc");
+song.setDuration(4.13);
+song.setAlbum(album);
+
+list.add(song);
+
+song = new Song();
+song.setTitle("song2");
+song.setArtist("def");
+song.setDuration(4.24);
+song.setAlbum(album);
+
+list.add(song);
+
+song = new Song();
+song.setTitle("song3");
+song.setArtist("mno");
+song.setDuration(5.02);
+song.setAlbum(album);
+
+list.add(song);
+
+album.setSong(list);
+List<Song> list2= album.getSong();
+for(Song s : list2)
+	System.out.println(s);
+dao.save(album);

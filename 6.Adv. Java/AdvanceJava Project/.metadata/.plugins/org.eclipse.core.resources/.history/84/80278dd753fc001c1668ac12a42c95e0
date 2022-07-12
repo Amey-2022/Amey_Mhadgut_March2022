@@ -1,0 +1,44 @@
+package com.cdac.app;
+
+import java.time.LocalDate;
+
+import com.cdac.dao.AlbumSongDao;
+import com.cdac.dao.GenericDao;
+import com.cdac.entity.Album;
+import com.cdac.entity.Song;
+
+import net.bytebuddy.description.type.TypeDescription.Generic;
+
+public class AlbumSongExample {
+	public static void main(String[] args) {
+		GenericDao gdao=new GenericDao();
+		AlbumSongDao adao=new AlbumSongDao();
+		
+		//adding an album
+	/*	Album album=new Album();
+		album.setName("Hits of 2020");
+		album.setReleaseDate(LocalDate.of(2020, 12, 30));
+		album.setCopyright("Amazon Music");
+		gdao.save(album);	*/
+		
+		//adding song to album
+		Album album=gdao.fetchById(Album.class, 1);
+		Song song=new Song;
+		song.setTitle("Chand se parda keejiye");
+		song.setArtist("Kumar Sanu");
+		song.setDuration(5.50);
+		song.setAlbum(album);
+		gdao.save(song);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+}

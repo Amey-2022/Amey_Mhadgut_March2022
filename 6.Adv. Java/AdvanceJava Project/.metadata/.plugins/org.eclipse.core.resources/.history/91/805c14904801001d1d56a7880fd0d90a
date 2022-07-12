@@ -1,0 +1,28 @@
+package com.cdac.component;
+
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
+
+@Component("carParts3")
+public class CarPartsInventoryImpl3 implements CarPartsInventory {
+	
+
+	@PersistenceContext
+	private EntityManager em;
+	
+	@Override
+	public void addNewPart(CarPart carPart) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	@Transactional
+	public List<CarPart> getAvailableParts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

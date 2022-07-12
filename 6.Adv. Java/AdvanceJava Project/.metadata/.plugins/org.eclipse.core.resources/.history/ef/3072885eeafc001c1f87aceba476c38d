@@ -1,0 +1,13 @@
+package com.cdac.entity;
+
+import java.util.List;
+
+@Entity
+@Table(name="tbl_book")
+public class Book {
+	private int id;
+	private String name;
+	private double cost;
+	
+	private List<Author> authors;
+}

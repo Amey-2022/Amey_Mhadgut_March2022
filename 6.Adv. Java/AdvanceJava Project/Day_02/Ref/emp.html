@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script src="emp.js"></script>
+</head>
+
+<body style="background-color:blanchedalmond;">
+    
+    <form action="Employee">
+    <h1 class="d-flex justify-content-center">Employee Details</h1>
+    <hr>
+    <div class="d-flex flex-column justify-content-between align-items-center m-2">
+    <input class="form-group col-lg-3" type="text" placeholder="Enter Employee ID" name="empid" pattern="[0-9]{1,5}" required>
+    <input class="form-group col-lg-3" type="text" placeholder="Enter Employee Name" name="empname" >
+    <input class="form-group col-lg-3" type="text" placeholder="Enter Employee Dept Name" name="deptname" >
+    <input class="form-group col-lg-3" type="text" placeholder="Enter Employee Salary" name="salary" >
+</div>
+    <hr>
+    <div class="d-flex justify-content-center m-2">
+    <button name="button" value="Insert" id="btninsert" class="btn btn-primary m-2"> Insert</button>
+    <button name="button" value="Update" id="btnupdate" class="btn btn-primary m-2"> Update</button>
+    <input type="reset" name="reset" value="Reset" class="btn btn-primary m-2">
+    
+    <button name="button" value="Show" id="showall" class="btn btn-primary m-2"> Show </button>
+    <button name="button" value="Delete" id="del" class="btn btn-primary m-2">Delete </button>
+</div>
+    <hr>
+    <div class="d-flex justify-content-center align-items-center m-2">
+    <!--  <h4><span id="msg">Message</span><br></h4>-->
+    </form>
+</div>
+<div class="d-flex justify-content-center align-items-center m-2">
+    <h4><span id="contents"></span></h4>
+</div>
+
+</body>
+
+</html>

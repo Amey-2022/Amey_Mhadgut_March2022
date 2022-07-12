@@ -1,0 +1,13 @@
+package com.cdac.component;
+
+public class CarPart {
+	
+	private int partNo;
+	private String partName;
+	private String carModel;
+	private double price;
+	private int quantity;
+	
+	
+	
+}

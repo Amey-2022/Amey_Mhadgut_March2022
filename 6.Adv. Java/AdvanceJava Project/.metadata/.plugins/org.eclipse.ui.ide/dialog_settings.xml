@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="G:\CDACM2022\SRC-Module-6\Adv. Java miniProject\Online-Book-Store-master.zip"/>
+			<item value="G:\CDACM2022\SRC-Module-6\Adv. Java miniProject\SBT-Enotes (2).zip"/>
+			<item value="G:\CDACM2022\SRC-Module-6\Adv. Java Project\SBT-Enotes (2)\SBT-Enotes\SBT-Enotes"/>
+			<item value="G:\CDACM2022\SRC-Module-6\Adv. Java Project\SBT-Enotes (2)\SBT-Enotes"/>
+			<item value="G:\CDACM2022\SRC-Module-6\Adv. Java Project\SBT-Enotes"/>
+			<item value="G:\CDACM2022\SRC-Module-6\Day3-27.06.2022"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jpt.jaxb"/>
+			<item value="org.eclipse.m2e"/>
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="429"/>
+		<item key="DIALOG_Y_ORIGIN" value="8"/>
+		<item key="DIALOG_WIDTH" value="525"/>
+		<item key="DIALOG_HEIGHT" value="580"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

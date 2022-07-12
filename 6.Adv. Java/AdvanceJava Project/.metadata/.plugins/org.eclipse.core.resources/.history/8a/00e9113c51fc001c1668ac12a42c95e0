@@ -1,0 +1,36 @@
+package com.cdac.app;
+
+import java.time.LocalDate;
+
+import com.cdac.dao.AlbumSongDao;
+import com.cdac.dao.GenericDao;
+import com.cdac.entity.Album;
+
+import net.bytebuddy.description.type.TypeDescription.Generic;
+
+public class AlbumSongExample {
+	public static void main(String[] args) {
+		GenericDao gdao=new GenericDao();
+		AlbumSongDao adao=new AlbumSongDao();
+		
+		//adding an album
+		Album album=new Album();
+		album.setName("Hits of 90's");
+		album.setReleaseDate(LocalDate.of(2010, 12, 15));
+		album.setCopyright("T-series");
+		gdao.save(album);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+}

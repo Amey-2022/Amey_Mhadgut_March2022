@@ -1,0 +1,14 @@
+package com.cdac.component.atmandbank;
+
+import org.springframework.stereotype.Component;
+
+@Component("hdfcAtm-v2")
+public class HdfcAtm implements Atm {
+
+	
+	public void withdraw(int acno, double amount) {
+		
+		
+	}
+
+}

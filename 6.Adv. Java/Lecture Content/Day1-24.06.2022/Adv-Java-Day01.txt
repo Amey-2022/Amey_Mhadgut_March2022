@@ -1,0 +1,81 @@
+Web Development
+
+Suppose i want to develop my own website, for ex: a2zxyz.com
+-> First, we will go an register the above domain, for ex: godaddy.com
+-> Next, we need a server to host the content for my website
+   -> This server has to run 24*7
+   -> This server should have a static ip
+   Approx cost will be 4 lac for the machine + 25k(domain+ip) + software licenses (1 lac)
+
+   Since the above model is very costly, what we generally do is go for web hosting
+   for ex: a hosting provider's plan could be:
+   			100 GB bandwidth p.m
+   			25 GB storage space
+   			1 Database
+   			1 Email Account
+   			Total Cost: 2000 Rs Annually
+
+   	Another modern flavour of hosting any service on the net is by using Cloud infrastructure
+   	(AWS, GCP, Azure, ...)
+
+A website is collection of various types of documents (html, images, style sheets, ...)
+
+A website is made up of client side as well as server side code
+-> Client side code is made of up HTML , CSS and JS
+-> Server side code is made up of technologies like Servlet/JSP/ASP/PHP, ....
+
+HTTP is the protocol commonly used for client/server communication
+- Web Servers and Browsers fully support HTTP protocol
+
+Web Server
+-> Basically a software that will be installed on a Server where we will be hosting our websites
+  -> Apache Web Server 
+  -> Microsoft IIS
+  -> Nginx
+  -> ...
+
+These Web Servers don't support Java technology by default, so that means we cannot design websites using Java
+
+To enable support for Java technology on servers, we need another software to be installed along with the Web Server, generally called as Web Container or Servlet/JSP Engine:
+-> Apache Tomcat
+-> JBoss, WebLogic, Websphere, Glassfish, ...
+
+These Web containers have all the features present in a Web Server, but additionally they support Java technology
+
+So it's possible that we don't use a separate web server in our setup.
+for ex: we can install Tomcat and use it like a web server
+
+But in live applications, a server + container combination is used commonly
+ex:
+-> apache web server + apache tomcat
+-> microsoft iis + apache tomcat
+-> nginx + apache tomcat
+
+TODO:
+1. role of web/http server
+2. difference between web server and web container
+3. what is the role of servlet/jsp
+5. what are the steps for writing and running a servlet
+
+Assignment:
+1. 
+	Version 1:
+	Write a form to take two numbers as an input from the user
+    Then write a servlet which will add the two numbers and display the sum of it
+    Version 2:
+	Write a form to take two numbers as an input from the user along with add and sub button
+    Then write a servlet which will add or sub the two numbers and display the result of it
+
+2. Write a form to take the date of birth of the user
+   then write a servlet to display the age based on the date of birth supplied
+   for ex:
+   If the user enters: 10-Mar-1995
+   Then the output should be:
+   Version 1: Your age is 27 yrs
+   Version 2: You are 27 yrs 3 months 12 Days old
+
+
+
+
+
+

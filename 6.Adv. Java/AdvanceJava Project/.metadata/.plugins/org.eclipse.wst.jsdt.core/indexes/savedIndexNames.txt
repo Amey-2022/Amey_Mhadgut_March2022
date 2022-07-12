@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+G:\CDACM2022\SRC-Module-6\AdvanceJava Project\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2404572609.index

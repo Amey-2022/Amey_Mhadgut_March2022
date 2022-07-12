@@ -1,0 +1,17 @@
+package com.cdac.component.atmandbank;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("hdfcAtm-v2")
+public class HdfcAtm implements Atm {
+
+		@Autowired
+		private Bank bank;
+	
+	public void withdraw(int acno, double amount) {
+		
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.cdac.component.atmandbank;
+
+public class HdfcAtm implements Atm {
+
+	public void withdraw(int acno, double amount) {
+		
+		
+	}
+
+}

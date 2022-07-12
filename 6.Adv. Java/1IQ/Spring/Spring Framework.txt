@@ -1,0 +1,30 @@
+Spring Framework
+- Creating objects of our classes
+- Managing dependencies between our objects (DI -> Dependency Injection)
+
+Creating objects of our classes using Spring
+- There are couple of ways by which this can be achieved
+
+Option 1
+-> We can configure the class whose object has to be created in an xml file
+   for ex:
+   class HelloWorld {
+   	...
+   }
+   then in the xml,
+   <bean id="hw" class="...HelloWorld" />
+
+Option 2
+-> We can use annotations instead
+   for ex:
+   @Component("hw")
+   class HelloWorld {
+   	...
+   }
+   But still we need to do one entry in the xml file to make this work:
+   <context:component-scan base-package="com.cdac" />
+
+Managing dependencies between our objects (DI -> Dependency Injection)
+- DI helps us in achieving loose coupling in our appplications
+- Also interfaces play an important role in achieving loose coupling
+

@@ -1,0 +1,42 @@
+ORMs
+- Hibernate
+- Toplink
+- Eclipselink
+- DataNucleus
+- ObjectDB
+....
+
+There's one problem:
+Every ORM has it's own API
+For ex, in case of Hibernate(SessionFactory, Session, hbm, cfg, ..)
+- If we use the underlying Hibernate API, then our code will only work with Hibernate ORM
+- In future, if we want to shift to some other ORM, then we will have to rewrite everything
+
+The solution was provided by creating a standard API for all the ORMs
+called as JPA (Java Persistence API)
+- Hibernate confirms to the standard API
+
+Objects of our Entity class can be in one of the following states:
+- Transient
+	- An Object whose state/data has not yet been saved/inserted in the Database yet
+	- An Object which is in the memory and hasn't been persisted yet
+- Persistent/Managed
+	- An Object whose state has been saved in the Database
+- Detached
+	- An Object which contains existing data, 
+	- An Object which represents persistent state, 
+		but if any changes done will not reflect in the Database
+
+
+In Hibernate/JPA, there is this concept of lazy/eager loading
+- Hibernate uses lazy loading by default for one to many and many to many associations
+- Hibernate used eager loading by default for one to one and many to one associations
+
+Web Development
+MVC Frameworks
+- Angular
+- React
+- Vue
+- Ember
+....
+

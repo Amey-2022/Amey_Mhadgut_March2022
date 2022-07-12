@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Login</title>
+</head>
+<style>
+    .myform {
+        width: 350px;
+        margin: auto;
+
+    }
+
+    div {
+        margin-top: 10px;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid rgba(217, 255, 0, 0.829);
+        border-radius: 4px;
+        font-size: large;
+    }
+
+    label {
+        font-weight: bold;
+        font-size: x-large;
+    }
+
+    button {
+        width: 150px;
+        padding: 10px;
+
+        background-color: rgb(0, 89, 205);
+        color: white;
+    }
+</style>
+
+<body class="myform">
+
+    <h1>Login Form</h1>
+    <form action="login">
+        <div>
+            <label for="username">Enter Username</label><br />
+            <input type="text" name=username placeholder="Enter Username" required />
+        </div>
+        <div>
+            <label for="password">Enter Password</label><br />
+            <input type="password" name=password placeholder="Enter Password" required />
+            <img src="captcha.jpg" alt="captcha"> 
+            <input type="text" name=captcha placeholder="Enter captcha text here">
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+package com.cdac.dao;
+
+import javax.persistence.EntityManager;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class UserDao {
+	
+	@PersistenceContent
+	private EntityManager entityManager;
+	
+	@Transactional
+	public void add(User user) {
+		entityManager.persist(user);
+	}
+}

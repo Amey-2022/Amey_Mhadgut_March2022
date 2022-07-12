@@ -1,0 +1,23 @@
+Album album = new Album();
+album.setName("catuu");
+album.setReleaseDate(LocalDate.of(2011, 04, 20));
+album.setCopyright(" DEC Records");
+
+
+//Album album	= (Album)dao.fetchById(Album.class, 1);
+List<Song> list = new ArrayList<Song>();
+Song song = new Song();
+song.setTitle("song");
+song.setArtist("abc");
+song.setDuration(4.53);
+song.setAlbum(album);
+
+list.add(song);
+
+album.setSong(list);
+dao.save(album);
+
+dao.save(song
+
+
+https://i.stack.imgur.com/HtuqG.png

@@ -1,0 +1,28 @@
+TODO:
+1. role of web/http server
+2. difference between web server and web container
+3. what is the role of servlet/jsp
+4. what are the steps for writing and running a servlet/jsp
+
+5. what is the role of HTTP protocol and how it works?
+6. What are different methods of HTTP protocol (GET, POST, ...)
+7. What is the difference between GET and POST method of HTTP protocol
+8. What is Servlet interface? What is GenericServlet? What is HttpServlet?
+9. What is the life-cycle of a Servlet?
+10. What is the life-cycle of a JSP?
+11. What is ServletConfig? What is ServletContext?
+	If possible, try some program on it on your own
+TODO:
+1. role of web/http server
+2. difference between web server and web container
+3. what is the role of servlet/jsp
+4. what are the steps for writing and running a servlet/jsp
+
+5. what is the role of HTTP protocol and how it works?
+6. What are different methods of HTTP protocol (GET, POST, ...)
+7. What is the difference between GET and POST method of HTTP protocol
+8. What is Servlet interface? What is GenericServlet? What is HttpServlet?
+9. What is the life-cycle of a Servlet?
+10. What is the life-cycle of a JSP?
+11. What is ServletConfig? What is ServletContext?
+	If possible, try some program on it on your own
