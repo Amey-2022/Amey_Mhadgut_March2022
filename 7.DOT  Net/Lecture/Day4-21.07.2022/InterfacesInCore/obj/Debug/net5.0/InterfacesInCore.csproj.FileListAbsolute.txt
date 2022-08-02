@@ -1,0 +1,16 @@
+D:\Trainings\JKJuly22\Day4\InterfacesInCore\bin\Debug\net5.0\InterfacesInCore.exe
+D:\Trainings\JKJuly22\Day4\InterfacesInCore\bin\Debug\net5.0\InterfacesInCore.deps.json
+D:\Trainings\JKJuly22\Day4\InterfacesInCore\bin\Debug\net5.0\InterfacesInCore.runtimeconfig.json
+D:\Trainings\JKJuly22\Day4\InterfacesInCore\bin\Debug\net5.0\InterfacesInCore.runtimeconfig.dev.json
+D:\Trainings\JKJuly22\Day4\InterfacesInCore\bin\Debug\net5.0\InterfacesInCore.dll
+D:\Trainings\JKJuly22\Day4\InterfacesInCore\bin\Debug\net5.0\ref\InterfacesInCore.dll
+D:\Trainings\JKJuly22\Day4\InterfacesInCore\bin\Debug\net5.0\InterfacesInCore.pdb
+D:\Trainings\JKJuly22\Day4\InterfacesInCore\obj\Debug\net5.0\InterfacesInCore.csproj.AssemblyReference.cache
+D:\Trainings\JKJuly22\Day4\InterfacesInCore\obj\Debug\net5.0\InterfacesInCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Trainings\JKJuly22\Day4\InterfacesInCore\obj\Debug\net5.0\InterfacesInCore.AssemblyInfoInputs.cache
+D:\Trainings\JKJuly22\Day4\InterfacesInCore\obj\Debug\net5.0\InterfacesInCore.AssemblyInfo.cs
+D:\Trainings\JKJuly22\Day4\InterfacesInCore\obj\Debug\net5.0\InterfacesInCore.csproj.CoreCompileInputs.cache
+D:\Trainings\JKJuly22\Day4\InterfacesInCore\obj\Debug\net5.0\InterfacesInCore.dll
+D:\Trainings\JKJuly22\Day4\InterfacesInCore\obj\Debug\net5.0\ref\InterfacesInCore.dll
+D:\Trainings\JKJuly22\Day4\InterfacesInCore\obj\Debug\net5.0\InterfacesInCore.pdb
+D:\Trainings\JKJuly22\Day4\InterfacesInCore\obj\Debug\net5.0\InterfacesInCore.genruntimeconfig.cache

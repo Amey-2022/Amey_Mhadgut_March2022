@@ -1,0 +1,7 @@
+D:\Trainings\JKJuly22\Day12\DatabaseCode\bin\Debug\DatabaseCode.exe.config
+D:\Trainings\JKJuly22\Day12\DatabaseCode\bin\Debug\DatabaseCode.exe
+D:\Trainings\JKJuly22\Day12\DatabaseCode\bin\Debug\DatabaseCode.pdb
+D:\Trainings\JKJuly22\Day12\DatabaseCode\obj\Debug\DatabaseCode.csproj.AssemblyReference.cache
+D:\Trainings\JKJuly22\Day12\DatabaseCode\obj\Debug\DatabaseCode.csproj.CoreCompileInputs.cache
+D:\Trainings\JKJuly22\Day12\DatabaseCode\obj\Debug\DatabaseCode.exe
+D:\Trainings\JKJuly22\Day12\DatabaseCode\obj\Debug\DatabaseCode.pdb

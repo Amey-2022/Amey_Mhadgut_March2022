@@ -1,0 +1,7 @@
+D:\Trainings\JKJuly22\Day6\Delegates\bin\Debug\Delegates.exe.config
+D:\Trainings\JKJuly22\Day6\Delegates\bin\Debug\Delegates.exe
+D:\Trainings\JKJuly22\Day6\Delegates\bin\Debug\Delegates.pdb
+D:\Trainings\JKJuly22\Day6\Delegates\obj\Debug\Delegates.csproj.AssemblyReference.cache
+D:\Trainings\JKJuly22\Day6\Delegates\obj\Debug\Delegates.csproj.CoreCompileInputs.cache
+D:\Trainings\JKJuly22\Day6\Delegates\obj\Debug\Delegates.exe
+D:\Trainings\JKJuly22\Day6\Delegates\obj\Debug\Delegates.pdb

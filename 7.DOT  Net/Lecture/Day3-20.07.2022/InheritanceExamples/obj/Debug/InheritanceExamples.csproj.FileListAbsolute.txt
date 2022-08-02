@@ -1,0 +1,7 @@
+D:\Trainings\JKJuly22\Day3\InheritanceExamples\bin\Debug\InheritanceExamples.exe.config
+D:\Trainings\JKJuly22\Day3\InheritanceExamples\bin\Debug\InheritanceExamples.exe
+D:\Trainings\JKJuly22\Day3\InheritanceExamples\bin\Debug\InheritanceExamples.pdb
+D:\Trainings\JKJuly22\Day3\InheritanceExamples\obj\Debug\InheritanceExamples.csproj.AssemblyReference.cache
+D:\Trainings\JKJuly22\Day3\InheritanceExamples\obj\Debug\InheritanceExamples.csproj.CoreCompileInputs.cache
+D:\Trainings\JKJuly22\Day3\InheritanceExamples\obj\Debug\InheritanceExamples.exe
+D:\Trainings\JKJuly22\Day3\InheritanceExamples\obj\Debug\InheritanceExamples.pdb

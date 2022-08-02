@@ -1,0 +1,7 @@
+C:\Users\Amey Mhadgut\source\repos\Day10\ReflectionExample\bin\Debug\ReflectionExample.exe.config
+C:\Users\Amey Mhadgut\source\repos\Day10\ReflectionExample\bin\Debug\ReflectionExample.exe
+C:\Users\Amey Mhadgut\source\repos\Day10\ReflectionExample\bin\Debug\ReflectionExample.pdb
+C:\Users\Amey Mhadgut\source\repos\Day10\ReflectionExample\obj\Debug\ReflectionExample.csproj.AssemblyReference.cache
+C:\Users\Amey Mhadgut\source\repos\Day10\ReflectionExample\obj\Debug\ReflectionExample.csproj.CoreCompileInputs.cache
+C:\Users\Amey Mhadgut\source\repos\Day10\ReflectionExample\obj\Debug\ReflectionExample.exe
+C:\Users\Amey Mhadgut\source\repos\Day10\ReflectionExample\obj\Debug\ReflectionExample.pdb

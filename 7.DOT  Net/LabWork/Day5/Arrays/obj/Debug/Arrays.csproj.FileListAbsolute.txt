@@ -1,0 +1,7 @@
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Arrays\bin\Debug\Arrays.exe.config
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Arrays\bin\Debug\Arrays.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Arrays\bin\Debug\Arrays.pdb
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Arrays\obj\Debug\Arrays.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Arrays\obj\Debug\Arrays.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Arrays\obj\Debug\Arrays.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Arrays\obj\Debug\Arrays.pdb

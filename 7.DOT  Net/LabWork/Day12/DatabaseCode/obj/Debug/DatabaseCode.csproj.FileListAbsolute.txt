@@ -1,0 +1,7 @@
+C:\Users\Amey Mhadgut\source\repos\Day12\DatabaseCode\bin\Debug\DatabaseCode.exe.config
+C:\Users\Amey Mhadgut\source\repos\Day12\DatabaseCode\bin\Debug\DatabaseCode.exe
+C:\Users\Amey Mhadgut\source\repos\Day12\DatabaseCode\bin\Debug\DatabaseCode.pdb
+C:\Users\Amey Mhadgut\source\repos\Day12\DatabaseCode\obj\Debug\DatabaseCode.csproj.AssemblyReference.cache
+C:\Users\Amey Mhadgut\source\repos\Day12\DatabaseCode\obj\Debug\DatabaseCode.csproj.CoreCompileInputs.cache
+C:\Users\Amey Mhadgut\source\repos\Day12\DatabaseCode\obj\Debug\DatabaseCode.exe
+C:\Users\Amey Mhadgut\source\repos\Day12\DatabaseCode\obj\Debug\DatabaseCode.pdb

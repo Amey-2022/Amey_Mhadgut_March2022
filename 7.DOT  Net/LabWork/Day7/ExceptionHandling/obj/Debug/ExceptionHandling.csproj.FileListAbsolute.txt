@@ -1,0 +1,14 @@
+G:\CDACM2022\SRC-Module-7\LabWork\ExceptionHandling\ExceptionHandling\bin\Debug\ExceptionHandling.exe.config
+G:\CDACM2022\SRC-Module-7\LabWork\ExceptionHandling\ExceptionHandling\bin\Debug\ExceptionHandling.exe
+G:\CDACM2022\SRC-Module-7\LabWork\ExceptionHandling\ExceptionHandling\bin\Debug\ExceptionHandling.pdb
+G:\CDACM2022\SRC-Module-7\LabWork\ExceptionHandling\ExceptionHandling\obj\Debug\ExceptionHandling.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\LabWork\ExceptionHandling\ExceptionHandling\obj\Debug\ExceptionHandling.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\LabWork\ExceptionHandling\ExceptionHandling\obj\Debug\ExceptionHandling.exe
+G:\CDACM2022\SRC-Module-7\LabWork\ExceptionHandling\ExceptionHandling\obj\Debug\ExceptionHandling.pdb
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\ExceptionHandling\bin\Debug\ExceptionHandling.exe.config
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\ExceptionHandling\bin\Debug\ExceptionHandling.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\ExceptionHandling\bin\Debug\ExceptionHandling.pdb
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\ExceptionHandling\obj\Debug\ExceptionHandling.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\ExceptionHandling\obj\Debug\ExceptionHandling.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\ExceptionHandling\obj\Debug\ExceptionHandling.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\ExceptionHandling\obj\Debug\ExceptionHandling.pdb

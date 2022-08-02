@@ -1,0 +1,7 @@
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Generics\obj\Debug\Generics.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Generics\obj\Debug\Generics.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Generics\bin\Debug\Generics.exe.config
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Generics\bin\Debug\Generics.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Generics\bin\Debug\Generics.pdb
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Generics\obj\Debug\Generics.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Generics\obj\Debug\Generics.pdb

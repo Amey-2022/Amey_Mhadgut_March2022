@@ -1,0 +1,7 @@
+C:\Users\Amey Mhadgut\source\repos\Day10\OperatorOverloading\bin\Debug\OperatorOverloading.exe.config
+C:\Users\Amey Mhadgut\source\repos\Day10\OperatorOverloading\bin\Debug\OperatorOverloading.exe
+C:\Users\Amey Mhadgut\source\repos\Day10\OperatorOverloading\bin\Debug\OperatorOverloading.pdb
+C:\Users\Amey Mhadgut\source\repos\Day10\OperatorOverloading\obj\Debug\OperatorOverloading.csproj.AssemblyReference.cache
+C:\Users\Amey Mhadgut\source\repos\Day10\OperatorOverloading\obj\Debug\OperatorOverloading.csproj.CoreCompileInputs.cache
+C:\Users\Amey Mhadgut\source\repos\Day10\OperatorOverloading\obj\Debug\OperatorOverloading.exe
+C:\Users\Amey Mhadgut\source\repos\Day10\OperatorOverloading\obj\Debug\OperatorOverloading.pdb

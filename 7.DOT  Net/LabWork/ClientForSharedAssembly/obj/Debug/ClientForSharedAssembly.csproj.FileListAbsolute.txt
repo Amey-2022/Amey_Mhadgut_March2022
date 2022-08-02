@@ -1,0 +1,10 @@
+G:\CDACM2022\SRC-Module-7\LabWork\ClientForSharedAssembly\bin\Debug\ClientForSharedAssembly.exe.config
+G:\CDACM2022\SRC-Module-7\LabWork\ClientForSharedAssembly\bin\Debug\ClientForSharedAssembly.exe
+G:\CDACM2022\SRC-Module-7\LabWork\ClientForSharedAssembly\bin\Debug\ClientForSharedAssembly.pdb
+G:\CDACM2022\SRC-Module-7\LabWork\ClientForSharedAssembly\obj\Debug\ClientForSharedAssembly.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\LabWork\ClientForSharedAssembly\obj\Debug\ClientForSharedAssembly.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\LabWork\ClientForSharedAssembly\obj\Debug\ClientForSharedAssembly.exe
+G:\CDACM2022\SRC-Module-7\LabWork\ClientForSharedAssembly\obj\Debug\ClientForSharedAssembly.pdb
+G:\CDACM2022\SRC-Module-7\LabWork\ClientForSharedAssembly\bin\Debug\TestAccessSpecifiers.dll
+G:\CDACM2022\SRC-Module-7\LabWork\ClientForSharedAssembly\bin\Debug\TestAccessSpecifiers.pdb
+G:\CDACM2022\SRC-Module-7\LabWork\ClientForSharedAssembly\obj\Debug\ClientForSharedAssembly.csproj.CopyComplete

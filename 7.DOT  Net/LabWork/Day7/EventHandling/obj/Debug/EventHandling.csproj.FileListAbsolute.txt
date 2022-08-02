@@ -1,0 +1,7 @@
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\EventHandling\bin\Debug\EventHandling.exe.config
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\EventHandling\bin\Debug\EventHandling.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\EventHandling\bin\Debug\EventHandling.pdb
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\EventHandling\obj\Debug\EventHandling.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\EventHandling\obj\Debug\EventHandling.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\EventHandling\obj\Debug\EventHandling.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\EventHandling\obj\Debug\EventHandling.pdb

@@ -1,0 +1,15 @@
+Generate a key pair
+sn -k key1.snk
+
+Assembly must be signed with a key pair
+vis studio - Project properties - Signing
+
+Assembly must have a strong name
+build the assembly 
+
+install it in the GAC (Global Assembly Cache)
+gacutil /i ClassLibrary1.Dll
+
+------------------------------------
+uninstall it from the GAC (Global Assembly Cache)
+gacutil /u ClassLibrary1

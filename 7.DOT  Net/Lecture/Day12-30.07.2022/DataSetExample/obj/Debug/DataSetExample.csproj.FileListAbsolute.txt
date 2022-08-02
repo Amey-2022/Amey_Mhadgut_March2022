@@ -1,0 +1,10 @@
+D:\Trainings\JKJuly22\Day12\DataSetExample\bin\Debug\DataSetExample.exe.config
+D:\Trainings\JKJuly22\Day12\DataSetExample\bin\Debug\DataSetExample.exe
+D:\Trainings\JKJuly22\Day12\DataSetExample\bin\Debug\DataSetExample.pdb
+D:\Trainings\JKJuly22\Day12\DataSetExample\obj\Debug\DataSetExample.csproj.AssemblyReference.cache
+D:\Trainings\JKJuly22\Day12\DataSetExample\obj\Debug\DataSetExample.Form1.resources
+D:\Trainings\JKJuly22\Day12\DataSetExample\obj\Debug\DataSetExample.Properties.Resources.resources
+D:\Trainings\JKJuly22\Day12\DataSetExample\obj\Debug\DataSetExample.csproj.GenerateResource.cache
+D:\Trainings\JKJuly22\Day12\DataSetExample\obj\Debug\DataSetExample.csproj.CoreCompileInputs.cache
+D:\Trainings\JKJuly22\Day12\DataSetExample\obj\Debug\DataSetExample.exe
+D:\Trainings\JKJuly22\Day12\DataSetExample\obj\Debug\DataSetExample.pdb

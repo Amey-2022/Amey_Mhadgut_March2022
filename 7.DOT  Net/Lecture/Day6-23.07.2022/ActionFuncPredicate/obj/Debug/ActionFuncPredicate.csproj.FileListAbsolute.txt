@@ -1,0 +1,7 @@
+D:\Trainings\JKJuly22\Day6\ActionFuncPredicate\bin\Debug\ActionFuncPredicate.exe.config
+D:\Trainings\JKJuly22\Day6\ActionFuncPredicate\bin\Debug\ActionFuncPredicate.exe
+D:\Trainings\JKJuly22\Day6\ActionFuncPredicate\bin\Debug\ActionFuncPredicate.pdb
+D:\Trainings\JKJuly22\Day6\ActionFuncPredicate\obj\Debug\ActionFuncPredicate.csproj.AssemblyReference.cache
+D:\Trainings\JKJuly22\Day6\ActionFuncPredicate\obj\Debug\ActionFuncPredicate.csproj.CoreCompileInputs.cache
+D:\Trainings\JKJuly22\Day6\ActionFuncPredicate\obj\Debug\ActionFuncPredicate.exe
+D:\Trainings\JKJuly22\Day6\ActionFuncPredicate\obj\Debug\ActionFuncPredicate.pdb

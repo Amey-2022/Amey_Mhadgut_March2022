@@ -1,0 +1,66 @@
+﻿@model HtmlHelpersExample.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <h4>Employee</h4>
+    <hr />
+    ActionLink @Html.ActionLink("Go to Edit", "Edit")<br /><br />
+
+    TextBox @Html.TextBox("txtBasic", "value")<br />
+    <input type="text" name="txtBasic" value="" />
+           TextBoxFor @Html.TextBoxFor(model => model.Basic) <br /><br />
+
+    CheckBox @Html.CheckBox("chk1")<br />
+    CheckBoxFor @Html.CheckBoxFor(model => model.IsActive)<br /><br />
+
+
+    @Html.RadioButton("btn1", "Yes") Yes<br />
+    @Html.RadioButton("btn1", "No") No<br />
+    @Html.RadioButton("btn1", "Maybe") Maybe<br /><br />
+
+    @foreach (var item in Model.Departments)
+    {
+        @Html.RadioButtonFor(model => model.DeptNo, item.Value)
+        @item.Text
+        <br />
+    }
+    <br />
+
+    DropDownList @Html.DropDownList("ddlDepts", Model.Departments)
+    <br />
+
+
+    DropDownListFor @Html.DropDownListFor(model => model.DeptNo, Model.Departments)
+    <br />
+    DropDownListFor @Html.DropDownListFor(model => model.DeptNo, (IEnumerable<SelectListItem>)ViewBag.Departments)
+
+    <br />
+
+    @Html.Password("txtPassword")<br />
+    @Html.PasswordFor(model => model.Name)
+
+    <br />
+    @Html.TextAreaFor(model => model.Name)
+    <br />
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

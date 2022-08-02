@@ -1,0 +1,10 @@
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\Inheritance\bin\Debug\Inheritance.exe.config
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\Inheritance\bin\Debug\Inheritance.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\Inheritance\bin\Debug\Inheritance.pdb
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\Inheritance\obj\Debug\Inheritance.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\Inheritance\obj\Debug\Inheritance.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\Inheritance\obj\Debug\Inheritance.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\Inheritance\obj\Debug\Inheritance.pdb
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\Inheritance\bin\Debug\TestAccessSpecifiers.dll
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\Inheritance\bin\Debug\TestAccessSpecifiers.pdb
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\Inheritance\obj\Debug\Inheritance.csproj.CopyComplete

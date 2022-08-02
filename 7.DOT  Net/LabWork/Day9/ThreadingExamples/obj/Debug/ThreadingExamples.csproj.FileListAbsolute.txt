@@ -1,0 +1,7 @@
+C:\Users\Amey Mhadgut\source\repos\Day9\ThreadingExamples\bin\Debug\ThreadingExamples.exe.config
+C:\Users\Amey Mhadgut\source\repos\Day9\ThreadingExamples\bin\Debug\ThreadingExamples.exe
+C:\Users\Amey Mhadgut\source\repos\Day9\ThreadingExamples\bin\Debug\ThreadingExamples.pdb
+C:\Users\Amey Mhadgut\source\repos\Day9\ThreadingExamples\obj\Debug\ThreadingExamples.csproj.AssemblyReference.cache
+C:\Users\Amey Mhadgut\source\repos\Day9\ThreadingExamples\obj\Debug\ThreadingExamples.csproj.CoreCompileInputs.cache
+C:\Users\Amey Mhadgut\source\repos\Day9\ThreadingExamples\obj\Debug\ThreadingExamples.exe
+C:\Users\Amey Mhadgut\source\repos\Day9\ThreadingExamples\obj\Debug\ThreadingExamples.pdb

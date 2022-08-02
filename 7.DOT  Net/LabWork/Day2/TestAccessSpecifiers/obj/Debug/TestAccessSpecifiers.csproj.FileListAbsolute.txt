@@ -1,0 +1,6 @@
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\TestAccessSpecifiers\bin\Debug\TestAccessSpecifiers.dll
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\TestAccessSpecifiers\bin\Debug\TestAccessSpecifiers.pdb
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\TestAccessSpecifiers\obj\Debug\TestAccessSpecifiers.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\TestAccessSpecifiers\obj\Debug\TestAccessSpecifiers.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\TestAccessSpecifiers\obj\Debug\TestAccessSpecifiers.dll
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\TestAccessSpecifiers\obj\Debug\TestAccessSpecifiers.pdb

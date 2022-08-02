@@ -1,0 +1,7 @@
+D:\Trainings\JKJuly22\Day10\Indexers\bin\Debug\Indexers.exe.config
+D:\Trainings\JKJuly22\Day10\Indexers\bin\Debug\Indexers.exe
+D:\Trainings\JKJuly22\Day10\Indexers\bin\Debug\Indexers.pdb
+D:\Trainings\JKJuly22\Day10\Indexers\obj\Debug\Indexers.csproj.AssemblyReference.cache
+D:\Trainings\JKJuly22\Day10\Indexers\obj\Debug\Indexers.csproj.CoreCompileInputs.cache
+D:\Trainings\JKJuly22\Day10\Indexers\obj\Debug\Indexers.exe
+D:\Trainings\JKJuly22\Day10\Indexers\obj\Debug\Indexers.pdb

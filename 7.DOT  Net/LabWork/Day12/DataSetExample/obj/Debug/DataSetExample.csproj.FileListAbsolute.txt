@@ -1,0 +1,20 @@
+C:\Users\Amey Mhadgut\source\repos\Day12\DataSetExample\obj\Debug\DataSetExample.csproj.AssemblyReference.cache
+C:\Users\Amey Mhadgut\source\repos\Day12\DataSetExample\obj\Debug\DataSetExample.Form1.resources
+C:\Users\Amey Mhadgut\source\repos\Day12\DataSetExample\obj\Debug\DataSetExample.Properties.Resources.resources
+C:\Users\Amey Mhadgut\source\repos\Day12\DataSetExample\obj\Debug\DataSetExample.csproj.GenerateResource.cache
+C:\Users\Amey Mhadgut\source\repos\Day12\DataSetExample\obj\Debug\DataSetExample.csproj.CoreCompileInputs.cache
+C:\Users\Amey Mhadgut\source\repos\Day12\DataSetExample\bin\Debug\DataSetExample.exe.config
+C:\Users\Amey Mhadgut\source\repos\Day12\DataSetExample\bin\Debug\DataSetExample.exe
+C:\Users\Amey Mhadgut\source\repos\Day12\DataSetExample\bin\Debug\DataSetExample.pdb
+C:\Users\Amey Mhadgut\source\repos\Day12\DataSetExample\obj\Debug\DataSetExample.exe
+C:\Users\Amey Mhadgut\source\repos\Day12\DataSetExample\obj\Debug\DataSetExample.pdb
+G:\CDACM2022\SRC-Module-7\LabWork\Day12\DataSetExample\bin\Debug\DataSetExample.exe.config
+G:\CDACM2022\SRC-Module-7\LabWork\Day12\DataSetExample\bin\Debug\DataSetExample.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day12\DataSetExample\bin\Debug\DataSetExample.pdb
+G:\CDACM2022\SRC-Module-7\LabWork\Day12\DataSetExample\obj\Debug\DataSetExample.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day12\DataSetExample\obj\Debug\DataSetExample.Form1.resources
+G:\CDACM2022\SRC-Module-7\LabWork\Day12\DataSetExample\obj\Debug\DataSetExample.Properties.Resources.resources
+G:\CDACM2022\SRC-Module-7\LabWork\Day12\DataSetExample\obj\Debug\DataSetExample.csproj.GenerateResource.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day12\DataSetExample\obj\Debug\DataSetExample.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day12\DataSetExample\obj\Debug\DataSetExample.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day12\DataSetExample\obj\Debug\DataSetExample.pdb

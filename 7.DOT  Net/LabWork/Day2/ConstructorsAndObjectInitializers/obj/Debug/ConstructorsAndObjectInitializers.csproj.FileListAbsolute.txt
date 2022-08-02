@@ -1,0 +1,7 @@
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\ConstructorsAndObjectInitializers\bin\Debug\ConstructorsAndObjectInitializers.exe.config
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\ConstructorsAndObjectInitializers\bin\Debug\ConstructorsAndObjectInitializers.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\ConstructorsAndObjectInitializers\bin\Debug\ConstructorsAndObjectInitializers.pdb
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\ConstructorsAndObjectInitializers\obj\Debug\ConstructorsAndObjectInitializers.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\ConstructorsAndObjectInitializers\obj\Debug\ConstructorsAndObjectInitializers.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\ConstructorsAndObjectInitializers\obj\Debug\ConstructorsAndObjectInitializers.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\ConstructorsAndObjectInitializers\obj\Debug\ConstructorsAndObjectInitializers.pdb

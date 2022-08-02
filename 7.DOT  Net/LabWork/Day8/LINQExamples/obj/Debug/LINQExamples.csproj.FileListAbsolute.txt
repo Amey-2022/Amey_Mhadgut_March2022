@@ -1,0 +1,7 @@
+G:\CDACM2022\SRC-Module-7\LabWork\Day8\LINQExamples\bin\Debug\LINQExamples.exe.config
+G:\CDACM2022\SRC-Module-7\LabWork\Day8\LINQExamples\bin\Debug\LINQExamples.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day8\LINQExamples\bin\Debug\LINQExamples.pdb
+G:\CDACM2022\SRC-Module-7\LabWork\Day8\LINQExamples\obj\Debug\LINQExamples.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day8\LINQExamples\obj\Debug\LINQExamples.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day8\LINQExamples\obj\Debug\LINQExamples.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day8\LINQExamples\obj\Debug\LINQExamples.pdb

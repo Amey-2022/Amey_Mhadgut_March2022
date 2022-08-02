@@ -1,0 +1,10 @@
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb

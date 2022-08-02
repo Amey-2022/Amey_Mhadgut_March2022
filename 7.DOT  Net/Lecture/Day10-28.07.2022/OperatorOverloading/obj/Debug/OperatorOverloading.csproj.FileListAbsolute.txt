@@ -1,0 +1,7 @@
+D:\Trainings\JKJuly22\Day10\OperatorOverloading\bin\Debug\OperatorOverloading.exe.config
+D:\Trainings\JKJuly22\Day10\OperatorOverloading\bin\Debug\OperatorOverloading.exe
+D:\Trainings\JKJuly22\Day10\OperatorOverloading\bin\Debug\OperatorOverloading.pdb
+D:\Trainings\JKJuly22\Day10\OperatorOverloading\obj\Debug\OperatorOverloading.csproj.AssemblyReference.cache
+D:\Trainings\JKJuly22\Day10\OperatorOverloading\obj\Debug\OperatorOverloading.csproj.CoreCompileInputs.cache
+D:\Trainings\JKJuly22\Day10\OperatorOverloading\obj\Debug\OperatorOverloading.exe
+D:\Trainings\JKJuly22\Day10\OperatorOverloading\obj\Debug\OperatorOverloading.pdb

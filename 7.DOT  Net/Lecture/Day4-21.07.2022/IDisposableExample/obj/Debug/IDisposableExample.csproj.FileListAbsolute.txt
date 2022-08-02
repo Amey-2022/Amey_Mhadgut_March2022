@@ -1,0 +1,6 @@
+D:\Trainings\JKJuly22\Day4\IDisposableExample\bin\Debug\IDisposableExample.exe.config
+D:\Trainings\JKJuly22\Day4\IDisposableExample\bin\Debug\IDisposableExample.exe
+D:\Trainings\JKJuly22\Day4\IDisposableExample\bin\Debug\IDisposableExample.pdb
+D:\Trainings\JKJuly22\Day4\IDisposableExample\obj\Debug\IDisposableExample.csproj.CoreCompileInputs.cache
+D:\Trainings\JKJuly22\Day4\IDisposableExample\obj\Debug\IDisposableExample.exe
+D:\Trainings\JKJuly22\Day4\IDisposableExample\obj\Debug\IDisposableExample.pdb

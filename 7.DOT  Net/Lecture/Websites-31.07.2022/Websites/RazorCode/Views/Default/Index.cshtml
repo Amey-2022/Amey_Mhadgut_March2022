@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+id = @ViewBag.id
+<br />
+a = @ViewBag.a
+<br />
+b = @ViewBag.b
+<br />
+c = @ViewBag.c
+<br />
+
+@{
+
+    string s = "abc";
+    int i = 100;
+    i = ViewBag.a;
+}
+@{
+    if (i % 2 == 0)
+    {
+        s = "even";
+    }
+    else
+    {
+        s = "odd";
+    }
+
+}
+i = @i
+<br />
+s = @s
+<br />
+
+@{
+if (i % 2 == 0)
+{
+    @:result = even<br />
+}
+else
+{
+    @:result= odd<br />
+}
+}
+
+<table border="1">
+    @for (int j = 1; j < 5; j++)
+    {
+        <tr>
+            <td>5</td>
+            <td>*</td>
+            <td>@j</td>
+            <td>=</td>
+            <td>@(j*5)</td>
+        </tr>
+
+    }
+</table>

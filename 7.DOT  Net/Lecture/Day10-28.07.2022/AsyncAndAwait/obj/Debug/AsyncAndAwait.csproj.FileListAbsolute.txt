@@ -1,0 +1,7 @@
+D:\Trainings\JKJuly22\Day10\AsyncAndAwait\bin\Debug\AsyncAndAwait.exe.config
+D:\Trainings\JKJuly22\Day10\AsyncAndAwait\bin\Debug\AsyncAndAwait.exe
+D:\Trainings\JKJuly22\Day10\AsyncAndAwait\bin\Debug\AsyncAndAwait.pdb
+D:\Trainings\JKJuly22\Day10\AsyncAndAwait\obj\Debug\AsyncAndAwait.csproj.AssemblyReference.cache
+D:\Trainings\JKJuly22\Day10\AsyncAndAwait\obj\Debug\AsyncAndAwait.csproj.CoreCompileInputs.cache
+D:\Trainings\JKJuly22\Day10\AsyncAndAwait\obj\Debug\AsyncAndAwait.exe
+D:\Trainings\JKJuly22\Day10\AsyncAndAwait\obj\Debug\AsyncAndAwait.pdb

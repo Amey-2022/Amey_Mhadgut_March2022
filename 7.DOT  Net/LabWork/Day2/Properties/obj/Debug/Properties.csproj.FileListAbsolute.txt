@@ -1,0 +1,7 @@
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\Properties\bin\Debug\Properties.exe.config
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\Properties\bin\Debug\Properties.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\Properties\bin\Debug\Properties.pdb
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\Properties\obj\Debug\Properties.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\Properties\obj\Debug\Properties.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\Properties\obj\Debug\Properties.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day2\Properties\obj\Debug\Properties.pdb

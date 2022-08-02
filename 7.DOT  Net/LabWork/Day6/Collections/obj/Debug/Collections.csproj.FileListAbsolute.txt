@@ -1,0 +1,7 @@
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day6\Collections\bin\Debug\Collections.exe.config
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day6\Collections\bin\Debug\Collections.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day6\Collections\bin\Debug\Collections.pdb
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day6\Collections\obj\Debug\Collections.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day6\Collections\obj\Debug\Collections.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day6\Collections\obj\Debug\Collections.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day6\Collections\obj\Debug\Collections.pdb

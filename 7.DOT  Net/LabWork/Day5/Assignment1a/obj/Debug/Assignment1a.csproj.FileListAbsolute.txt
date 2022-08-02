@@ -1,0 +1,6 @@
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Assignment1a\bin\Debug\Assignment1a.exe.config
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Assignment1a\bin\Debug\Assignment1a.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Assignment1a\bin\Debug\Assignment1a.pdb
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Assignment1a\obj\Debug\Assignment1a.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Assignment1a\obj\Debug\Assignment1a.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day5\Assignment1a\obj\Debug\Assignment1a.pdb

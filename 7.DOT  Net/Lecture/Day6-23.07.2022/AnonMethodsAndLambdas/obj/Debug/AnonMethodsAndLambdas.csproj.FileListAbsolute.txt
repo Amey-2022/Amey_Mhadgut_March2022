@@ -1,0 +1,6 @@
+D:\Trainings\JKJuly22\Day6\AnonMethodsAndLambdas\bin\Debug\AnonMethodsAndLambdas.exe.config
+D:\Trainings\JKJuly22\Day6\AnonMethodsAndLambdas\bin\Debug\AnonMethodsAndLambdas.exe
+D:\Trainings\JKJuly22\Day6\AnonMethodsAndLambdas\bin\Debug\AnonMethodsAndLambdas.pdb
+D:\Trainings\JKJuly22\Day6\AnonMethodsAndLambdas\obj\Debug\AnonMethodsAndLambdas.csproj.CoreCompileInputs.cache
+D:\Trainings\JKJuly22\Day6\AnonMethodsAndLambdas\obj\Debug\AnonMethodsAndLambdas.exe
+D:\Trainings\JKJuly22\Day6\AnonMethodsAndLambdas\obj\Debug\AnonMethodsAndLambdas.pdb

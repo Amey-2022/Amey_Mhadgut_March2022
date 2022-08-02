@@ -1,0 +1,10 @@
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\SerializationEgs\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\SerializationEgs\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\SerializationEgs\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\SerializationEgs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\SerializationEgs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\SerializationEgs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\SerializationEgs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\SerializationEgs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\SerializationEgs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day11\SerializationEgs\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb

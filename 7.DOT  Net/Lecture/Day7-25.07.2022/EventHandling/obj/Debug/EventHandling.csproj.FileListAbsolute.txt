@@ -1,0 +1,7 @@
+D:\Trainings\JKJuly22\Day7\EventHandling\bin\Debug\EventHandling.exe.config
+D:\Trainings\JKJuly22\Day7\EventHandling\bin\Debug\EventHandling.exe
+D:\Trainings\JKJuly22\Day7\EventHandling\bin\Debug\EventHandling.pdb
+D:\Trainings\JKJuly22\Day7\EventHandling\obj\Debug\EventHandling.csproj.AssemblyReference.cache
+D:\Trainings\JKJuly22\Day7\EventHandling\obj\Debug\EventHandling.csproj.CoreCompileInputs.cache
+D:\Trainings\JKJuly22\Day7\EventHandling\obj\Debug\EventHandling.exe
+D:\Trainings\JKJuly22\Day7\EventHandling\obj\Debug\EventHandling.pdb

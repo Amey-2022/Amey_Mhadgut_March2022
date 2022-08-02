@@ -1,0 +1,7 @@
+C:\Users\Amey Mhadgut\source\repos\Day10\TaskExamples\bin\Debug\TaskExamples.exe.config
+C:\Users\Amey Mhadgut\source\repos\Day10\TaskExamples\bin\Debug\TaskExamples.exe
+C:\Users\Amey Mhadgut\source\repos\Day10\TaskExamples\bin\Debug\TaskExamples.pdb
+C:\Users\Amey Mhadgut\source\repos\Day10\TaskExamples\obj\Debug\TaskExamples.csproj.AssemblyReference.cache
+C:\Users\Amey Mhadgut\source\repos\Day10\TaskExamples\obj\Debug\TaskExamples.csproj.CoreCompileInputs.cache
+C:\Users\Amey Mhadgut\source\repos\Day10\TaskExamples\obj\Debug\TaskExamples.exe
+C:\Users\Amey Mhadgut\source\repos\Day10\TaskExamples\obj\Debug\TaskExamples.pdb

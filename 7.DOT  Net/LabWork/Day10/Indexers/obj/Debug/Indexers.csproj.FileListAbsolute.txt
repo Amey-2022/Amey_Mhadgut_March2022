@@ -1,0 +1,7 @@
+C:\Users\Amey Mhadgut\source\repos\Day10\Indexers\bin\Debug\Indexers.exe.config
+C:\Users\Amey Mhadgut\source\repos\Day10\Indexers\bin\Debug\Indexers.exe
+C:\Users\Amey Mhadgut\source\repos\Day10\Indexers\bin\Debug\Indexers.pdb
+C:\Users\Amey Mhadgut\source\repos\Day10\Indexers\obj\Debug\Indexers.csproj.AssemblyReference.cache
+C:\Users\Amey Mhadgut\source\repos\Day10\Indexers\obj\Debug\Indexers.csproj.CoreCompileInputs.cache
+C:\Users\Amey Mhadgut\source\repos\Day10\Indexers\obj\Debug\Indexers.exe
+C:\Users\Amey Mhadgut\source\repos\Day10\Indexers\obj\Debug\Indexers.pdb

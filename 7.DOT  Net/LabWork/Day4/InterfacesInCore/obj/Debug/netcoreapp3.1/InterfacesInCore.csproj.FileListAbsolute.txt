@@ -1,0 +1,14 @@
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\InterfacesInCore\bin\Debug\netcoreapp3.1\InterfacesInCore.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\InterfacesInCore\bin\Debug\netcoreapp3.1\InterfacesInCore.deps.json
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\InterfacesInCore\bin\Debug\netcoreapp3.1\InterfacesInCore.runtimeconfig.json
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\InterfacesInCore\bin\Debug\netcoreapp3.1\InterfacesInCore.runtimeconfig.dev.json
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\InterfacesInCore\bin\Debug\netcoreapp3.1\InterfacesInCore.dll
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\InterfacesInCore\bin\Debug\netcoreapp3.1\InterfacesInCore.pdb
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\InterfacesInCore\obj\Debug\netcoreapp3.1\InterfacesInCore.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\InterfacesInCore\obj\Debug\netcoreapp3.1\InterfacesInCore.GeneratedMSBuildEditorConfig.editorconfig
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\InterfacesInCore\obj\Debug\netcoreapp3.1\InterfacesInCore.AssemblyInfoInputs.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\InterfacesInCore\obj\Debug\netcoreapp3.1\InterfacesInCore.AssemblyInfo.cs
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\InterfacesInCore\obj\Debug\netcoreapp3.1\InterfacesInCore.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\InterfacesInCore\obj\Debug\netcoreapp3.1\InterfacesInCore.dll
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\InterfacesInCore\obj\Debug\netcoreapp3.1\InterfacesInCore.pdb
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\InterfacesInCore\obj\Debug\netcoreapp3.1\InterfacesInCore.genruntimeconfig.cache

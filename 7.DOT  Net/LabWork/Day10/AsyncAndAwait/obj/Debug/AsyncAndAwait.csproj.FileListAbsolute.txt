@@ -1,0 +1,7 @@
+C:\Users\Amey Mhadgut\source\repos\Day10\AsyncAndAwait\bin\Debug\AsyncAndAwait.exe.config
+C:\Users\Amey Mhadgut\source\repos\Day10\AsyncAndAwait\bin\Debug\AsyncAndAwait.exe
+C:\Users\Amey Mhadgut\source\repos\Day10\AsyncAndAwait\bin\Debug\AsyncAndAwait.pdb
+C:\Users\Amey Mhadgut\source\repos\Day10\AsyncAndAwait\obj\Debug\AsyncAndAwait.csproj.AssemblyReference.cache
+C:\Users\Amey Mhadgut\source\repos\Day10\AsyncAndAwait\obj\Debug\AsyncAndAwait.csproj.CoreCompileInputs.cache
+C:\Users\Amey Mhadgut\source\repos\Day10\AsyncAndAwait\obj\Debug\AsyncAndAwait.exe
+C:\Users\Amey Mhadgut\source\repos\Day10\AsyncAndAwait\obj\Debug\AsyncAndAwait.pdb

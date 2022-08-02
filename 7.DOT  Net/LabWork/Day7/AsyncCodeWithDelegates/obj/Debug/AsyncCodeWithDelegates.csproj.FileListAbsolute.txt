@@ -1,0 +1,7 @@
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\AsyncCodeWithDelegates\obj\Debug\AsyncCodeWithDelegates.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\AsyncCodeWithDelegates\obj\Debug\AsyncCodeWithDelegates.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\AsyncCodeWithDelegates\bin\Debug\AsyncCodeWithDelegates.exe.config
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\AsyncCodeWithDelegates\bin\Debug\AsyncCodeWithDelegates.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\AsyncCodeWithDelegates\bin\Debug\AsyncCodeWithDelegates.pdb
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\AsyncCodeWithDelegates\obj\Debug\AsyncCodeWithDelegates.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day7\AsyncCodeWithDelegates\obj\Debug\AsyncCodeWithDelegates.pdb

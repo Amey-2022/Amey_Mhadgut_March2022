@@ -1,0 +1,14 @@
+D:\Trainings\JKJuly22\Day8\LanguageFeatures\bin\Debug\LanguageFeatures.exe.config
+D:\Trainings\JKJuly22\Day8\LanguageFeatures\bin\Debug\LanguageFeatures.exe
+D:\Trainings\JKJuly22\Day8\LanguageFeatures\bin\Debug\LanguageFeatures.pdb
+D:\Trainings\JKJuly22\Day8\LanguageFeatures\obj\Debug\LanguageFeatures.csproj.AssemblyReference.cache
+D:\Trainings\JKJuly22\Day8\LanguageFeatures\obj\Debug\LanguageFeatures.csproj.CoreCompileInputs.cache
+D:\Trainings\JKJuly22\Day8\LanguageFeatures\obj\Debug\LanguageFeatures.exe
+D:\Trainings\JKJuly22\Day8\LanguageFeatures\obj\Debug\LanguageFeatures.pdb
+G:\CDACM2022\SRC-Module-7\LabWork\Day8\LanguageFeatures\bin\Debug\LanguageFeatures.exe.config
+G:\CDACM2022\SRC-Module-7\LabWork\Day8\LanguageFeatures\bin\Debug\LanguageFeatures.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day8\LanguageFeatures\bin\Debug\LanguageFeatures.pdb
+G:\CDACM2022\SRC-Module-7\LabWork\Day8\LanguageFeatures\obj\Debug\LanguageFeatures.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day8\LanguageFeatures\obj\Debug\LanguageFeatures.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day8\LanguageFeatures\obj\Debug\LanguageFeatures.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day8\LanguageFeatures\obj\Debug\LanguageFeatures.pdb

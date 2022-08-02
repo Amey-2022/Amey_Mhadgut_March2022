@@ -1,0 +1,7 @@
+D:\Trainings\JKJuly22\Day2\Properties\bin\Debug\Properties.exe.config
+D:\Trainings\JKJuly22\Day2\Properties\bin\Debug\Properties.exe
+D:\Trainings\JKJuly22\Day2\Properties\bin\Debug\Properties.pdb
+D:\Trainings\JKJuly22\Day2\Properties\obj\Debug\Properties.csproj.CoreCompileInputs.cache
+D:\Trainings\JKJuly22\Day2\Properties\obj\Debug\Properties.exe
+D:\Trainings\JKJuly22\Day2\Properties\obj\Debug\Properties.pdb
+D:\Trainings\JKJuly22\Day2\Properties\obj\Debug\Properties.csproj.AssemblyReference.cache

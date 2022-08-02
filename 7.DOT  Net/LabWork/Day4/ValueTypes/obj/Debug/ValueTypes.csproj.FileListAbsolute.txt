@@ -1,0 +1,7 @@
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\ValueTypes\bin\Debug\ValueTypes.exe.config
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\ValueTypes\bin\Debug\ValueTypes.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\ValueTypes\bin\Debug\ValueTypes.pdb
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\ValueTypes\obj\Debug\ValueTypes.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\ValueTypes\obj\Debug\ValueTypes.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\ValueTypes\obj\Debug\ValueTypes.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\ValueTypes\obj\Debug\ValueTypes.pdb

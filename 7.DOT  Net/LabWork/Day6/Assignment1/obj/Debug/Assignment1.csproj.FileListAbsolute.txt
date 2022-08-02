@@ -1,0 +1,14 @@
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day6\Assignment1\bin\Debug\Assignment1.exe.config
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day6\Assignment1\bin\Debug\Assignment1.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day6\Assignment1\bin\Debug\Assignment1.pdb
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day6\Assignment1\obj\Debug\Assignment1.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day6\Assignment1\obj\Debug\Assignment1.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day6\Assignment1\obj\Debug\Assignment1.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day6\Assignment1\obj\Debug\Assignment1.pdb
+G:\CDACM2022\SRC-Module-7\LabWork\Day6\Assignment1\bin\Debug\Assignment1.exe.config
+G:\CDACM2022\SRC-Module-7\LabWork\Day6\Assignment1\bin\Debug\Assignment1.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day6\Assignment1\bin\Debug\Assignment1.pdb
+G:\CDACM2022\SRC-Module-7\LabWork\Day6\Assignment1\obj\Debug\Assignment1.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day6\Assignment1\obj\Debug\Assignment1.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\LabWork\Day6\Assignment1\obj\Debug\Assignment1.exe
+G:\CDACM2022\SRC-Module-7\LabWork\Day6\Assignment1\obj\Debug\Assignment1.pdb

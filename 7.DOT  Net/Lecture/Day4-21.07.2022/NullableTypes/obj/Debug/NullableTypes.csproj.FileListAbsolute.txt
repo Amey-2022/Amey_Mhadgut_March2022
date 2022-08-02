@@ -1,0 +1,6 @@
+D:\Trainings\JKJuly22\Day4\NullableTypes\bin\Debug\NullableTypes.exe.config
+D:\Trainings\JKJuly22\Day4\NullableTypes\bin\Debug\NullableTypes.exe
+D:\Trainings\JKJuly22\Day4\NullableTypes\bin\Debug\NullableTypes.pdb
+D:\Trainings\JKJuly22\Day4\NullableTypes\obj\Debug\NullableTypes.csproj.CoreCompileInputs.cache
+D:\Trainings\JKJuly22\Day4\NullableTypes\obj\Debug\NullableTypes.exe
+D:\Trainings\JKJuly22\Day4\NullableTypes\obj\Debug\NullableTypes.pdb

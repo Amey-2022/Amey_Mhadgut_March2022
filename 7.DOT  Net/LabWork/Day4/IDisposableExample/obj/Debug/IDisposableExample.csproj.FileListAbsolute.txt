@@ -1,0 +1,7 @@
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\IDisposableExample\bin\Debug\IDisposableExample.exe.config
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\IDisposableExample\bin\Debug\IDisposableExample.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\IDisposableExample\bin\Debug\IDisposableExample.pdb
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\IDisposableExample\obj\Debug\IDisposableExample.csproj.AssemblyReference.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\IDisposableExample\obj\Debug\IDisposableExample.csproj.CoreCompileInputs.cache
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\IDisposableExample\obj\Debug\IDisposableExample.exe
+G:\CDACM2022\SRC-Module-7\JKJuly22\Day4\IDisposableExample\obj\Debug\IDisposableExample.pdb
