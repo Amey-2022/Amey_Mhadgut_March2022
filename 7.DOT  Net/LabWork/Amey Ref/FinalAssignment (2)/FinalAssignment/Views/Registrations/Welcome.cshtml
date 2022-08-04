@@ -1,0 +1,7 @@
+﻿<h2>
+    Welcome
+    @if (Session["LoginName"] != null)
+    {
+        @Session["LoginName"].ToString()
+    }
+</h2>

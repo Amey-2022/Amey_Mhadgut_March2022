@@ -1,0 +1,42 @@
+﻿Assignment :
+1. Create a Register Page
+
+Login name __
+Password __
+Confirm password __
+Full Name____
+EmailId____
+City____ (Dropdown)
+Phone____
+
+Register(submit Button) Reset(Html Reset Buttom) (Buttons)
+
+2. Create a Login Page
+
+Login Name____
+Password____
+
+[]Remember Me
+
+Login(Submit)   New User(Hyperlink)
+
+3. Create a Home Page
+
+Welcome <login name>
+Full Name <full nname>
+
+Logout (submit button) --> Session.Abandon(), delete cookie, redirect to login page
+Update Profile (Hyperlink)
+
+4. Update Profile
+
+Welcome <login name>
+Login name (display login name)
+Full Name____
+EmailId____
+City____
+Phone____
+
+Update(submit) 
+Logout (submit button)
+Home Page (Hyperlink)

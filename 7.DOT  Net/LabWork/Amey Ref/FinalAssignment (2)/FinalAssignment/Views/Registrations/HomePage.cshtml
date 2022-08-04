@@ -1,0 +1,60 @@
+﻿@model FinalAssignment.Models.Registration
+
+@{
+    ViewBag.Title = "HomePage";
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+
+<h2>HomePage</h2>
+
+<div>
+ 
+    <hr />
+    <h2>
+        @Html.Partial("Welcome")
+    </h2>
+    <h2>
+        @{string s, s2, s3 = "";
+            if (Session["LoginName"] != null)
+            {
+                HttpCookie objCookie = Request.Cookies["LoginDetails"];
+                if (objCookie != null){
+                    s = (string)objCookie.Values["UserFullName"];
+                    s2 = (string)objCookie.Values["LoginName"];
+
+                }
+                s3 = Session["LoginName"].ToString();
+            }
+            }
+            Full Name :  @if (Session["FullName"] != null)
+            {
+                @Session["FullName"].ToString()
+        }
+
+    </h2>
+       
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            
+            
+
+    <div class="form-group">
+       
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Logout" class="btn btn-default" />
+
+        </div>
+    </div>
+                }
+
+
+
+        </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit",new { id = @s3 }) 
+
+   
+</p>
