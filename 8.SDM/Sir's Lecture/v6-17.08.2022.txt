@@ -1,0 +1,287 @@
+   ┌──────────────────────────────────────────────────────────────────────┐
+    │                 • MobaXterm Personal Edition v22.1 •                 │
+    │               (SSH client, X server and network tools)               │
+    │                                                                      │
+    │ ⮞ SSH session to ec2-user@54.159.206.202                             │
+    │   • Direct SSH      :  ✓                                             │
+    │   • SSH compression :  ✓                                             │
+    │   • SSH-browser     :  ✓                                             │
+    │   • X11-forwarding  :  ✗  (disabled or not supported by server)      │
+    │                                                                      │
+    │ ⮞ For more info, ctrl+click on help or visit our website.            │
+    └──────────────────────────────────────────────────────────────────────┘
+
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+2 package(s) needed for security, out of 10 available
+Run "sudo yum update" to apply all updates.
+[ec2-user@ip-172-31-88-10 ~]$ clear
+[ec2-user@ip-172-31-88-10 ~]$ sudo su
+[root@ip-172-31-88-10 ec2-user]# yum install docker
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+amzn2-core                                                                                                        | 3.7 kB  00:00:00
+Resolving Dependencies
+--> Running transaction check
+---> Package docker.x86_64 0:20.10.17-1.amzn2 will be installed
+--> Processing Dependency: runc >= 1.0.0 for package: docker-20.10.17-1.amzn2.x86_64
+--> Processing Dependency: libcgroup >= 0.40.rc1-5.15 for package: docker-20.10.17-1.amzn2.x86_64
+--> Processing Dependency: containerd >= 1.3.2 for package: docker-20.10.17-1.amzn2.x86_64
+--> Processing Dependency: pigz for package: docker-20.10.17-1.amzn2.x86_64
+--> Running transaction check
+---> Package containerd.x86_64 0:1.6.6-1.amzn2 will be installed
+---> Package libcgroup.x86_64 0:0.41-21.amzn2 will be installed
+---> Package pigz.x86_64 0:2.3.4-1.amzn2.0.1 will be installed
+---> Package runc.x86_64 0:1.1.3-1.amzn2 will be installed
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+=========================================================================================================================================
+ Package                       Arch                      Version                              Repository                            Size
+=========================================================================================================================================
+Installing:
+ docker                        x86_64                    20.10.17-1.amzn2                     amzn2extra-docker                     39 M
+Installing for dependencies:
+ containerd                    x86_64                    1.6.6-1.amzn2                        amzn2extra-docker                     27 M
+ libcgroup                     x86_64                    0.41-21.amzn2                        amzn2-core                            66 k
+ pigz                          x86_64                    2.3.4-1.amzn2.0.1                    amzn2-core                            81 k
+ runc                          x86_64                    1.1.3-1.amzn2                        amzn2extra-docker                    2.9 M
+
+Transaction Summary
+=========================================================================================================================================
+Install  1 Package (+4 Dependent packages)
+
+Total download size: 69 M
+Installed size: 260 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/5): pigz-2.3.4-1.amzn2.0.1.x86_64.rpm                                                                          |  81 kB  00:00:00
+(2/5): libcgroup-0.41-21.amzn2.x86_64.rpm                                                                         |  66 kB  00:00:00
+(3/5): docker-20.10.17-1.amzn2.x86_64.rpm                                                                         |  39 MB  00:00:00
+(4/5): runc-1.1.3-1.amzn2.x86_64.rpm                                                                              | 2.9 MB  00:00:00
+(5/5): containerd-1.6.6-1.amzn2.x86_64.rpm                                                                        |  27 MB  00:00:01
+-----------------------------------------------------------------------------------------------------------------------------------------
+Total                                                                                                     63 MB/s |  69 MB  00:00:01
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Installing : runc-1.1.3-1.amzn2.x86_64                                                                                             1/5
+  Installing : containerd-1.6.6-1.amzn2.x86_64                                                                                       2/5
+  Installing : libcgroup-0.41-21.amzn2.x86_64                                                                                        3/5
+  Installing : pigz-2.3.4-1.amzn2.0.1.x86_64                                                                                         4/5
+  Installing : docker-20.10.17-1.amzn2.x86_64                                                                                        5/5
+  Verifying  : docker-20.10.17-1.amzn2.x86_64                                                                                        1/5
+  Verifying  : runc-1.1.3-1.amzn2.x86_64                                                                                             2/5
+  Verifying  : pigz-2.3.4-1.amzn2.0.1.x86_64                                                                                         3/5
+  Verifying  : containerd-1.6.6-1.amzn2.x86_64                                                                                       4/5
+  Verifying  : libcgroup-0.41-21.amzn2.x86_64                                                                                        5/5
+
+Installed:
+  docker.x86_64 0:20.10.17-1.amzn2
+
+Dependency Installed:
+  containerd.x86_64 0:1.6.6-1.amzn2   libcgroup.x86_64 0:0.41-21.amzn2   pigz.x86_64 0:2.3.4-1.amzn2.0.1   runc.x86_64 0:1.1.3-1.amzn2
+
+Complete!
+[root@ip-172-31-88-10 ec2-user]# docker --version
+Docker version 20.10.17, build 100c701
+
+
+[root@ip-172-31-88-10 ec2-user]# service docker start
+Redirecting to /bin/systemctl start docker.service
+
+
+[root@ip-172-31-88-10 ec2-user]# mkdir demo_docker
+
+[root@ip-172-31-88-10 ec2-user]# cd demo_docker
+
+
+[root@ip-172-31-88-10 demo_docker]# vi Dockerfile
+
+[root@ip-172-31-88-10 demo_docker]# ls
+Dockerfile
+
+
+[root@ip-172-31-88-10 demo_docker]# docker build -t tomcat_1.0 .
+Sending build context to Docker daemon  2.048kB
+Step 1/1 : FROM tomcat
+latest: Pulling from library/tomcat
+d19f32bd9e41: Pull complete
+60ffabbc7d49: Pull complete
+f094bb0c8b4d: Pull complete
+fde4950fc6ef: Pull complete
+34eeeee27a4f: Pull complete
+a9f9c08dfe70: Pull complete
+8f63f2537b0f: Pull complete
+Digest: sha256:1c95c053578c1f229fb45e28ce17da5447b25178f276379c87c418d9bc2c8d21
+Status: Downloaded newer image for tomcat:latest
+ ---> bf4d7a00e8fd
+Successfully built bf4d7a00e8fd
+Successfully tagged tomcat_1.0:latest
+
+
+[root@ip-172-31-88-10 demo_docker]# docker image ls
+REPOSITORY   TAG       IMAGE ID       CREATED      SIZE
+tomcat       latest    bf4d7a00e8fd   4 days ago   475MB
+tomcat_1.0   latest    bf4d7a00e8fd   4 days ago   475MB
+
+[root@ip-172-31-88-10 demo_docker]# docker run -d -p 8080:8080 tomcat_1.0
+277f991c62ea19179903bc6e0bc26bd18f739f2f3a250686a955bb4da74dd4c6
+
+[root@ip-172-31-88-10 demo_docker]# docker ps
+CONTAINER ID   IMAGE        COMMAND             CREATED          STATUS          PORTS                                       NAMES
+277f991c62ea   tomcat_1.0   "catalina.sh run"   19 seconds ago   Up 19 seconds   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   awesome_fermi
+
+[root@ip-172-31-88-10 demo_docker]# docker ps
+CONTAINER ID   IMAGE        COMMAND             CREATED         STATUS         PORTS                                       NAMES
+277f991c62ea   tomcat_1.0   "catalina.sh run"   8 minutes ago   Up 8 minutes   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   awesome_fermi
+
+[root@ip-172-31-88-10 demo_docker]# docker stop 277f991c62ea
+277f991c62ea
+
+[root@ip-172-31-88-10 demo_docker]# docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+
+
+
+[root@ip-172-31-88-10 demo_docker]# clear
+
+[root@ip-172-31-88-10 demo_docker]# aws s3 cp s3://amey-cdac/sample.war .
+fatal error: Unable to locate credentials
+
+updated iamrole settings of ec2
+
+[root@ip-172-31-88-10 demo_docker]# aws s3 cp s3://amey-cdac/sample.war .
+download: s3://amey-cdac/sample.war to ./sample.war
+
+
+[root@ip-172-31-88-10 demo_docker]# ls
+Dockerfile  sample.war
+
+
+[root@ip-172-31-88-10 demo_docker]# vi Dockerfile
+(copy sample.war)
+
+[root@ip-172-31-88-10 demo_docker]# ls
+Dockerfile  sample.war
+
+
+[root@ip-172-31-88-10 demo_docker]# docker build -t sample_1.0 .
+Sending build context to Docker daemon  7.168kB
+Step 1/2 : FROM tomcat
+ ---> bf4d7a00e8fd
+Step 2/2 : copy sample.war /usr/local/tomcat/webapps/
+ ---> 2a9ff4699146
+Successfully built 2a9ff4699146
+Successfully tagged sample_1.0:latest
+[root@ip-172-31-88-10 demo_docker]# docker image ls
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+sample_1.0   latest    2a9ff4699146   28 seconds ago   475MB
+tomcat       latest    bf4d7a00e8fd   4 days ago       475MB
+tomcat_1.0   latest    bf4d7a00e8fd   4 days ago       475MB
+
+
+[root@ip-172-31-88-10 demo_docker]# docker run -d -p 8080:8080 sample_1.0
+7e0974b379b9609e996d5d024d99d33f88c26e9b73bf4cd81f158c2954f75baa
+
+
+[root@ip-172-31-88-10 demo_docker]# docker ps
+CONTAINER ID   IMAGE        COMMAND             CREATED         STATUS         PORTS                                       NAMES
+7e0974b379b9   sample_1.0   "catalina.sh run"   4 seconds ago   Up 4 seconds   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   cool_mclaren
+
+
+(due to powercut direct login succeeded)
+
+[root@ip-172-31-88-10 demo_docker]# docker login
+Authenticating with existing credentials...
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+[root@ip-172-31-88-10 demo_docker]# docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+sample_1.0   latest    2a9ff4699146   52 minutes ago   475MB
+tomcat       latest    bf4d7a00e8fd   4 days ago       475MB
+tomcat_1.0   latest    bf4d7a00e8fd   4 days ago       475MB
+[root@ip-172-31-88-10 demo_docker]# docker tag 2a9ff4699146 ameymhadgut132/sample_1.0
+[root@ip-172-31-88-10 demo_docker]# docker image ls
+REPOSITORY                  TAG       IMAGE ID       CREATED          SIZE
+ameymhadgut132/sample_1.0   latest    2a9ff4699146   54 minutes ago   475MB
+sample_1.0                  latest    2a9ff4699146   54 minutes ago   475MB
+tomcat_1.0                  latest    bf4d7a00e8fd   4 days ago       475MB
+tomcat                      latest    bf4d7a00e8fd   4 days ago       475MB
+[root@ip-172-31-88-10 demo_docker]# docker push ameymhadgut132/sample_1.0
+Using default tag: latest
+The push refers to repository [docker.io/ameymhadgut132/sample_1.0]
+13b625b50b16: Pushed
+177a75749b9d: Mounted from library/tomcat
+6cd83084f571: Mounted from library/tomcat
+ddde9f22d3ef: Mounted from library/tomcat
+4cd0300f250d: Mounted from library/tomcat
+8050cfbe961c: Mounted from library/tomcat
+fd567e98dd57: Mounted from library/tomcat
+629d9dbab5ed: Mounted from library/tomcat
+latest: digest: sha256:276cc598163c43bca6a13e39e6b8a7f845e40191976b8533cc0c84d32d416585 size: 1996
+
+
+
+
+[root@ip-172-31-88-10 demo_docker]# docker pull pradeep3393/sample_1.0
+Using default tag: latest
+latest: Pulling from pradeep3393/sample_1.0
+d19f32bd9e41: Already exists
+60ffabbc7d49: Already exists
+f094bb0c8b4d: Already exists
+fde4950fc6ef: Already exists
+34eeeee27a4f: Already exists
+a9f9c08dfe70: Already exists
+8f63f2537b0f: Already exists
+42a30c0b35cc: Pull complete
+Digest: sha256:502e733f83f840229a881d102265bd28aedeafdeeb2b2a83514bec210f469ff5
+Status: Downloaded newer image for pradeep3393/sample_1.0:latest
+docker.io/pradeep3393/sample_1.0:latest
+
+
+[root@ip-172-31-88-10 demo_docker]# docker image ls
+REPOSITORY                  TAG       IMAGE ID       CREATED          SIZE
+sample_1.0                  latest    2a9ff4699146   59 minutes ago   475MB
+ameymhadgut132/sample_1.0   latest    2a9ff4699146   59 minutes ago   475MB
+pradeep3393/sample_1.0      latest    8528589bec45   6 hours ago      475MB
+tomcat_1.0                  latest    bf4d7a00e8fd   4 days ago       475MB
+tomcat                      latest    bf4d7a00e8fd   4 days ago       475MB
+
+
+[root@ip-172-31-88-10 demo_docker]# docker ps
+CONTAINER ID   IMAGE        COMMAND             CREATED          STATUS          PORTS                                       NAMES
+7e0974b379b9   sample_1.0   "catalina.sh run"   59 minutes ago   Up 59 minutes   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   cool_mclaren
+
+[root@ip-172-31-88-10 demo_docker]# docker stop 7e0974b379b9
+7e0974b379b9
+
+[root@ip-172-31-88-10 demo_docker]# docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+
+[root@ip-172-31-88-10 demo_docker]# docker run -d -p 8080:8080 pradeep3393/sample_1.0
+2b10e898c26b740940f2ac32dcae8c60e0e1815b164108c9e6f8975e2d18d1fa
+[root@ip-172-31-88-10 demo_docker]# docker ps
+CONTAINER ID   IMAGE                    COMMAND             CREATED          STATUS         PORTS                                       NAMES
+2b10e898c26b   pradeep3393/sample_1.0   "catalina.sh run"   10 seconds ago   Up 9 seconds   0.0.0.0:8080->8080/tcp, :::8080->8080/tcp   quirky_mendel
+
+[root@ip-172-31-88-10 demo_docker]# docker stop 2b10e898c26b
+2b10e898c26b
+
+[root@ip-172-31-88-10 demo_docker]# docker ps
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+
+
+
+

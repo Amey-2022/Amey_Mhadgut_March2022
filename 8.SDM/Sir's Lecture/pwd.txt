@@ -1,0 +1,20 @@
+EC2-Amey019_cdac
+
+wd!%ELP2sYJK=X*jPtd.M*YSo*OW=NHk
+
+
+
+Password for your database amey-db
+
+This is the only time you will be able to view this password. Copy and save the password for your reference, otherwise you will need to modify the database to change it.
+Master username
+Amey019_cdac
+Master password
+6PqnJ5LkBQTRZGM6E5l1
+
+
+
+
+Amey_windows
+
+3IX*a9u)ZJEH-WNVYf-iVM$ZoO3JWGMU
